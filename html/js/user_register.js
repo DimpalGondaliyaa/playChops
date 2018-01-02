@@ -14,7 +14,7 @@ $(function(){
 					processData:false,
 					success:function(res)
 					{
-						alert("ok");
+						window.location.reload();
 					}
 				});
 		});

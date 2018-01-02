@@ -3,7 +3,7 @@
   <div id="register" class="modal">
     <div class="modal-content">
       <?php
-     $this->load->view("register");
+     //$this->load->view("register");
      ?>
     </div>
     <div class="modal-footer">
@@ -14,7 +14,7 @@
  <!-- Modal Structure -->
   <div id="changee" class="modal">
     <div class="modal-content">
-      <?php $this->load->view("varify"); ?>
+      <?php //$this->load->view("varify"); ?>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat varify">Agree</a>

@@ -24,13 +24,13 @@
         </div>
 
          <div class="input-field col s12">
-          <input id="mobile" name="mobile" type="text" class="validate">
+          <input id="mobile" name="mobile" maxlength="10" type="text" class="validate">
           <label for="mobile">Mobile</label>
         </div>
 
          <div class="input-field col s12">
-          <input id="profile_photo" name="profile_photo" type="text" class="validate">
-          <label for="profile_photo">Profile Photo</label>
+          <input id="profile_photo" name="profile_photo" type="file" class="validate">
+         <!--  <label for="profile_photo">Profile Photo</label> -->
         </div>
 
         <a class="waves-effect waves-light btn user_Register">Register</a>
@@ -41,3 +41,8 @@
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+	
+</script>

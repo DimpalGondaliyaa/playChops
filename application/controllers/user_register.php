@@ -28,9 +28,24 @@ class user_register extends CI_Controller {
 			'fname' => $_POST['fname'],
 			'lname' => $_POST['lname'],
 			'email' => $_POST['email'],
-			'fname' => $_POST['fname'],
-			'fname' => $_POST['fname'], );
-		$this->user_register_model->user_reg_data();
+			'password' => $_POST['password'],
+			'mobile' => $_POST['mobile'], );
+		$reg_id = $this->user_register_model->user_reg_data($data);
+
+		$userImage=$reg_id."_userImage.".pathinfo($_FILES['profile_photo']['name'],PATHINFO_EXTENSION);
+   
+		$adduserimgg=array('profile_photo'=>$userImage);
+		$this->user_register_model->adduserimg($adduserimgg,$reg_id);
+
+		$config["upload_path"]='html/images/user_image';
+		$config["allowed_types"]='gif|png|jpg|jpeg';
+		$config["file_name"]=$reg_id."_userImage";
+		$config["remove_spaces"]=TRUE;
+		$config["encrypt_name"]=FALSE;
+		$config['overwrite']=TRUE;
+
+		$this->load->library('upload',$config);
+		$this->upload->do_upload('profile_photo');
 
 	}
 }
