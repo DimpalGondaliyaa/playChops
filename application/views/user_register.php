@@ -1,5 +1,6 @@
 <div class="container">
 	<div class="main">
+		<h1>User Registration</h1>
 		<div class="row">
 			 <div class="row">
     <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data>
