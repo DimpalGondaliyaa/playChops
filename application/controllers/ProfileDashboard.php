@@ -21,5 +21,12 @@ class ProfileDashboard extends CI_Controller {
 		);
 		$this->load->view('template',$viewData);
 	}
+
+	public function postStatus(){
+		$this->load->model('ProfileDashboard_model');
+		$data = $_POST['data'];
+		$ress = $this->ProfileDashboard_model->postStatus($data);
+		echo json_encode($ress);
+	}
 }
 ?>
