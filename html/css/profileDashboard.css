@@ -90,6 +90,7 @@ img.responsive-img.profile_photo {
     background: #fff;
     padding: 25px;
     box-shadow: 0px 1px 3px #0000004f;
+    position: relative;
 }
 .col.s6.m4.recentBox img {
     border: 1px solid #ddd;
@@ -104,6 +105,21 @@ img.responsive-img.profile_photo {
 .commentsBox {
   	padding-top: 15px;
 }
-.postProfile.row h5 {
+.postProfile.row span {
     color: #002a43;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+    font-size: 16px;
+}
+/*shareLink*/
+.postProfile.row span.shareLink {
+    color: #aaa;
+    position: relative;
+    padding: 5px;
+}
+.postProfile.row span.SharedLink {
+    color: #0070ff;
+}
+.b4postContent {
+    color: #a5a5a5;
 }
