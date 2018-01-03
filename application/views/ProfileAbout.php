@@ -5,7 +5,7 @@
       	<div class="profileDetails-area">
       		<div class="row">
       		<div class="profile_img col s12 m4">
-      			<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img profile_photo">
+      			<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $pro_data['profile_photo'];?>" class="responsive-img profile_photo">
       		</div>
       		<div class="profileData col s12 m8">
       			<div class="user_name">
@@ -246,7 +246,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Hobbies:</div>
 								<div class="Hobbies-content">
-								I like to ride the bike to work, swimming, and working out. I also like reading design magazines, go to museums, and binge watching a good tv show while it’s raining outside.
+								<?php echo $pro_data['hobby']; ?>
 							   </div>
 							</div>
 						</div>
@@ -255,7 +255,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Music Bands / Artists:</div>
 								<div class="Hobbies-content">
-								Iron Maid, DC/AC, Megablow, The Ill, Kung Fighters, System of a Revenge.
+								<?php echo $pro_data['Favourite_Music_Bands_Artists']; ?>
 							   </div>
 							</div>
 						</div>
@@ -264,7 +264,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite TV Shows:</div>
 								<div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+								<?php echo $pro_data['Favourite_TV_Shows']; ?>
 							   </div>
 							</div>
 						</div>
@@ -273,7 +273,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Books:</div>
 								<div class="Hobbies-content">
-								The Crime of the Century, Egiptian Mythology 101, The Scarred Wizard, Lord of the Wings, Amongst Gods, The Oracle, A Tale of Air and Water.
+								<?php echo $pro_data['FavouriteBooks']; ?>
 							   </div>
 							</div>
 						</div>
@@ -282,7 +282,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Movies:</div>
 								<div class="Hobbies-content">
-								Idiocratic, The Scarred Wizard and the Fire Crown, Crime Squad, Ferrum Man.
+								<?php echo $pro_data['FavouriteMovies']; ?>
 							   </div>
 							</div>
 						</div>
@@ -291,7 +291,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Writers:</div>
 								<div class="Hobbies-content">
-								Martin T. Georgeston, Jhonathan R. Token, Ivana Rowle, Alexandria Platt, Marcus Roth.
+							<?php echo $pro_data['FavouriteWriters']; ?>
 							   </div>
 							</div>
 						</div>
@@ -300,7 +300,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Games:</div>
 								<div class="Hobbies-content">
-								The First of Us, Assassin’s Squad, Dark Assylum, NMAK16, Last Cause 4, Grand Snatch Auto.
+								<?php echo $pro_data['FavouriteGames']; ?>
 							   </div>
 							</div>
 						</div>
@@ -309,7 +309,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title">Other Interests:</div>
 								<div class="Hobbies-content">
-								Swimming, Surfing, Scuba Diving, Anime, Photography, Tattoos, Street Art.
+								<?php echo $pro_data['OtherInterests']; ?>
 							   </div>
 							</div>
 						</div>
@@ -329,83 +329,47 @@
 						</div>
 					</div>
 					<div class="row">
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title"><?php echo $pro_data['college']; ?></div>
+								<div class="education-date"><?php echo $pro_data['college_start_year']; ?> - <?php echo $pro_data['college_end_year']; ?></div>
+								<!-- <div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div> -->
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title"><?php echo $pro_data['primaryschool']; ?></div>
+								<div class="education-date"><?php echo $pro_data['start_primary_year']; ?> - <?php echo $pro_data['end_primary_year']; ?></div>
+								<!-- <div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div> -->
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title"><?php echo $pro_data['highersecondary']; ?></div>
+								<div class="education-date"><?php echo $pro_data['start_higher_year']; ?> - <?php echo $pro_data['end_higher_year']; ?></div>
+								<!-- <div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div> -->
+							</div>
+						</div>
+
+						
+
+					
 						<div class="col s12 m6">
 							<div class="postContent">
 								<div class="Hobbies-title">The New College of Design</div>
 								<div class="education-date">2001 - 2006</div>
-								<div class="Hobbies-content">
+								<!-- <div class="Hobbies-content">
 								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">Digital Design Intern</div>
-								<div class="education-date">2006-2008</div>
-								<div class="Hobbies-content">
-								Digital Design Intern for the “Multimedz” agency. Was in charge of the communication with the clients.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">Rembrandt Institute</div>
-								<div class="education-date">2008</div>
-								<div class="Hobbies-content">
-								Five months Digital Illustration course. Professor: Leonardo Stagg.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">UI/UX Designer</div>
-								<div class="education-date">2008-2013</div>
-								<div class="Hobbies-content">
-								UI/UX Designer for the “Daydreams” agency.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">The Digital College</div>
-								<div class="education-date">2010</div>
-								<div class="Hobbies-content">
-								6 months intensive Motion Graphics course. After Effects and Premire. Professor: Donatello Urtle.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">Senior UI/UX Designer</div>
-								<div class="education-date">2013-Now</div>
-								<div class="Hobbies-content">
-								Senior UI/UX Designer for the “Daydreams” agency. I’m in charge of a ten person group, overseeing all the proyects and talking to potential clients.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">The New College of Design</div>
-								<div class="education-date">2001 - 2006</div>
-								<div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">The New College of Design</div>
-								<div class="education-date">2001 - 2006</div>
-								<div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div>
+							   </div> -->
 							</div>
 						</div>
 						

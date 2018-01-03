@@ -40,7 +40,7 @@ $(function(){
 			processData:false,
 			success:function(res)
 			{
-				window.location.href = baseurl+"user_login";
+				window.location.href = baseurl+"Hobbie";
 				/*window.location.reload();*/
 			}
 		});

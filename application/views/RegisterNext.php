@@ -86,7 +86,7 @@
           <label for="hobby">hobby</label>
         </div>
         <div class="col s12 input-field done-btn-cols">
-        <a class="waves-effect waves-light btn usernextdata">Done</a>
+        <a class="waves-effect waves-light btn usernextdata">next</a>
         </div>
       </div>
     </form>

@@ -8,7 +8,7 @@
     <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
-          <input id="fname"  name="fname" value="-" type="text" class="validate">
+          <input id="fname"  name="fname" type="text" class="validate">
           <label for="fname">First Name</label>
         </div>
         <div class="input-field col s12">
