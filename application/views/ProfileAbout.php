@@ -9,7 +9,7 @@
       		</div>
       		<div class="profileData col s12 m8">
       			<div class="user_name">
-      				<h4>Ravi Meswaniya</h4>
+      				<h4 class="about-name-title"><?php echo $pro_data['fname']; ?> &nbsp;<?php echo $pro_data['lname']; ?></h4>
       			</div>
       			<div class="totalData">
 	      		<ul>
@@ -79,7 +79,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  December 14th, 1980
+						 <?php echo $pro_data['Birthday']; ?>
 						</div>
 				    </div>
 				</div>
@@ -92,7 +92,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  Austin, Texas, USA
+						  <?php echo $pro_data['Birthplace']; ?>
 						</div>
 				    </div>
 				</div>
@@ -105,7 +105,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  San Francisco, California, USA
+						  <?php echo $pro_data['Lives_In']; ?>
 						</div>
 				    </div>
 				</div>
@@ -144,7 +144,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  Married
+						  <?php echo $pro_data['Status']; ?>
 						</div>
 				    </div>
 				</div>
@@ -157,7 +157,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  jspiegel@yourmail.com
+						  <?php echo $this->session->userdata('email'); ?>
 						</div>
 				    </div>
 				</div>
@@ -183,7 +183,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  (044) 555 - 4369 - 8957 	
+						 <?php echo $pro_data['mobile']; ?>
 						</div>
 				    </div>
 				</div>
@@ -231,91 +231,188 @@
 			<div class="post-area">
 				<div class="postBox">
 					<div class="postProfile row">
-						<div class="col s4 m1">
+						<!-- <div class="col s4 m1">
 						<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-						</div>
+						</div> -->
 						<div class="col s4 m7">
-						<h5>Ravi Meswaniya</h5>
+						<h5>Hobbies and Interests</h5>
 						</div>
 						<div class="col s4 m4">
 							
 						</div>
 					</div>
-					<div class="postContent">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-					</div>
-					<div class="commentsBox">
-						<div class="row">
-							<div class="col s4 m4">
-								<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Hobbies:</div>
+								<div class="Hobbies-content">
+								I like to ride the bike to work, swimming, and working out. I also like reading design magazines, go to museums, and binge watching a good tv show while it’s raining outside.
+							   </div>
 							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite Music Bands / Artists:</div>
+								<div class="Hobbies-content">
+								Iron Maid, DC/AC, Megablow, The Ill, Kung Fighters, System of a Revenge.
+							   </div>
 							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-share" aria-hidden="true"> Share</i>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite TV Shows:</div>
+								<div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite Books:</div>
+								<div class="Hobbies-content">
+								The Crime of the Century, Egiptian Mythology 101, The Scarred Wizard, Lord of the Wings, Amongst Gods, The Oracle, A Tale of Air and Water.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite Movies:</div>
+								<div class="Hobbies-content">
+								Idiocratic, The Scarred Wizard and the Fire Crown, Crime Squad, Ferrum Man.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite Writers:</div>
+								<div class="Hobbies-content">
+								Martin T. Georgeston, Jhonathan R. Token, Ivana Rowle, Alexandria Platt, Marcus Roth.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Favourite Games:</div>
+								<div class="Hobbies-content">
+								The First of Us, Assassin’s Squad, Dark Assylum, NMAK16, Last Cause 4, Grand Snatch Auto.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Other Interests:</div>
+								<div class="Hobbies-content">
+								Swimming, Surfing, Scuba Diving, Anime, Photography, Tattoos, Street Art.
+							   </div>
 							</div>
 						</div>
 					</div>
 				</div>
-					<div class="postBox">
+				
+				<div class="postBox">
 					<div class="postProfile row">
-						<div class="col s4 m1">
+						<!-- <div class="col s4 m1">
 						<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-						</div>
+						</div> -->
 						<div class="col s4 m7">
-						<h5>Ravi Meswaniya</h5>
+						<h5>Education and Employement</h5>
 						</div>
 						<div class="col s4 m4">
 							
 						</div>
 					</div>
-					<div class="postContent">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-					</div>
-					<div class="commentsBox">
-						<div class="row">
-							<div class="col s4 m4">
-								<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
-							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-share" aria-hidden="true"> Share</i>
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">The New College of Design</div>
+								<div class="education-date">2001 - 2006</div>
+								<div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div>
 							</div>
 						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Digital Design Intern</div>
+								<div class="education-date">2006-2008</div>
+								<div class="Hobbies-content">
+								Digital Design Intern for the “Multimedz” agency. Was in charge of the communication with the clients.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Rembrandt Institute</div>
+								<div class="education-date">2008</div>
+								<div class="Hobbies-content">
+								Five months Digital Illustration course. Professor: Leonardo Stagg.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">UI/UX Designer</div>
+								<div class="education-date">2008-2013</div>
+								<div class="Hobbies-content">
+								UI/UX Designer for the “Daydreams” agency.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">The Digital College</div>
+								<div class="education-date">2010</div>
+								<div class="Hobbies-content">
+								6 months intensive Motion Graphics course. After Effects and Premire. Professor: Donatello Urtle.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">Senior UI/UX Designer</div>
+								<div class="education-date">2013-Now</div>
+								<div class="Hobbies-content">
+								Senior UI/UX Designer for the “Daydreams” agency. I’m in charge of a ten person group, overseeing all the proyects and talking to potential clients.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">The New College of Design</div>
+								<div class="education-date">2001 - 2006</div>
+								<div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div>
+							</div>
+						</div>
+
+						<div class="col s12 m6">
+							<div class="postContent">
+								<div class="Hobbies-title">The New College of Design</div>
+								<div class="education-date">2001 - 2006</div>
+								<div class="Hobbies-content">
+								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+							   </div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
-					<div class="postBox">
-					<div class="postProfile row">
-						<div class="col s4 m1">
-						<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-						</div>
-						<div class="col s4 m7">
-						<h5>Ravi Meswaniya</h5>
-						</div>
-						<div class="col s4 m4">
-							
-						</div>
-					</div>
-					<div class="postContent">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-					</div>
-					<div class="commentsBox">
-						<div class="row">
-							<div class="col s4 m4">
-								<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
-							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-							</div>
-							<div class="col s4 m4">
-								<i class="fa fa-share" aria-hidden="true"> Share</i>
-							</div>
-						</div>
-					</div>
-				</div>
+				
+				
 			</div>
 		</div>
 	</div>

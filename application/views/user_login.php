@@ -1,9 +1,11 @@
-<div class="container">
-	<div class="main">
-		<h1>User Login</h1>
-		<div class="row">
-			 <div class="row">
-    <form class="col s12" name="user_log" id="user_log" method='post' enctype="multipart/form-data>
+<div class="register-area">
+  <div class="main">
+    <div class="registerBox">
+      <div class="title">
+      <h5>User Login</h5>
+    </div>
+       <div class="row">
+    <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
           <input id="email"  name="email" type="text" class="validate">
@@ -13,13 +15,12 @@
           <input id="password" name="password" type="text" class="validate">
           <label for="password">Password</label>
         </div>
-
-        <a class="waves-effect waves-light btn user_login">Login</a>
+        <div class="col s12 input-field">
+           <a class="waves-effect waves-light btn user_login">Login</a>
+        </div>
       </div>
-    
     </form>
   </div>
-		</div>
-	</div>
 </div>
-
+</div>
+</div>

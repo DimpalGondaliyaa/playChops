@@ -8,7 +8,7 @@
     <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
-          <input id="fname"  name="fname" type="text" class="validate">
+          <input id="fname"  name="fname" value="-" type="text" class="validate">
           <label for="fname">First Name</label>
         </div>
         <div class="input-field col s12">
@@ -28,7 +28,7 @@
 
          <div class="input-field col s12 m6">
           <input id="profile_photo" name="profile_photo" type="file" class="validate" style="display: none;">
-          <button class="btn btn-flat btn-upload" onclick="$('input#profile_photo').click();">Upload Photo</button>
+          <button type="button" class="btn btn-flat btn-upload" onclick="$('input#profile_photo').click();">Upload Photo</button>
          <!--  <label for="profile_photo">Profile Photo</label> -->
         </div>
         <div class="input-field col s12">
@@ -36,7 +36,7 @@
           <label for="password">Password</label>
         </div>
         <div class="col s12 input-field">
-        <a class="waves-effect waves-light btn user_Register">Register</a>
+        <a class="waves-effect waves-light btn user_Register">Next</a>
         </div>
       </div>
     </form>

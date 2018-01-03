@@ -14,7 +14,9 @@ $(function(){
 					processData:false,
 					success:function(res)
 					{
-						window.location.reload();
+						window.location.href = baseurl+"RegisterNext";
+						/*window.location.href=baseurl+"RegisterNext";*/
+						/*window.location.reload();*/
 					}
 				});
 		});

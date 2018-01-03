@@ -6,6 +6,8 @@ class ProfileAbout extends CI_Controller {
 	
 	public function index()
 	{		
+		$this->load->model("profile_about_model");
+		$pro_data = $this->profile_about_model->fetch_pro_data();
 		$headerData = array(
 			"pageTitle" => "Profile ProfileAbout",
 			"stylesheet" => array("ProfileAbout.css")
@@ -15,7 +17,7 @@ class ProfileAbout extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "ProfileAbout",
-            "viewData" => array(),
+            "viewData" => array('pro_data'=>$pro_data),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
