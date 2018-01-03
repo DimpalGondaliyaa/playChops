@@ -1,7 +1,10 @@
-<div class="login_arey">
+<div class="register-area">
 	<div class="main">
-		<h1>User Registration</h1>
-		<div class="row">
+		<div class="registerBox">
+      <div class="title">
+      <h5>Create Profile</h5>
+    </div>
+			 <div class="row">
     <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
@@ -38,5 +41,6 @@
       </div>
     </form>
   </div>
+</div>
 </div>
 </div>
