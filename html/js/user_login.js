@@ -16,6 +16,7 @@ $(function(){
 				{
 					alert("ok");
 					window.location.href=baseurl+"ProfileDashboard";
+					$('form[name=user_login]').html('');
 				}
 				else if(check.status=='fail')
 				{

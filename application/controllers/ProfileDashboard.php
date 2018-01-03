@@ -6,6 +6,9 @@ class ProfileDashboard extends CI_Controller {
 	
 	public function index()
 	{		
+		if(!$this->session->userdata('email')){
+			header('Location:user_login');
+		}
 		$headerData = array(
 			"pageTitle" => "Profile Dashboard",
 			"stylesheet" => array("profileDashboard.css")

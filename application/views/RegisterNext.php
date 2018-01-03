@@ -19,7 +19,7 @@
 
          <div class="input-field col s12 m6">
           <input id="Status" name="Status" type="text" class="validate">
-          <label for="Status">Status</label>
+          <label for="Status">Marital Status</label>
         </div>
 
         <div class="input-field col s12 m6">

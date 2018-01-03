@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProfileAbout extends CI_Controller {
+class BuddyList extends CI_Controller {
 
 	
 	public function index()
@@ -9,19 +9,17 @@ class ProfileAbout extends CI_Controller {
 		if(!$this->session->userdata('email')){
 			header('Location:user_login');
 		}
-
-		$this->load->model("profile_about_model");
-		$pro_data = $this->profile_about_model->fetch_pro_data();
+		
 		$headerData = array(
-			"pageTitle" => "Profile ProfileAbout",
-			"stylesheet" => array("ProfileAbout.css")
+			"pageTitle" => "BuddyList",
+			"stylesheet" => array("buddyList.css")
 		);
 		$footerData = array(
-			"jsFiles" => array("ProfileAbout.js")
+			"jsFiles" => array("buddyList.js")
 		);
 		$viewData = array(
-			"viewName" => "ProfileAbout",
-            "viewData" => array('pro_data'=>$pro_data),
+			"viewName" => "buddyList",
+            "viewData" => array(),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

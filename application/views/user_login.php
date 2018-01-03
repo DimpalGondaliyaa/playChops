@@ -5,7 +5,7 @@
       <h5>User Login</h5>
     </div>
        <div class="row">
-    <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data">
+    <form class="col s12" name="user_login" id="user_login" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
           <input id="email"  name="email" type="text" class="validate">

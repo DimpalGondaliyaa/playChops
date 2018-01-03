@@ -37,7 +37,7 @@
       			<ul>
       				<li><a href="#!">Timeline</a></li>
       				<li><a href="<?php echo base_url(); ?>ProfileAbout">About</a></li>
-      				<li><a href="#!">Friends</a></li>
+      				<li><a href="<?php echo base_url(); ?>/buddyList">Friends</a></li>
       				<li><a href="#!">Posts</a></li>
       				<li><a href="#!">About</a></li>
       			</ul>

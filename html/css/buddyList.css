@@ -1,0 +1,10 @@
+.friendRow {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.friendRow:last-child {
+    position: relative;
+    border-bottom: 0px solid #eee;
+    padding-bottom: 5px;
+}
