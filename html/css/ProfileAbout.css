@@ -107,3 +107,52 @@ img.responsive-img.profile_photo {
 .postProfile.row h5 {
     color: #002a43;
 }
+/* ---------------personal info css--------------*/
+.title h5 {
+    text-transform:  capitalize;
+    font-size: 23px;
+}
+.personal-box {
+   padding-bottom: 55px;
+    margin-top: 37px;
+    /* margin-bottom: 55px; */
+}
+.personal-left-title {
+    font-size:  17px;
+    font-weight:  bold;
+    color: #000000ab;
+    text-transform:  capitalize;
+}
+.personal-right-title {
+    color: #736b6b;
+}
+.other-social a {
+    width:  100%;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+a.waves-effect.waves-light.btn.other-social-fb {
+    background: #2f5b9d;
+    font-size: 14px;
+}
+a.waves-effect.waves-light.btn.other-social-twitter {
+    background:  #38bff1;
+    font-size: 14px;
+}
+a.waves-effect.waves-light.btn.other-social-dribble {
+    background:  #f74881;
+    font-size: 14px;
+}
+
+i.social-icon {
+    padding-right:  10px;
+    font-size: 15px;
+}
+.other-title {
+    font-size:  16px;
+    font-weight:  bold;
+    text-transform:  capitalize;
+    padding-top: 20px;
+}

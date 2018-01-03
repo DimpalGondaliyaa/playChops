@@ -52,9 +52,179 @@
 <div class="PostContainer">
 	<div class="row">
 		<div class="col s12 m3">
-
+			<div class="recentPostBox sticky">
+		<div class="title">
+			<h5>personal info</h5>
 		</div>
-		<div class="col s12 m6">
+			<div class="recentPostData row">
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    about me
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						    Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier 56
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Birthday:
+
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  December 14th, 1980
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Birthplace:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  Austin, Texas, USA
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Lives in:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  San Francisco, California, USA
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						   Occupation:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  UI/UX Designer
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Joined:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  April 31st, 2014
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Status:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  Married
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Email:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  jspiegel@yourmail.com
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						   Website:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						 daydreamsagency.com
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						    Phone Number:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  (044) 555 - 4369 - 8957 	
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						   Religious Belifs:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						 -
+						</div>
+				    </div>
+				</div>
+
+				<div class="personal-box">
+					<div class="col m4">
+						<div class="personal-left-title">
+						   Political Incline:
+						</div>
+					</div>
+					<div class="col m8">	
+					    <div class="personal-right-title">
+						  Democrat
+						</div>
+				    </div>
+				</div>
+		<div class="other-social">
+			<div class="other-title">Other Social Networks:</div>
+			<a class="waves-effect waves-light btn other-social-fb"><i class="fa fa-facebook social-icon" aria-hidden="true"></i>facebook</a>
+			<a class="waves-effect waves-light btn other-social-twitter"><i class="fa fa-twitter social-icon" aria-hidden="true"></i>twitter</a>
+			<a class="waves-effect waves-light btn other-social-dribble"><i class="fa fa-dribbble social-icon" aria-hidden="true"></i>dribbble</a>
+		</div>		
+				
+			</div>
+		</div>
+		</div>
+
+		<div class="col s12 m9">
 <div class="main">
 	<div class="profile-area">
 		<div class="max-width">
@@ -152,7 +322,7 @@
 </div>
 </div>
 <div class="col s12 m3">
-	<div class="recentPostBox sticky">
+<!-- 	<div class="recentPostBox sticky">
 		<div class="title">
 			<h5>Recent Post</h5>
 		</div>
@@ -171,7 +341,7 @@
 			</div>
 			</div>
 
-		</div>
+		</div> -->
 	</div>
 </div>
 </div>
