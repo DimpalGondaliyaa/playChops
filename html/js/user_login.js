@@ -15,7 +15,7 @@ $(function(){
 				if(check.status=='ok')
 				{
 					alert("ok");
-					window.location.href=baseurl+"home";
+					window.location.href=baseurl+"ProfileDashboard";
 				}
 				else if(check.status=='fail')
 				{

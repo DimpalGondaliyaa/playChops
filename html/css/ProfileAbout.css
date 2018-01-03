@@ -46,6 +46,10 @@ img.responsive-img.profile_photo {
     text-align: center;
     margin-right: 5px;
 }
+.about-name-title
+{
+    text-transform: capitalize;
+}
 .col.s12.m12.profile_quickLinks {
     padding-left: 0;
 }
@@ -85,6 +89,7 @@ img.responsive-img.profile_photo {
     padding: 15px;
     border-bottom: 1px solid #eee;
     text-align: justify;
+    min-height: 119px;
 }
 .recentPostBox {
     background: #fff;
@@ -118,13 +123,14 @@ img.responsive-img.profile_photo {
     /* margin-bottom: 55px; */
 }
 .personal-left-title {
-    font-size:  17px;
+    font-size:  15px;
     font-weight:  bold;
     color: #000000ab;
     text-transform:  capitalize;
 }
 .personal-right-title {
     color: #736b6b;
+    text-transform: capitalize;
 }
 .other-social a {
     width:  100%;
@@ -155,4 +161,18 @@ i.social-icon {
     font-weight:  bold;
     text-transform:  capitalize;
     padding-top: 20px;
+}
+/*-----------------hobby and interest css------------------*/
+.Hobbies-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000ab;
+    text-transform: capitalize;
+    font-weight:  bold;
+}
+/*--------------------------education emploayee css-------------*/
+.education-date {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #000000a6;
 }
