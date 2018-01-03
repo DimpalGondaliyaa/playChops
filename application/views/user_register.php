@@ -1,4 +1,4 @@
-<div class="container">
+<div class="login_arey">
 	<div class="main">
 		<h1>User Registration</h1>
 		<div class="row">
