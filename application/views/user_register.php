@@ -1,7 +1,9 @@
-<div class="container">
+<div class="register-area">
 	<div class="main">
-		<h1>User Registration File</h1>
-		<div class="row">
+		<div class="registerBox">
+      <div class="title">
+      <h5>Create Profile</h5>
+    </div>
 			 <div class="row">
     <form class="col s12" name="user_reg" id="user_reg" method='post' enctype="multipart/form-data>
       <div class="row">
@@ -19,31 +21,26 @@
           <label for="email">Email</label>
         </div>
 
-         <div class="input-field col s12">
-          <input id="password" name="password" type="text" class="validate">
-          <label for="password">Password</label>
-        </div>
-
-         <div class="input-field col s12">
+         <div class="input-field col s12 m6">
           <input id="mobile" name="mobile" maxlength="10" type="text" class="validate">
           <label for="mobile">Mobile</label>
         </div>
 
-         <div class="input-field col s12">
-          <input id="profile_photo" name="profile_photo" type="file" class="validate">
+         <div class="input-field col s12 m6">
+          <input id="profile_photo" name="profile_photo" type="file" class="validate" style="display: none;">
+          <button class="btn btn-flat btn-upload" onclick="$('input#profile_photo').click();">Upload Photo</button>
          <!--  <label for="profile_photo">Profile Photo</label> -->
         </div>
-
+        <div class="input-field col s12">
+          <input id="password" name="password" type="text" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <div class="col s12 input-field">
         <a class="waves-effect waves-light btn user_Register">Register</a>
+        </div>
       </div>
-    
     </form>
   </div>
-		</div>
-	</div>
 </div>
-
-
-<script type="text/javascript">
-	
-</script>
+</div>
+</div>

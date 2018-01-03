@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class user_register extends CI_Controller {
+class User_register extends CI_Controller {
 
 	
 	public function index()

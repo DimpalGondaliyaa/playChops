@@ -1,0 +1,10 @@
+/*body{
+	background: #002A43;
+}*/
+nav{
+	background-color: #002A43 !important;
+}
+nav .nav-wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+}
