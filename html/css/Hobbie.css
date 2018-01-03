@@ -2,7 +2,7 @@
     padding: 25px;
     position: relative;
     background:#002A43;
-    min-height: 100vh;
+       min-height: 100vh;
 }
 .main {
     max-width: 1280px;
@@ -12,14 +12,15 @@
 .registerBox {
     background: #7b7b7b2e;
     padding: 25px;
-    max-width: 500px;
+      max-width: 850px;
     margin: 0 auto;
     margin-top: 10%;
     box-shadow: 0px 2px 7px #011927;
 }
 .title h5{
-	text-align: center;
-	color: #FB9108;
+        text-transform: capitalize;
+    text-align: center;
+    color: #FB9108;
 }
 .btn-upload {
     background: #fb9108d1;
@@ -31,8 +32,23 @@
     color: #000;
     border: 2px solid #cacaca54;
 }
-input {
+input
+{
     color: #fff;
+}
+a.waves-effect.waves-light.btn.usernextdata {
+    background: #173a50;
+    border:  1px solid #fff;
+    width: 31%;
+    margin-top:  28px;
+}
+.done-btn-cols {
+    width: 100%;
+    margin-top:  32px;
+    margin:  0 auto;
+    text-align:  center;
+    padding-top:  27px;
+    background:  transparent;
 }
 a.waves-effect.waves-light.btn.user_Register {
     width: 100%;
