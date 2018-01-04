@@ -1,32 +1,27 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProfileAbout extends CI_Controller {
+class ProfileHeader extends CI_Controller {
 
 	
 	public function index()
 	{		
-		if(!$this->session->userdata('email')){
-			header('Location:user_login');
-		}
-
 		$this->load->model("profile_about_model");
 		$pro_data = $this->profile_about_model->fetch_pro_data();
 		$headerData = array(
-			"pageTitle" => "Profile ProfileAbout",
-			"stylesheet" => array("ProfileAbout.css")
+			"pageTitle" => "ProfileHeader",
+			"stylesheet" => array("ProfileHeader.css","ProfileAbout.css")
 		);
 		$footerData = array(
-			"jsFiles" => array("ProfileAbout.js","RegisterNext.js")
+			"jsFiles" => array("ProfileHeader.js","ProfileAbout.js")
 		);
 		$viewData = array(
-			"viewName" => "ProfileAbout",
+			"viewName" => "ProfileHeader",
             "viewData" => array('pro_data'=>$pro_data),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
 		$this->load->view('template',$viewData);
 	}
-	
 }
 ?>

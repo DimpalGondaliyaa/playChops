@@ -1,61 +1,59 @@
-<div class="row">
-	<div class="parallax-container">
-      <div class="parallax">
-      	<img src="<?php echo base_url(); ?>html/images/user_profile_cover/tiger.jpg">
-      	<div class="profileDetails-area">
-      		<div class="row">
-      		<div class="profile_img col s12 m4">
-      			<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $pro_data['profile_photo'];?>" class="responsive-img profile_photo">
-      		</div>
-      		<div class="profileData col s12 m8">
-      			<div class="user_name">
-      				<h4 class="about-name-title"><?php echo $pro_data['fname']; ?> &nbsp;<?php echo $pro_data['lname']; ?></h4>
-      			</div>
-      			<div class="totalData">
-	      		<ul>
-      				<li>
-      				<div class="total_post">
-	      				<h5>26</h5>
-	      				<p>POST</p>
-	      			</div>
-		      		</li>
-		      		<li>
-		      		<div class="profile_followers">
-	      				<h5>500</h5>
-	      				<p>FOLLOWERS</p>
-	      			</div>
-	      			</li>
-	      			<li>
-	      			<div class="profile_followig">
-	      				<h5>200</h5>
-	      				<p>FOLLOWING</p>
-	      			</div>
-	      			</li>
-      			</ul>
-      			</div>
-      			<div class="col s12 m12 profile_quickLinks">
-      			<ul>
-      				<li><a href="#!">Timeline</a></li>
-      				<li><a href="#!">About</a></li>
-      				<li><a href="#!">Friends</a></li>
-      				<li><a href="#!">Posts</a></li>
-      				<li><a href="<?php echo base_url(); ?>ProfileAbout">About</a></li>
-      			</ul>
-      			</div>
-      		</div>
-      		</div>
-      	</div>
-      </div>
+<?php  $this->load->view("ProfileHeader"); ?>
+
+<!--===============perdsonal info model============-->
+<!-- Modal Structure -->
+  <div id="personal-model" class="modal">
+    <div class="modal-content">
+    	<?php
+     $this->load->view("update_personal_info");
+    ?>
     </div>
-</div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat edit-personal">edit</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+    </div>
+  </div>
+<!--===============hobby info model============-->
+<!-- Modal Structure -->
+  <div id="hobby-model" class="modal">
+    <div class="modal-content">
+    	<?php
+     $this->load->view("update_hobbies");
+    ?>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat edit-hobbie">edit</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+    </div>
+  </div>
+<!--===============education info model============-->
+<!-- Modal Structure -->
+  <div id="education-model" class="modal">
+    <div class="modal-content">
+    	<?php
+     $this->load->view("update_education");
+    ?>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat edit-education">edit</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+    </div>
+  </div>
+
+
+
+
 
 <div class="PostContainer">
 	<div class="row">
 		<div class="col s12 m3">
 			<div class="recentPostBox sticky">
-		<div class="title">
+				<a class="waves-effect waves-light btn edit-pro-btn">edit</a>
+		<div class="title">	
 			<h5>personal info</h5>
+
 		</div>
+
 			<div class="recentPostData row">
 				<div class="personal-box">
 					<div class="col m4">
@@ -65,7 +63,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						    Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier 56
+						  <?php echo $pro_data['about_me']; ?>
 						</div>
 				    </div>
 				</div>
@@ -118,7 +116,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  UI/UX Designer
+						  <?php echo $pro_data['Occupation']; ?>
 						</div>
 				    </div>
 				</div>
@@ -131,7 +129,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						  April 31st, 2014
+						  <?php echo $pro_data['Joined']; ?>
 						</div>
 				    </div>
 				</div>
@@ -170,7 +168,7 @@
 					</div>
 					<div class="col m8">	
 					    <div class="personal-right-title">
-						 daydreamsagency.com
+						   <?php echo $pro_data['Website']; ?>
 						</div>
 				    </div>
 				</div>
@@ -188,31 +186,6 @@
 				    </div>
 				</div>
 
-				<div class="personal-box">
-					<div class="col m4">
-						<div class="personal-left-title">
-						   Religious Belifs:
-						</div>
-					</div>
-					<div class="col m8">	
-					    <div class="personal-right-title">
-						 -
-						</div>
-				    </div>
-				</div>
-
-				<div class="personal-box">
-					<div class="col m4">
-						<div class="personal-left-title">
-						   Political Incline:
-						</div>
-					</div>
-					<div class="col m8">	
-					    <div class="personal-right-title">
-						  Democrat
-						</div>
-				    </div>
-				</div>
 		<div class="other-social">
 			<div class="other-title">Other Social Networks:</div>
 			<a class="waves-effect waves-light btn other-social-fb"><i class="fa fa-facebook social-icon" aria-hidden="true"></i>facebook</a>
@@ -234,7 +207,9 @@
 						<!-- <div class="col s4 m1">
 						<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 						</div> -->
+						<a class="waves-effect waves-light btn edit-hobbie-btn">edit</a>
 						<div class="col s4 m7">
+
 						<h5>Hobbies and Interests</h5>
 						</div>
 						<div class="col s4 m4">
@@ -321,7 +296,9 @@
 						<!-- <div class="col s4 m1">
 						<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 						</div> -->
+						<a class="waves-effect waves-light btn edit-education-btn">edit</a>
 						<div class="col s4 m7">
+
 						<h5>Education and Employement</h5>
 						</div>
 						<div class="col s4 m4">
@@ -360,19 +337,6 @@
 							</div>
 						</div>
 
-						
-
-					
-						<div class="col s12 m6">
-							<div class="postContent">
-								<div class="Hobbies-title">The New College of Design</div>
-								<div class="education-date">2001 - 2006</div>
-								<!-- <div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div> -->
-							</div>
-						</div>
-						
 					</div>
 				</div>
 				

@@ -9,6 +9,8 @@ class ProfileDashboard extends CI_Controller {
 		if(!$this->session->userdata('email')){
 			header('Location:user_login');
 		}
+		$this->load->model("profile_about_model");
+		$pro_data = $this->profile_about_model->fetch_pro_data();
 		$headerData = array(
 			"pageTitle" => "Profile Dashboard",
 			"stylesheet" => array("profileDashboard.css")
@@ -18,7 +20,7 @@ class ProfileDashboard extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "profileDashboard",
-            "viewData" => array(),
+            "viewData" => array('pro_data'=>$pro_data),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
