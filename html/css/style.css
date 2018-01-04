@@ -82,17 +82,17 @@ nav .nav-wrapper{
 
 .like-container{filter: url('#filter');}
 .like-cnt{  
-      position: relative;
+       position: relative;
     cursor: pointer;
     /* left: 50%; */
     /* top: 50%; */
     /* transform: translate(-50%, -50%); */
     background: rgb(175, 177, 179);
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     text-align: center;
-    line-height: 75px;
+    line-height: 50px;
     z-index: 10;
 }
 .like-btn{

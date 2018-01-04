@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2018 at 12:38 PM
+-- Generation Time: Jan 04, 2018 at 12:52 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -31,12 +31,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `buddyposts` (
   `post_Id` int(5) NOT NULL,
   `postData` text NOT NULL,
-  `postType` int(255) NOT NULL,
+  `postTime` varchar(255) NOT NULL,
+  `postDate` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `postType` varchar(255) NOT NULL,
   `post_status` int(11) NOT NULL,
   `post_location` text NOT NULL,
   `postTag` text NOT NULL,
   `post_attachment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `buddyposts`
+--
+
+INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
+(1, 'First', '05:22:pm', 'January 4, 2018', 'abc@me.com', 'status', 1, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -109,8 +119,7 @@ CREATE TABLE `user_ragister` (
 --
 
 INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `Favourite_TV_Shows`, `Favourite_Music_Bands_Artists`, `FavouriteBooks`, `FavouriteWriters`, `FavouriteMovies`, `FavouriteGames`, `OtherInterests`, `profile_photo`) VALUES
-(2, 'riya', 'shah', 'riya123', 'riya123', 0, 'dfdfdf', '              abd', '              marrid', 'dfdfdf', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '              abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', 'dsdsds', 'rt', 'dfdfdfsasa', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg'),
-(3, 'riya', 'shah', ' test@me.com', 'test@me.com', 2222222222, 'fverfv', '        abd', '        marrid', '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '        abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', '', 'rt', 'dfdfdf', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg');
+(3, 'riya', 'shah', 'abc@me.com', '123', 2222222222, 'fverfv', '        abd', '        marrid', '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '        abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', '', 'rt', 'dfdfdf', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg');
 
 --
 -- Indexes for dumped tables
@@ -142,7 +151,7 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
