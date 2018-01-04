@@ -42,5 +42,52 @@ class RegisterNext extends CI_Controller {
 		'hobby' => $_POST['hobby'] );
 		$this->RegisterNextModel->insertNextdata($data);
 	}
+	public function updatenextdata()
+	{
+		$this->load->model('RegisterNextModel');
+		$data = array(
+		'Birthday' => $_POST['Birthday'] ,
+		'Birthplace' => $_POST['Birthplace'] ,
+		'Status' => $_POST['Status'] ,
+		'Lives_In'=>$_POST['Lives_In'] ,
+		'about_me'=>$_POST['about_me'],
+		'Occupation'=>$_POST['Occupation'],
+		'Joined'=>$_POST['Joined'],
+		'email'=>$_POST['email'],
+		'mobile'=>$_POST['mobile'],
+		'Website'=>$_POST['Website']);
+		$this->RegisterNextModel->updateNextdata($data);
+	}
+	public function updatehobbiedata()
+	{
+		$this->load->model('RegisterNextModel');
+		$data = array(
+		'hobby' => $_POST['hobby'] ,
+		'Favourite_Music_Bands_Artists' => $_POST['Favourite_Music_Bands_Artists'] ,
+		'Favourite_TV_Shows' => $_POST['Favourite_TV_Shows'] ,
+		'FavouriteBooks'=>$_POST['FavouriteBooks'] ,
+		'FavouriteWriters'=>$_POST['FavouriteWriters'],
+		'FavouriteGames'=>$_POST['FavouriteGames'],
+		'FavouriteMovies'=>$_POST['FavouriteMovies'],
+		'OtherInterests'=>$_POST['OtherInterests'],
+		'mobile'=>$_POST['mobile'],
+		'Website'=>$_POST['Website']);
+		$this->RegisterNextModel->updathobbiydata($data);
+	}
+	public function updateeducationdata()
+	{
+		$this->load->model('RegisterNextModel');
+		$data = array(
+		'college' => $_POST['college'] ,
+		'college_start_year' => $_POST['college_start_year'] ,
+		'college_end_year' => $_POST['college_end_year'] ,
+		'primaryschool'=>$_POST['primaryschool'] ,
+		'start_primary_year'=>$_POST['start_primary_year'],
+		'end_primary_year'=>$_POST['end_primary_year'],
+		'highersecondary'=>$_POST['highersecondary'],
+		'start_higher_year'=>$_POST['start_higher_year'],
+		'end_higher_year'=>$_POST['end_higher_year']);
+		$this->RegisterNextModel->updatEducationdata($data);
+	}
 }
 ?>

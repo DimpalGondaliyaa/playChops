@@ -9,6 +9,7 @@ class ProfileDashboard extends CI_Controller {
 		if(!$this->session->userdata('email')){
 			header('Location:user_login');
 		}
+
 		$this->load->model('ProfileDashboard_model');
 		$postRow=$this->ProfileDashboard_model->getPostData();
 
@@ -16,6 +17,9 @@ class ProfileDashboard extends CI_Controller {
 		/*get User Deatails by Email*/
 		$this->load->model('getUserDetais_model');
 		$userData=$this->getUserDetais_model->getUserDetails();
+
+		$this->load->model("profile_about_model");
+		$pro_data = $this->profile_about_model->fetch_pro_data();
 
 		$headerData = array(
 			"pageTitle" => "Profile Dashboard",
@@ -26,7 +30,8 @@ class ProfileDashboard extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "profileDashboard",
-            "viewData" => array('postRow'=>$postRow,'userData'=>$userData),
+
+            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

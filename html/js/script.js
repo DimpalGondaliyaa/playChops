@@ -41,6 +41,7 @@ $(function(){
 	/*=================== Like Button for PostBox =======================*/
 
 
+
  $(".like-cnt").on("click",function(){
     var baseurl=$("#base_url").val();  
     var productID=$(this).data("likesid");

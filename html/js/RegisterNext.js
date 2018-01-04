@@ -44,6 +44,82 @@ $(function(){
 				/*window.location.reload();*/
 			}
 		});
+	});
 
-	});	
+
+	$(".edit-personal").on("click",function(){
+
+		var reg_form = new FormData($("#up_personal_info")[0]);
+		$.ajax({
+
+			url : baseurl+"RegisterNext/updatenextdata",
+			type :"POST",
+			data :reg_form,	
+			contentType:false,
+			processData:false,
+			success:function(res)
+			{
+				
+				window.location.reload();
+			}
+		});
+	});
+/*---------------------edit hobbiy details---------------*/
+$(".edit-hobbie").on("click",function(){
+
+	var reg_form = new FormData($("#hobbyform")[0]);
+	$.ajax({
+
+		url : baseurl+"RegisterNext/updatehobbiedata",
+		type :"POST",
+		data :reg_form,	
+		contentType:false,
+		processData:false,
+		success:function(res)
+		{
+			
+			window.location.reload();
+		}
+	});
+});
+/*---------------------edit hobbiy details---------------*/
+$(".edit-education").on("click",function(){
+
+	var reg_form = new FormData($("#eduvcationform")[0]);
+	$.ajax({
+
+		url : baseurl+"RegisterNext/updateeducationdata",
+		type :"POST",
+		data :reg_form,	
+		contentType:false,
+		processData:false,
+		success:function(res)
+		{
+			
+			window.location.reload();
+		}
+	});
+});
+
+
+
+$('.edit-pro-btn').on("click",function(){
+	$(".modal").modal();
+	$("#personal-model").modal("open");
+});
+
+/*------------------OPEN HOBBIE MODEL------------------*/
+
+$('.edit-hobbie-btn').on("click",function(){
+		$(".modal").modal();
+		$("#hobby-model").modal("open");
+});
+/*------------------OPEN education MODEL------------------*/
+$('.edit-education-btn').on("click",function(){
+		$(".modal").modal();
+		$("#education-model").modal("open");
+});
+   
+
+
 });

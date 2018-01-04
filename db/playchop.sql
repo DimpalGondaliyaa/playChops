@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2018 at 02:07 PM
+-- Generation Time: Jan 04, 2018 at 12:38 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -37,15 +37,6 @@ CREATE TABLE `buddyposts` (
   `postTag` text NOT NULL,
   `post_attachment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `buddyposts`
---
-
-INSERT INTO `buddyposts` (`post_Id`, `postData`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, '', 0, 0, '', '', ''),
-(2, 'sadASD', 0, 0, '', '', ''),
-(3, '', 0, 0, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -86,6 +77,10 @@ CREATE TABLE `user_ragister` (
   `Birthday` varchar(233) NOT NULL,
   `Birthplace` varchar(233) NOT NULL,
   `Status` varchar(233) NOT NULL,
+  `about_me` varchar(244) NOT NULL,
+  `Occupation` varchar(222) NOT NULL,
+  `Joined` varchar(222) NOT NULL,
+  `Website` varchar(222) NOT NULL,
   `Lives_In` varchar(255) NOT NULL,
   `country` varchar(233) NOT NULL,
   `state` varchar(233) NOT NULL,
@@ -113,9 +108,9 @@ CREATE TABLE `user_ragister` (
 -- Dumping data for table `user_ragister`
 --
 
-INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `Favourite_TV_Shows`, `Favourite_Music_Bands_Artists`, `FavouriteBooks`, `FavouriteWriters`, `FavouriteMovies`, `FavouriteGames`, `OtherInterests`, `profile_photo`) VALUES
-(1, 'priya', 'shah', 'priya@123', 'priya@123', 9898989899, '2 January, 2018', 'rajkot', 'merrid', 'adb', 'india', 'gujrat', 'mirambica college', '2012', '2014', 'ram krushna school', '2010', '2011', 'ram krushna', '2008', '2009', 'I like to ride the bike to work, swimming, and working out. I also like reading design magazines, go to museums, and binge watching a good tv show while it’s raining outside.', 'Iron Maid, DC/AC, Megablow, The Ill, Kung Fighters, System of a Revenge.', 'Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.', 'The Crime of the Century, Egiptian Mythology 101, The Scarred Wizard, Lord of the Wings, Amongst Gods, The Oracle, A Tale of Air and Water.', 'Martin T. Georgeston, Jhonathan R. Token, Ivana Rowle, Alexandria Platt, Marcus Roth.', 'Idiocratic, The Scarred Wizard and the Fire Crown, Crime Squad, Ferrum Man.', 'The First of Us, Assassin’s Squad, Dark Assylum, NMAK16, Last Cause 4, Grand Snatch Auto.', 'Swimming, Surfing, Scuba Diving, Anime, Photography, Tattoos, Street Art.', '1_userImage.jpg'),
-(6, 'Dimpal', 'Gondaliya', 'priya@123', 'priya@123', 9898989899, '2 January, 2018', 'rajkot', 'merrid', 'adb', 'india', 'gujrat', 'mirambica college', '2012', '2014', 'ram krushna school', '2010', '2011', 'ram krushna', '2008', '2009', 'I like to ride the bike to work, swimming, and working out. I also like reading design magazines, go to museums, and binge watching a good tv show while it’s raining outside.', 'Iron Maid, DC/AC, Megablow, The Ill, Kung Fighters, System of a Revenge.', 'Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.', 'The Crime of the Century, Egiptian Mythology 101, The Scarred Wizard, Lord of the Wings, Amongst Gods, The Oracle, A Tale of Air and Water.', 'Martin T. Georgeston, Jhonathan R. Token, Ivana Rowle, Alexandria Platt, Marcus Roth.', 'Idiocratic, The Scarred Wizard and the Fire Crown, Crime Squad, Ferrum Man.', 'The First of Us, Assassin’s Squad, Dark Assylum, NMAK16, Last Cause 4, Grand Snatch Auto.', 'Swimming, Surfing, Scuba Diving, Anime, Photography, Tattoos, Street Art.', '1_userImage.jpg');
+INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `Favourite_TV_Shows`, `Favourite_Music_Bands_Artists`, `FavouriteBooks`, `FavouriteWriters`, `FavouriteMovies`, `FavouriteGames`, `OtherInterests`, `profile_photo`) VALUES
+(2, 'riya', 'shah', 'riya123', 'riya123', 0, 'dfdfdf', '              abd', '              marrid', 'dfdfdf', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '              abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', 'dsdsds', 'rt', 'dfdfdfsasa', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg'),
+(3, 'riya', 'shah', ' test@me.com', 'test@me.com', 2222222222, 'fverfv', '        abd', '        marrid', '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '        abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', '', 'rt', 'dfdfdf', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg');
 
 --
 -- Indexes for dumped tables
@@ -147,7 +142,7 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
@@ -159,7 +154,7 @@ ALTER TABLE `personal_info`
 -- AUTO_INCREMENT for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
