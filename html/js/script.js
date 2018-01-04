@@ -41,10 +41,25 @@ $(function(){
 	/*=================== Like Button for PostBox =======================*/
 
 
-var check_status = false;
-var like_cnt = $("#like-cnt");
-var like_parent = $(".like-container");
+ $(".like-cnt").on("click",function(){
+    var baseurl=$("#base_url").val();  
+    var productID=$(this).data("likesid");
+    alert(productID);
+    $('like-cnt_'+productID).css('background','blue');
+  /*  $.post(baseurl+"product/getTowishList"+productID,function(data){
+      var data=$.parseJSON(data);  */
+    });
+  
 
+
+
+/*
+var check_status = false;
+var like_cnt = $(".like-cnt");
+var like_parent = $(".like-container");
+*/
+/*var likBtnId=$(this).data('likesid');*/
+/*
 var burst = new mojs.Burst({
   parent: like_parent,
   radius:   { 20: 60 },
@@ -59,18 +74,19 @@ var burst = new mojs.Burst({
   }
 });
 
-$("#like-cnt").click(function(){
+$(".like-cnt").click(function(){
   var t1 = new TimelineLite();
   var t2 = new TimelineLite();
+
   if(!check_status){
     t1.set(like_cnt, {scale:0});
     t1.set('.like-btn', {scale: 0});
     t1.to(like_cnt, 0.6, {scale:1, background: '#002a43',ease: Expo.easeOut});
-    t2.to('.like-btn', 0.65, {scale: 1, ease: Elastic.easeOut.config(1, 0.3)}, '+=0.2');
+    t2.to('.like-btn', 0.65, {scale: 1, ease: Elastic.easeOut.config(1, 0.3)}, '+=0.2');*/
 //    t1.timeScale(5);
-    check_status=true;
+    //check_status=true;
     //circleShape.replay();
-    burst.replay();
+    /*burst.replay();
   }
   else{
     t1.to(like_cnt, 1, {scale:1})
@@ -80,7 +96,7 @@ $("#like-cnt").click(function(){
     check_status=false;
   }
   
-})
+})*/
 
 
 });

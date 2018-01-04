@@ -92,7 +92,10 @@
 							<div class="postStory" id="postStatus">
 								<form name="postPOST" id="postPOST">
 									<div class="input-field col s12">
-							          <textarea id="postStory" class="materialize-textarea" placeholder="Post Something..."></textarea>
+									  <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
+							          <textarea id="postStory" name="postStory" class="materialize-textarea" placeholder="Post Something..."></textarea>
+							          <input type="hidden" name="postType" id="postType" value="status">
+							          <input type="hidden" name="postStatus" id="postStatus" value="1">
 							        </div>
 							         <div class="col s12 m12">
 							        <div class="attachmentBox col s12 m8">
@@ -157,31 +160,37 @@
 						</div>
 						<!-- // post area for post -->
 
+						<?php 
+							foreach ($postRow as $key => $postData) {
+						?>
 						<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 								</div>
 								<div class="col s4 m7">
-								<span>Ravi Meswaniya</span>
-								<label><h6>7 hr ago.</h6></label>
+								<span>
+									<?php 
+										echo $userData['fname']; 
+										echo ' ';
+										echo $userData['lname'];
+									?>
+								</span>
+								<label><h6><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
 								</div>
 								<div class="col s4 m4">
 									
 								</div>
 							</div>
 							<div class="postContent">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+								<p><?php echo $postData['postData']; ?></p>
 							</div>
 							<div class="commentsBox">
 								<div class="row">
 									<div class="col s4 m4">
-										<div class="like-container">
-										  <div class="like-cnt unchecked" id="like-cnt">
+										  <div class="like-cnt unchecked" id="like-cnt" data-likesid="<?php echo $postData['post_Id'];  ?>">
 										  <i class="like-btn material-icons">thumb_up</i>
 										</div>
-										</div>
-
 										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
 									</div>
 									<div class="col s4 m4">
@@ -193,6 +202,7 @@
 								</div>
 							</div>
 						</div>
+						<?php } ?>
 						<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">

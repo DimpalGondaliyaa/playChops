@@ -35,17 +35,40 @@ $(function(){
 
 
 
-	$('#postPOSTButton').on('click',function(){
+	var baseurl = $("#base_url").val();
+
+		$("#postPOSTButton").on("click",function(){
+
+				var reg_form = new FormData($("#postPOST")[0]);
+				$.ajax({
+
+					url : baseurl+"ProfileDashboard/postStatus",
+					type :"POST",
+					data :reg_form,	
+					contentType:false,
+					processData:false,
+					success:function(res)
+					{
+						/*window.location.href = reload();*/
+						/*window.location.href=baseurl+"RegisterNext";*/
+						window.location.reload();
+					}
+				});
+		});
+
+
+	/*$('#postPOSTButton').on('click',function(){
 
 		var baseUrl=$('#base_url').val();
 
 		var data = {
 			'postData' : $("#postStory").val(),
 			'post_status' : $("#postStatus").val(),
+			'email' : $("#email").val(),
 			'post_location' : $("#postLocation").val(),
 			'postTag' : $("#postTags").val(),
 		};
-			/*$.post(baseurl+"login/dologin/",{data:data},function(data){*/
+			
 			$.post(baseUrl+"ProfileDashboard/postStatus/",{data:data},function(data){
 
 				var check = jQuery.parseJSON(data);
@@ -65,8 +88,15 @@ $(function(){
 				}
 			});
 	});
+*/
 
 
 
+
+
+
+/*Get Cuurt Time*/
+	
+	
 
 });

@@ -18,6 +18,8 @@ class register_model extends CI_Model
 		$data = $this->db->insert("teacher_register",$data);
 		
 	}
+
+	
 	
 }
 

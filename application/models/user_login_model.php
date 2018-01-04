@@ -12,7 +12,11 @@ class user_login_model extends CI_Model
 		{
 			$sql= array('status' => "ok",
 			'message' => "login ok" );
-			$this->session->set_userdata('email',$email);
+			$email=$this->session->set_userdata('email',$email);
+
+			$q=$this->db->query("SELECT * FROM user_ragister WHERE email='".$email."'");
+			$row=$this->$q->row_array();
+			var_dump($row);
 		}
 		else
 		{
