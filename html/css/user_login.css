@@ -2,7 +2,7 @@
     padding: 25px;
     position: relative;
     background:#002A43;
-    height: 100vh;
+    min-height: 100vh;
 }
 .main {
     max-width: 1280px;

@@ -36,9 +36,9 @@
       			</div>
       			<div class="col s12 m12 profile_quickLinks">
       			<ul>
-      				<li><a href="#!">Timeline</a></li>
+      				<li><a href="<?php echo base_url(); ?>ProfileDashboard">Timeline</a></li>
       				<li><a href="<?php echo base_url(); ?>ProfileAbout">About</a></li>
-      				<li><a href="#!">Friends</a></li>
+      				<li><a href='#!'>Friends</a></li>
       				<li><a href="#!">Posts</a></li>
       				<li><a href="<?php echo base_url(); ?>ProfilePhoto">Photo</a></li>
       			</ul>

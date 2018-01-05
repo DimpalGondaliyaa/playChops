@@ -199,7 +199,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="postBox">
+				<!-- 		<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
@@ -228,8 +228,8 @@
 								</div>
 							</div>
 						</div>
-						
-						<div class="postBox">
+						 -->
+					<!-- 	<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
@@ -257,7 +257,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>

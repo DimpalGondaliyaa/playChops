@@ -339,6 +339,51 @@
 
 					</div>
 				</div>
+
+
+						<?php 
+							foreach ($postRow as $key => $postData) {
+						?>
+						<div class="postBox">
+							<div class="postProfile row">
+								<div class="col s4 m1">
+								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
+								</div>
+								<div class="col s4 m7">
+								<span>
+									<?php 
+										echo $userData['fname']; 
+										echo ' ';
+										echo $userData['lname'];
+									?>
+								</span>
+								<label><h6><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
+								</div>
+								<div class="col s4 m4">
+									
+								</div>
+							</div>
+							<div class="postContent">
+								<p><?php echo $postData['postData']; ?></p>
+							</div>
+							<div class="commentsBox">
+								<div class="row">
+									<div class="col s4 m4">
+										  <div class="like-cnt unchecked" id="like-cnt" data-likesid="<?php echo $postData['post_Id'];  ?>">
+										  <i class="like-btn material-icons">thumb_up</i>
+										</div>
+										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
+									</div>
+									<div class="col s4 m4">
+										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
+									</div>
+									<div class="col s4 m4">
+										<i class="fa fa-share" aria-hidden="true"> Share</i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php } ?>
 				
 				
 			</div>
