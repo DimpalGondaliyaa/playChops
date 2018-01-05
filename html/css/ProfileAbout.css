@@ -45,6 +45,25 @@ img.responsive-img.profile_photo {
     background: #ada9a9;
     /* border: 2px solid #635959; */
 }
+.edit-pro-btn:hover
+{
+    background: #4c4949;
+}
+.edit-education-btn:hover
+{
+    background: #4c4949;
+}
+.edit-education-btn {
+    float: right;
+    height: 35px;
+    border-radius: 13px;
+    background: #ada9a9;
+    /* border: 2px solid #635959; */
+}
+.edit-hobbie-btn:hover
+{
+    background: #4c4949;
+}
 .edit-hobbie-btn {
     float: right;
     height: 35px;
