@@ -111,8 +111,21 @@
 						<!-- // post area for post -->
 
 						<?php 
+							
+							//$q=("SELECT * FROM buddyposts WHERE postDate > DATE_SUB(NOW(), INTERVAL 10 MINUTE)");
+
+			/*	$email=$this->session->userdata('email');
+				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' and postDate > DATE_SUB(NOW(), INTERVAL 10 MINUTE) ORDER BY post_Id DESC");
+				$row=$this->db->query("SELECT sent_date FROM invitations WHERE email='$email' AND uid='$session_uid' AND `sent_date` < SUBDATE( CURRENT_DATE, INTERVAL 1 DAY)")
+				$row=$row->result_array();*/
+
 							foreach ($postRow as $key => $postData) {
+						
+							
+
 						?>
+
+
 						<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">
