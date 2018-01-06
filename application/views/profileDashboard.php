@@ -34,8 +34,8 @@
 								
 								<ul>
 									<li><button type="button" class="btn btn-flat blue-text statusPostBtn">Status</button></li>
-									<li><button type="button" class="btn btn-flat blue-text mediaPostBtn">Media</button></li>
-									<li><button type="button" class="btn btn-flat blue-text locationPostBtn">Location</button></li>
+									<li><button type="button" class="btn btn-flat blue-text  mediaPostBtn">Media</button></li>
+									<li><button type="button" class="btn btn-flat blue-text  locationPostBtn">Location</button></li>
 								</ul>
 
 							</div>
@@ -47,11 +47,11 @@
 							          <input type="hidden" name="postType" id="postType" value="status">
 							          <input type="hidden" name="postStatus" id="postStatus" value="1">
 							        </div>
+							    <!--     <input id="post_attachment" name="post_attachment" type="file" class="validate" style="display: none;"> -->
 							         <div class="col s12 m12">
 							        <div class="attachmentBox col s12 m8">
 							        	<ul class="addAttachment">
 							        		<li class="fa fa-map-marker" aria-hidden="true"></li>
-							        		<li class="fa fa-camera" aria-hidden="true"></li>
 							        		<li class="fa fa-tags" aria-hidden="true"></li>
 							        	</ul>
 							        </div>
@@ -64,20 +64,28 @@
 							<!-- post media -->
 							<div class="postMedia" style="display: none;" id="postMedia">
 								<!-- <label>Post Media</label> -->
-								<form>
+								<form name="postMediaa" id="postMediaa">
 									<div class="input-field col s12">
-							          <textarea id="postStory" class="materialize-textarea" placeholder="Post Media File..."></textarea>
+									  <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
+							          <textarea id="postStory" name="postStory" class="materialize-textarea" placeholder="Post Media File..."></textarea>
+							          <input type="hidden" name="postType" id="postType" value="status">
+							          <input type="hidden" name="postStatus" id="postStatus" value="1">
 							        </div>
+							        <input id="post_attachment" name="post_attachment" type="file" class="validate" style="display: none;"> 
+									<!-- <div class="input-field col s12">
+							          <textarea id="postStory" class="materialize-textarea" placeholder="Post Media File..."></textarea>
+							        </div> -->
 							        <div class="col s12 m12">
 							        <div class="attachmentBox col s12 m8">
 							        	<ul class="addAttachment">
 							        		<li class="fa fa-map-marker" aria-hidden="true"></li>
-							        		<li class="fa fa-camera" aria-hidden="true"></li>
+							        		  <li  aria-hidden="true" class="fa fa-camera btn-upload" onclick="$('input#post_attachment').click();"></li>
+							        		<!-- <li class="fa fa-camera" aria-hidden="true"></li> -->
 							        		<li class="fa fa-tags" aria-hidden="true"></li>
 							        	</ul>
 							        </div>
 							        <div class="col s12 m4">
-							        	<button type="button" class="btn btn-flat blue white-text">Post</button>
+							        	<button type="button" id='mediapost' class="btn btn-flat blue white-text">Post</button>
 							        </div>
 							    	</div>
 								</form>
@@ -130,122 +138,50 @@
 								</div>
 								<div class="col s4 m4">
 									
+							    </div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12">
+									<div class="post">
+										
+										<?php echo $postData['postData'];  ?>
+									</div>
+									<div class="post_img">
+										<?php if($postData['post_attachment']>0) {?>
+									<img src="<?php echo base_url(); ?>html/images/post_images/<?php echo $postData['post_attachment']; ?>" >
+									<?php } else { ?> <?php } ?>
+								    </div>
 								</div>
 							</div>
-							<div class="postContent">
-								<p><?php echo $postData['postData']; ?></p>
-							</div>
+							
+							
 							<div class="commentsBox">
 								<div class="row">
 									<div class="col s4 m4">
-										  <div class="like-cnt unchecked" id="like-cnt" data-likesid="<?php echo $postData['post_Id'];  ?>">
-										  <i class="like-btn material-icons">thumb_up</i>
-										</div>
-										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
+										  <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i></div>
+										<i class="fa fa-heart red-text" aria-hidden="true"> <strong id='output' data-n="0">0<i></i></strong></i>
 									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<?php } ?>
-						<div class="postBox">
-							<div class="postProfile row">
-								<div class="col s4 m1">
-								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-								</div>
-								<div class="col s4 m7">
-								<span>Ravi Meswaniya</span> <span class="shareLink">Share</span> a <span class="SharedLink">link</span>.
-								<label><h6>7 hr ago.</h6></label>
-								</div>
-								<div class="col s4 m4">
-									
-								</div>
-							</div>
-							<div class="b4postContent">
-								If someone missed it, check out the new song by System of a Revenge! I thinks they are going back to their roots...
-							</div>
-							<div class="postContent">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-							</div>
-							<div class="commentsBox">
-								<div class="row">
-									<div class="col s4 m4">
-										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
-									</div>
-								</div>
-							</div>
-						</div>
-				<!-- 		<div class="postBox">
-							<div class="postProfile row">
-								<div class="col s4 m1">
-								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-								</div>
-								<div class="col s4 m7">
-								<h5>Ravi Meswaniya</h5>
-								</div>
-								<div class="col s4 m4">
-									
-								</div>
-							</div>
-							<div class="postContent">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-							</div>
-							<div class="commentsBox">
-								<div class="row">
-									<div class="col s4 m4">
-										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
-									</div>
-								</div>
-							</div>
-						</div>
-						 -->
-					<!-- 	<div class="postBox">
-							<div class="postProfile row">
-								<div class="col s4 m1">
-								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-								</div>
-								<div class="col s4 m7">
-								<h5>Ravi Meswaniya</h5>
-								</div>
-								<div class="col s4 m4">
-									
-								</div>
-							</div>
-							<div class="postContent">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-							</div>
-							<div class="commentsBox">
-								<div class="row">
-									<div class="col s4 m4">
-										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
-									</div>
-									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
-									</div>
-								</div>
-							</div>
-						</div> -->
 
+									
+									<div class="col s4 m4">
+										 <div   id="coomm-div"">
+										   <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i>
+										 </div>
+										   <i class="fa fa-comment  comment-class" aria-hidden="true"> 284</i>
+									</div>
+
+									<div class="col s4 m4">
+										<i class="fa fa-share" aria-hidden="true"> Share</i>
+									</div>
+
+								</div>
+							</div>
+								
+						</div>
+						
+						<?php } ?>
+
+				
 					</div>
 				</div>
 			</div>

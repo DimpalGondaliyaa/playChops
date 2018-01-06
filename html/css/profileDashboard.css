@@ -1,3 +1,127 @@
+/* Heart icon from Adam Whitcroft's batch 
+http://adamwhitcroft.com/batch/  */
+textarea.materialize-textarea {
+    overflow-y: hidden;
+    padding: .8rem 0 1.6rem 0;
+    resize: none;
+    min-height: 3rem;
+    border: 1px solid #8080801c;
+    padding: 10px;
+}
+.comm-btn {
+    font-size: 20px;
+    color: #fff !important;
+    position: relative;
+    bottom: 6px;
+    color: #fff;
+}
+/*-----------comment btn css-----------*/
+.comment-btn {
+    text-align:  center;
+    position:  relative;
+    top: 27px;
+    /* background:  red; */
+}
+
+.comment-btn a {
+    background: #0089ec;
+}
+body
+
+{
+         background: #ededed;
+  
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;      
+        /*prevents flickering*/
+}
+
+
+
+#circle
+{
+       width: 60px;
+       height: 60px;
+    margin-top: 150px;  
+      -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background-color: #212121;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    position: relative;
+
+}
+
+
+
+
+
+
+@-webkit-keyframes pulse 
+{
+  from {
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    opacity: 1.0;
+  }
+  to { 
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
+}
+
+
+
+
+#output
+
+{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #1a1a1a;
+        margin-top:10px;
+          
+  }
+
+
+#descrip
+
+{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #242424;
+        margin-top:8px;
+          
+  }
+
+
+#HjelmPatrik
+
+{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        color: #1f1f1f;
+        margin-top:200px;
+        gutter: 10px;
+        text-decoration: none;
+        opacity: 0.7;       
+}
+
+#HjelmPatrik:hover
+{
+        opacity: 0.9;
+}
+
 /*ProfileDashboard Global Css*/
 body{
 	background: #eee;
@@ -29,6 +153,30 @@ img.responsive-img.profile_photo {
     position: relative;
     height: 200px;
     object-fit: contain;
+}
+.post_img img {
+    height:  auto;
+    width: 100%;
+}
+h4.about-name-title {
+    text-transform: capitalize;
+}
+.statusPostBtn:hover {
+    color: black;
+    background-color: #8080802e !important;
+}
+.mediaPostBtn:hover
+{
+ color: black;
+    background-color: #8080802e !important;
+}
+.locationPostBtn:hover
+{
+    color: black;
+    background-color: #8080802e !important;
+}
+button#postPOSTButton:hover {
+    background: #2898f4ad !important;
 }
 .profileDetails-area {
     max-width: 1000px;
@@ -85,6 +233,28 @@ img.responsive-img.profile_photo {
     padding: 15px;
     border-bottom: 1px solid #eee;
     text-align: justify;
+}
+.comm-btn
+{
+      position: relative;
+    cursor: pointer;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background: rgb(175, 177, 179);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    z-index: 10;
+}
+div#coomm-div {
+    position: relative;
+    top: 8px;
+}
+.comm-btn{
+  color: blue;
 }
 .recentPostBox {
     background: #fff;
@@ -174,3 +344,4 @@ i.fa.fa-map-marker {
 	overflow: hidden;
 	position: relative;
 }
+/*like btn*/

@@ -24,66 +24,66 @@
 
         <div class="input-field col s12 m6">
           <input id="Lives_In" name="Lives_In" type="text" class="validate">
-          <label for="Lives_In">Lives_In</label>
+          <label for="Lives_In">Lives In</label>
         </div>
 
          <div class="input-field col s12 m6">
           <input id="country" name="country" maxlength="10" type="text" class="validate">
-          <label for="country">country</label>
+          <label for="country">Country</label>
         </div>
 
         <div class="input-field col s12 m6">
           <input id="state" name="state" type="text" class="validate">
-          <label for="state">state</label>
+          <label for="state">State</label>
         </div>
 
          <div class="input-field col s12 m6">
         <input id="college" name="college" type="text" class="validate">
-          <label for="college">college</label>
+          <label for="college">College</label>
         </div>
 
           <div class="input-field col s12 m6">
         <input id="college_start_year" name="college_start_year" type="text" class="validate">
-          <label for="college_start_year">college_start_year</label>
+          <label for="college_start_year">College Start Year</label>
         </div>
 
          <div class="input-field col s12 m6">
       <input id="college_end_year" name="college_end_year" type="text" class="validate">
-          <label for="college_end_year">college_end_year</label>
+          <label for="college_end_year">College End Year</label>
         </div>
 
          <div class="input-field col s12 m6">
         <input id="primaryschool" name="primaryschool" type="text" class="validate">
-          <label for="primaryschool">primaryschool</label>
+          <label for="primaryschool">Primary School</label>
         </div>
 
           <div class="input-field col s12 m6">
         <input id="start_primary_year" name="start_primary_year" type="text" class="validate">
-          <label for="start_primary_year">start_primary_year</label>
+          <label for="start_primary_year">Start Primary Year</label>
         </div>
 
          <div class="input-field col s12 m6">
       <input id="end_primary_year" name="end_primary_year" type="text" class="validate">
-          <label for="end_primary_year">end_primary_year</label>
+          <label for="end_primary_year">End Primary Year</label>
         </div>
 
         <div class="input-field col s12 m6">
         <input id="highersecondary" name="highersecondary" type="text" class="validate">
-          <label for="highersecondary">higher secondary</label>
+          <label for="highersecondary">Higher Secondary</label>
         </div>
 
           <div class="input-field col s12 m6">
         <input id="start_higher_year" name="start_higher_year" type="text" class="validate">
-          <label for="start_higher_year">start_higher_year</label>
+          <label for="start_higher_year">Start Higher Year</label>
         </div>
            <div class="input-field col s12 m6">
        <input id="end_higher_year" name="end_higher_year" type="text" class="validate">
-         <label for="end_higher_year">end_higher_year</label>
+         <label for="end_higher_year">End Higher Year</label>
         </div>
 
         <div class="input-field col s12 m6">
           <input id="hobby" name="hobby" type="text" class="validate">
-          <label for="hobby">hobby</label>
+          <label for="hobby">Hobby</label>
         </div>
         <div class="col s12 input-field done-btn-cols">
         <a class="waves-effect waves-light btn usernextdata">next</a>
