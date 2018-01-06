@@ -37,7 +37,7 @@ $(function(){
 
 	/*Smooth Scroillig*/
 
-
+var baseurl = $("#base_url").val();
 	/*=================== Like Button for PostBox =======================*/
 
 
@@ -50,6 +50,9 @@ $(function(){
   /*  $.post(baseurl+"product/getTowishList"+productID,function(data){
       var data=$.parseJSON(data);  */
     });
+
+/*--------------------script for comment fetch-----------------*/
+
   
 
 
