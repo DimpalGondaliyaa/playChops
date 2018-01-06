@@ -216,8 +216,19 @@
 									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
 									           <div class="col s4 m3 comm-col">	
 									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
+
+									
 									</div>
 									</form>
+									  <div>
+									  	<?php 
+									  		foreach ($postData['coment'] as  $imagekey => $imageRow) {
+									  			?>
+									  			<?php echo $imageRow['comment']; ?>
+									  			<?php
+									  		}
+									  	?>
+									  </div>
 								</div>
 							</div>
 								
