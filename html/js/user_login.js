@@ -14,7 +14,7 @@ $(function(){
 				var check = jQuery.parseJSON(data);
 				if(check.status=='ok')
 				{
-					alert("ok");
+					/*alert("ok");*/
 					window.location.href=baseurl+"ProfileDashboard";
 					$('form[name=user_login]').html('');
 				}
@@ -24,6 +24,7 @@ $(function(){
 				}
 				else
 				{
+					alert("Please Check your Login Details.");
 					console.log(data);
 				}
 			});

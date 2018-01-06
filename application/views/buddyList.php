@@ -110,6 +110,7 @@
 								<div class="col s12 m5">
 									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
 									<button class="btn flat-btn remove-btn">Remove</button>
+
 								</div>
 							</div>
 							<div class="friendRow row">

@@ -25,12 +25,12 @@ body{
     position: relative;
 }
 img.responsive-img.profile_photo {
-       display: block;
+  /*     display: block;
     position: relative;
     height: 282px;
     padding: 42px 50px;
     border-radius: 170px;
-    width: 69px !important;
+    width: 69px !important;*/
     /* object-fit: contain; */
     /* object-fit: contain; */
     /*display: block;
