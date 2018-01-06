@@ -138,7 +138,8 @@ public function postMedia()
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array('email' => $_POST['email'] ,
-		'comment'=>$_POST['comment'] );
+		'comment'=>$_POST['comment'],
+		'post_id' =>$_POST['post_id'] );
 		$this->ProfileDashboard_model->addcommentpost($data);
 	}
 

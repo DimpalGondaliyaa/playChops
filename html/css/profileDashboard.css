@@ -15,6 +15,15 @@ textarea.materialize-textarea {
     bottom: 6px;
     color: #fff;
 }
+.comm-col {
+    text-align:  center;
+    position:  relative;
+    top: 13px;
+}
+
+.postcomm-btn {
+    background: #0089ec;
+}
 /*-----------comment btn css-----------*/
 .comment-btn {
     text-align:  center;

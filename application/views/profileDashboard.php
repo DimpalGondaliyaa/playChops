@@ -173,7 +173,18 @@
 									<div class="col s4 m4">
 										<i class="fa fa-share" aria-hidden="true"> Share</i>
 									</div>
-
+									<form name="commentform" id="commentform">
+										<div class="row">
+											
+									           <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
+									       
+									           <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>">
+											<div class="col s8 m9">									   
+									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
+									           <div class="col s4 m3 comm-col">	
+									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
+									</div>
+									</form>
 								</div>
 							</div>
 								

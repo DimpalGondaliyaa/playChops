@@ -8,22 +8,26 @@ $('#demo').on("click",function(){
 });
 $(".post-btn").on("click",function(){
 
-				var reg_form = new FormData($("#commentform")[0]);
-				$.ajax({
+	var reg_form = new FormData($("#commentform")[0]);
+	$.ajax({
 
-					url : baseurl+"ProfileDashboard/commentpost",
-					type :"POST",
-					data :reg_form,	
-					contentType:false,
-					processData:false,
-					success:function(res)
-					{
-						/*window.location.href = reload();*/
-						/*window.location.href=baseurl+"RegisterNext";*/
-						window.location.reload();
-					}
-				});
+		url : baseurl+"ProfileDashboard/commentpost",
+		type :"POST",
+		data :reg_form,	
+		contentType:false,
+		processData:false,
+		success:function(res)
+		{
+			/*window.location.href = reload();*/
+			/*window.location.href=baseurl+"RegisterNext";*/
+			window.location.reload();
+		}
+	});
 });
+
+
+
+
 
 	$(".like-cnt").click(function() {
   var n = Number($("strong").attr("data-n"))+1;
@@ -101,8 +105,6 @@ $(".post-btn").on("click",function(){
 					processData:false,
 					success:function(res)
 					{
-						/*window.location.href = reload();*/
-						/*window.location.href=baseurl+"RegisterNext";*/
 						window.location.reload();
 					}
 				});
