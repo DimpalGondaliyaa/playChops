@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2018 at 09:45 AM
+-- Generation Time: Jan 06, 2018 at 09:53 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,7 +46,8 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, 'qqq', '02:08:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '1_postImage.jpg');
+(1, 'qqq', '02:08:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '1_postImage.jpg'),
+(2, '', '02:21:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '2_postImage.jpg');
 
 -- --------------------------------------------------------
 
@@ -81,7 +82,8 @@ INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
 (13, 1, 'abc@me.com', 'meeeeeee'),
 (14, 1, 'abc@me.com', 'qqqqqq'),
 (15, 1, 'abc@me.com', 'dddddd'),
-(16, 1, 'abc@me.com', 'rrrrrrr');
+(16, 1, 'abc@me.com', 'rrrrrrr'),
+(17, 1, 'abc@me.com', 'fdfdfd');
 
 -- --------------------------------------------------------
 
@@ -104,6 +106,20 @@ CREATE TABLE `personal_info` (
   `Website` varchar(222) NOT NULL,
   `Religious_Belifs` varchar(222) NOT NULL,
   `Political_Incline` varchar(222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userliks`
+--
+
+CREATE TABLE `userliks` (
+  `id` int(5) NOT NULL,
+  `post_id` int(5) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `likes` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -180,6 +196,12 @@ ALTER TABLE `personal_info`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `userliks`
+--
+ALTER TABLE `userliks`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
@@ -193,19 +215,25 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`
 --
 ALTER TABLE `commenttbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
 --
 ALTER TABLE `personal_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `userliks`
+--
+ALTER TABLE `userliks`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_ragister`
