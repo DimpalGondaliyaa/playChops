@@ -172,11 +172,17 @@
 								<div class="row">
 									<div class="col s4 m4 row">
 										<div class="likBox">
+											<form name="likeForm" id="likeForm" method="post">
+												<input type="hidden" name="post_Id" id="post_Id" value="<?php echo $postData['post_Id']; ?>">
+												<input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email');?>">
+												<input type="hidden" name="likes" id="likes" value="<?php echo $postData['post_Id']; ?>">
+												<input type="hidden" name="status" id="status" value="1">
 											<div class="valign-wrapper">
-												 <a class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
-												 	<i class="material-icons">thumb_up</i>&nbsp; 20
-												 </a>
-											</div>	
+												 <a data-like-id="<?php echo $postData['post_Id'];?>" class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
+												 	<i class="material-icons">thumb_up</i>
+												 </a>&nbsp; 20
+											</div>
+											</form>	
 										</div>
 										  <!-- <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i>
 										  	<span class="likeValue">200</span>
@@ -190,8 +196,8 @@
 										 	
 										 	<div class="valign-wrapper">
 										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
-										 			<i class="material-icons">message</i>&nbsp; 20
-										 		</a>
+										 			<i class="material-icons">message</i>
+										 		</a>&nbsp; 20
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
@@ -206,7 +212,7 @@
 										 	</div>
 										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
 									</div>
-									<form name="commentform" id="commentform">
+									<form name="commentform" id="commentform_<?php echo $postData['post_Id']; ?>">
 										<div class="row">
 											
 									           <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
@@ -216,10 +222,9 @@
 									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
 									           <div class="col s4 m3 comm-col">	
 									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
-
-									
 									</div>
 									</form>
+									  
 									  <div>
 									  	<?php 
 									  		foreach ($postData['coment'] as  $imagekey => $imageRow) {

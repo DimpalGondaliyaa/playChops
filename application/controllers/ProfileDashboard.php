@@ -65,25 +65,17 @@ class ProfileDashboard extends CI_Controller {
 				   );
 		 $postid = $this->ProfileDashboard_model->postStatus($data);
 	
-}
-public function postMedia()
-{
-	$this->load->model('ProfileDashboard_model');
+	}
+
+	public function postMedia()
+	{
+		$this->load->model('ProfileDashboard_model');
 		$this->load->helper('date');
 		
 		//$dt = new DateTime();
 		date_default_timezone_set("UTC");
     	$date=gmdate("F j, Y");
 
-		/*$time=date('h:i '); */
-		
-		/*$timezone  = -5; //(GMT -5:00) EST (U.S. & Canada) 
-		echo gmdate("Y/m/j H:i:s", time() + 3600*($timezone+date("I")));*/
-
-		/*$date = new DateTime("@$ts"); 
-		var_dump($date->format('Y-m-d H:i:s e'));
-
-		$time=date("g:i a", time());*/
 		if (function_exists('date_default_timezone_set'))
 		{
 		  date_default_timezone_set('Asia/Kolkata');
@@ -114,6 +106,7 @@ public function postMedia()
 		$this->load->library('upload',$config);
 		$this->upload->do_upload('post_attachment');
 	}
+
 	public function commentpost()
 	{
 		$this->load->model("ProfileDashboard_model");
@@ -122,6 +115,19 @@ public function postMedia()
 		'post_id' =>$_POST['post_id'] );
 		$this->ProfileDashboard_model->addcommentpost($data);
 	}
+
+	/*public function postLike(){
+		$this->load->model('postLike_model');*/
+		/*$data=$_POST['data'];*/
+		/*$data=array(
+			'post_id'=>$_POST['id'],
+			'email'=>$_POST['email'],
+			'likes'=>$_POST['likes'],
+			'status'=>$_POST['status']
+		);
+		$this->postLike_model->postLikeData($data);*/
+		/*echo json_encode($likes);*/
+	/*}*/
 
 }
 ?>
