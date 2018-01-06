@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2018 at 05:57 AM
+-- Generation Time: Jan 06, 2018 at 09:45 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,7 +46,7 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, 'xzxzzxz', '06:51:pm', 'January 5, 2018', 'abc@me.com', 'status', 1, '', '', '');
+(1, 'qqq', '02:08:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '1_postImage.jpg');
 
 -- --------------------------------------------------------
 
@@ -56,6 +56,7 @@ INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`
 
 CREATE TABLE `commenttbl` (
   `id` int(11) NOT NULL,
+  `post_id` int(12) NOT NULL,
   `email` varchar(222) NOT NULL,
   `comment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -64,27 +65,23 @@ CREATE TABLE `commenttbl` (
 -- Dumping data for table `commenttbl`
 --
 
-INSERT INTO `commenttbl` (`id`, `email`, `comment`) VALUES
-(1, 'abc@me.com', ''),
-(2, 'abc@me.com', ''),
-(3, 'abc@me.com', ''),
-(4, 'abc@me.com', 'dsdsdsdsd'),
-(5, 'abc@me.com', ''),
-(6, 'abc@me.com', ''),
-(7, 'abc@me.com', 'dsdsdsd'),
-(8, 'abc@me.com', ''),
-(9, '', ''),
-(10, '', ''),
-(11, '', ''),
-(12, '', ''),
-(13, '', ''),
-(14, '', ''),
-(15, '', ''),
-(16, '', ''),
-(17, '', ''),
-(18, 'abc@me.com', 'sxws'),
-(19, 'abc@me.com', 'sxws'),
-(20, 'abc@me.com', '');
+INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
+(1, 1, 'abc@me.com', 'meeeeeee'),
+(2, 1, 'abc@me.com', 'meeeeeee'),
+(3, 1, 'abc@me.com', 'meeeeeee'),
+(4, 1, 'abc@me.com', 'meeeeeee'),
+(5, 1, 'abc@me.com', 'meeeeeee'),
+(6, 1, 'abc@me.com', 'meeeeeee'),
+(7, 1, 'abc@me.com', 'meeeeeee'),
+(8, 1, 'abc@me.com', 'meeeeeee'),
+(9, 1, 'abc@me.com', 'meeeeeee'),
+(10, 1, 'abc@me.com', 'meeeeeee'),
+(11, 1, 'abc@me.com', 'meeeeeee'),
+(12, 1, 'abc@me.com', 'meeeeeee'),
+(13, 1, 'abc@me.com', 'meeeeeee'),
+(14, 1, 'abc@me.com', 'qqqqqq'),
+(15, 1, 'abc@me.com', 'dddddd'),
+(16, 1, 'abc@me.com', 'rrrrrrr');
 
 -- --------------------------------------------------------
 
@@ -202,7 +199,7 @@ ALTER TABLE `buddyposts`
 -- AUTO_INCREMENT for table `commenttbl`
 --
 ALTER TABLE `commenttbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
