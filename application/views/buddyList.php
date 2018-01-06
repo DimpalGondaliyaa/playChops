@@ -96,7 +96,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -109,7 +109,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -122,7 +122,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -135,7 +135,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -148,7 +148,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -161,7 +161,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -174,7 +174,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -187,7 +187,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 
@@ -201,7 +201,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div><div class="friendRow row">
 								<div class="col s4 m1">
@@ -213,7 +213,7 @@
 								</div>
 								<div class="col s12 m5">
 									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn ">Remove</button>
+									<button class="btn flat-btn btn-flat">Remove</button>
 								</div>
 							</div>
 

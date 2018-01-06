@@ -39,7 +39,7 @@
           <label for="FavouriteGames">FavouriteGames</label>
         </div>
 
-          <div class="input-field col s12 m6">
+          <div class="input-field col s12 m12">
         <input id="OtherInterests" name="OtherInterests" type="text" class="validate">
           <label for="OtherInterests">OtherInterests</label>
         </div>

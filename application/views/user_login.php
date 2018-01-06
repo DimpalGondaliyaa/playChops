@@ -15,8 +15,12 @@
           <input id="password" name="password" type="text" class="validate">
           <label for="password">Password</label>
         </div>
-        <div class="col s12 input-field">
+        <div class="col s12 input-field col s12">
            <a class="waves-effect waves-light btn user_login">Login</a>
+        </div>
+
+        <div class="input-field col s12 center">
+          <p class="center">New To PlayChops? <a href="<?php echo base_url() ?>User_register"> Sign up. </a></p>
         </div>
       </div>
     </form>

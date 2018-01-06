@@ -32,7 +32,7 @@
          <!--  <label for="profile_photo">Profile Photo</label> -->
         </div>
         <div class="input-field col s12">
-          <input id="password" name="password" type="text" class="validate">
+          <input id="password" name="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
         <div class="col s12 input-field">

@@ -10,8 +10,8 @@ class BuddyList extends CI_Controller {
 			header('Location:user_login');
 		}
 		
-		$this->load->model->
-		$this->getPostData();
+		/*$this->load->model->
+		$this->getPostData();*/
 
 		$headerData = array(
 			"pageTitle" => "BuddyList",
