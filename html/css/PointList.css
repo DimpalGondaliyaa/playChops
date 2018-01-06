@@ -68,10 +68,10 @@ span.totle-point {
 .pointDashboardBox {
     padding: 25px;
     max-width: 1280px;
-    background: #ddd;
+    background: #dddddd14;
     margin: 0 auto;
     position: relative;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd42;
 }
 .profileBox {
     text-align: center;

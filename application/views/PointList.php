@@ -3,7 +3,8 @@
 
 
 <div class="pointDashboard">
-   <div class="row"><h4>Top 10 Ranker</h4></div>
+   <div class="row"><h4 class="center" style="color: #FF9000;
+    text-shadow: 0px 2px 4px #000;">Top 10 Ranker</h4></div>
    <div class="pointDashboardBox">
       <div class="row">
          <div class="col s12 m4">
