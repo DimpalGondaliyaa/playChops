@@ -1,0 +1,55 @@
+img.responsive-img.profile_photo {
+    display: block;
+    position: relative;
+    height: 200px;
+    object-fit: contain;
+}
+.point-list-box {
+    background:  #fff;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.point-list-title {
+    font-size:  14px;
+    text-transform:  capitalize;
+    color: #635b5b;
+}
+
+.totole-point-list {
+    font-size: 23px;
+}
+.totole-point-list
+{
+	font-size: 25px;
+    /* padding-left: 12px; */
+    text-transform: capitalize;
+    /* color: #e21d07ed; */
+}
+.main {
+    background: #eee;
+    width: 1280px;
+    margin: 0 auto;
+}
+span.totle-point {
+    font-size: 14px;
+    padding-left: 5px;
+       color: #0999e0;
+}
+/*--------------------line chart---------------------*/
+.yearly-degites {
+    font-size: 37px;
+}
+
+.totle-like {
+    text-transform:  capitalize;
+    font-weight:  500;
+}
+
+.specific-year {
+    text-transform:  capitalize;
+    color:  grey;
+}
+.yearly-box {
+    text-align: center;
+}

@@ -1,7 +1,39 @@
 $(function(){
 
+$('#demo').on("click",function(){
+
+	$(".modal").modal();
+	$("#personal-model").modal("open");
+
+});
+$(".post-btn").on("click",function(){
+
+				var reg_form = new FormData($("#commentform")[0]);
+				$.ajax({
+
+					url : baseurl+"ProfileDashboard/commentpost",
+					type :"POST",
+					data :reg_form,	
+					contentType:false,
+					processData:false,
+					success:function(res)
+					{
+						/*window.location.href = reload();*/
+						/*window.location.href=baseurl+"RegisterNext";*/
+						window.location.reload();
+					}
+				});
+});
+
+	$(".like-cnt").click(function() {
+  var n = Number($("strong").attr("data-n"))+1;
+  $("strong").html(
+    a(n,1)+"<i></i>"
+  ).attr("data-n",n);
+});
+	function a(a,b){b=Math.pow(10,b);var c=["k","m","b","t"];for(var i=b.length-1;i>=0;i--){var d=Math.pow(10,(i+1)*3);if(d<=a){a=Math.round(a*b/d)/b;if((a==1000)&&(i<c.length-1)){a=1;i++}a+=c[i];break}}return a}
 	/*parallax effect*/
-    
+  
 
 
   $('#postStory').val('');
@@ -51,52 +83,28 @@ $(function(){
 					{
 						/*window.location.href = reload();*/
 						/*window.location.href=baseurl+"RegisterNext";*/
-						window.location.reload();
+						/*window.location.reload();*/
 					}
 				});
 		});
 
 
-	/*$('#postPOSTButton').on('click',function(){
+		$("#mediapost").on("click",function(){
 
-		var baseUrl=$('#base_url').val();
+				var reg_form = new FormData($("#postMediaa")[0]);
+				$.ajax({
 
-		var data = {
-			'postData' : $("#postStory").val(),
-			'post_status' : $("#postStatus").val(),
-			'email' : $("#email").val(),
-			'post_location' : $("#postLocation").val(),
-			'postTag' : $("#postTags").val(),
-		};
-			
-			$.post(baseUrl+"ProfileDashboard/postStatus/",{data:data},function(data){
-
-				var check = jQuery.parseJSON(data);
-				if(check.status=='ok')
-				{
-					alert("ok");
-					window.location.reload();
-				}
-				else if(check.status=='fail')
-				{
-					alert("login fail");
-					window.location.href='#!';
-				}
-				else
-				{
-					console.log(data);
-				}
-			});
-	});
-*/
-
-
-
-
-
-
-/*Get Cuurt Time*/
-	
-	
-
+					url : baseurl+"ProfileDashboard/postMedia",
+					type :"POST",
+					data :reg_form,	
+					contentType:false,
+					processData:false,
+					success:function(res)
+					{
+						/*window.location.href = reload();*/
+						/*window.location.href=baseurl+"RegisterNext";*/
+						window.location.reload();
+					}
+				});
+		});
 });

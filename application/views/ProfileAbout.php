@@ -366,6 +366,15 @@
 							<div class="postContent">
 								<p><?php echo $postData['postData']; ?></p>
 							</div>
+							<div class="row">
+								<div class="col s12 m12">
+									<div class="post_img">
+											<?php if($postData['post_attachment']>0) {?>
+									<img src="<?php echo base_url(); ?>html/images/post_images/<?php echo $postData['post_attachment']; ?>" >
+									<?php } else { ?> <?php } ?>
+								    </div>
+								</div>
+							</div>
 							<div class="commentsBox">
 								<div class="row">
 									<div class="col s4 m4">

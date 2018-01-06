@@ -10,25 +10,6 @@
 			$post=$this->db->insert('buddyposts',$data);
 			$post=$this->db->insert_id();
 			return $post;
-
-
-			/*if($post)
-			{
-				$post= array('status' => "ok",
-				'message' => "login ok" );
-				$email=$this->session->userdata('email');
-				$this->db->where('email',$email);
-				$this->db->update('buddyposts');
-				//$this->session->set_userdata('email',$post);
-				
-			}
-			else
-			{
-				$post= array('status' => "no",
-				'message' => "login fail"  );
-			}
-
-			return $post;*/
 		}
 
 		/*get Post Data*/
@@ -37,6 +18,16 @@
 				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' ORDER BY post_Id DESC");
 				$row=$row->result_array();
 				return $row;
+		}
+		public function addpostimg($data,$id)
+		{
+			/*$email=$this->session->userdata('email');*/
+			$this->db->where("post_Id",$id);
+			$this->db->update("buddyposts",$data);
+		}
+		public function addcommentpost($data)
+		{
+			$post=$this->db->insert('commenttbl',$data);
 		}
 	}
 ?>

@@ -41,6 +41,7 @@
       				<li><a href='<?php echo base_url(); ?>buddyList'>Friends</a></li>
       				<li><a href="#!">Posts</a></li>
       				<li><a href="<?php echo base_url(); ?>ProfilePhoto">Photo</a></li>
+                              <li><a href="<?php echo base_url(); ?>PointList">PointList</a></li>
       			</ul>
       			</div>
       		</div>

@@ -95,8 +95,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -108,8 +108,9 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
+
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -121,8 +122,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -134,8 +135,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -147,8 +148,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -160,8 +161,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -173,8 +174,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 							<div class="friendRow row">
@@ -186,8 +187,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 
@@ -200,8 +201,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn ">Remove</button>
 								</div>
 							</div><div class="friendRow row">
 								<div class="col s4 m1">
@@ -212,8 +213,8 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
-									<button class="btn flat-btn ">Add Friend</button>&nbsp;
-									<button class="btn flat-btn btn-flat">Remove</button>
+									<button class="btn flat-btn add-btn ">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
 

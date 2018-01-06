@@ -8,3 +8,15 @@
     border-bottom: 0px solid #eee;
     padding-bottom: 5px;
 }
+.remove-btn {
+    background: #ff0000bf;
+}
+.add-btn {
+    background: #0089ecc7;
+}
+.remove-btn:hover {
+    background: red;
+}
+.add-btn:hover {
+    background: #0089ec;
+}

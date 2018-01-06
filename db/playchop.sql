@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2018 at 12:52 PM
+-- Generation Time: Jan 06, 2018 at 05:57 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,7 +46,45 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, 'First', '05:22:pm', 'January 4, 2018', 'abc@me.com', 'status', 1, '', '', '');
+(1, 'xzxzzxz', '06:51:pm', 'January 5, 2018', 'abc@me.com', 'status', 1, '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `commenttbl`
+--
+
+CREATE TABLE `commenttbl` (
+  `id` int(11) NOT NULL,
+  `email` varchar(222) NOT NULL,
+  `comment` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `commenttbl`
+--
+
+INSERT INTO `commenttbl` (`id`, `email`, `comment`) VALUES
+(1, 'abc@me.com', ''),
+(2, 'abc@me.com', ''),
+(3, 'abc@me.com', ''),
+(4, 'abc@me.com', 'dsdsdsdsd'),
+(5, 'abc@me.com', ''),
+(6, 'abc@me.com', ''),
+(7, 'abc@me.com', 'dsdsdsd'),
+(8, 'abc@me.com', ''),
+(9, '', ''),
+(10, '', ''),
+(11, '', ''),
+(12, '', ''),
+(13, '', ''),
+(14, '', ''),
+(15, '', ''),
+(16, '', ''),
+(17, '', ''),
+(18, 'abc@me.com', 'sxws'),
+(19, 'abc@me.com', 'sxws'),
+(20, 'abc@me.com', '');
 
 -- --------------------------------------------------------
 
@@ -119,7 +157,8 @@ CREATE TABLE `user_ragister` (
 --
 
 INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `Favourite_TV_Shows`, `Favourite_Music_Bands_Artists`, `FavouriteBooks`, `FavouriteWriters`, `FavouriteMovies`, `FavouriteGames`, `OtherInterests`, `profile_photo`) VALUES
-(3, 'riya', 'shah', 'abc@me.com', '123', 2222222222, 'fverfv', '        abd', '        marrid', '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', '        abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdf', 'fdfd', 'sadsd', 'fdfdfdfd', '', 'rt', 'dfdfdf', 'rtrt', 'rtrtr', 'trtr', 'trtr', 'trtrtr', '2_userImage.jpg');
+(3, 'riya', 'shah', 'abc@me.com', '123', 0, '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', '         abd', '         marrid', '  Hi, I’m James, I’m 36 and I work as a Digital sdsdsDesigner for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', '', '         abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdfdsdsd', 'fdfd', 'sadsd', 'fdfdfdfd', 'eerere', 'rtererer', 'dfdfdfrererer', 'rtrterererer', 'rtrtr', 'trtrererere', 'trtrdsdssd', 'trtrtr', '2_userImage.jpg'),
+(4, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '4_userImage.');
 
 --
 -- Indexes for dumped tables
@@ -130,6 +169,12 @@ INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobil
 --
 ALTER TABLE `buddyposts`
   ADD PRIMARY KEY (`post_Id`);
+
+--
+-- Indexes for table `commenttbl`
+--
+ALTER TABLE `commenttbl`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `personal_info`
@@ -154,6 +199,12 @@ ALTER TABLE `buddyposts`
   MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `commenttbl`
+--
+ALTER TABLE `commenttbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
 -- AUTO_INCREMENT for table `personal_info`
 --
 ALTER TABLE `personal_info`
@@ -163,7 +214,7 @@ ALTER TABLE `personal_info`
 -- AUTO_INCREMENT for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

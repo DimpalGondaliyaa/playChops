@@ -11,37 +11,37 @@
          
         <div class="input-field col s12 m6">
           <input id="Favourite_TV_Shows" name="Favourite_TV_Shows" type="text" class="validate">
-          <label for="Favourite_TV_Shows">Favourite_TV_Shows</label>
+          <label for="Favourite_TV_Shows">Favourite TV Shows</label>
         </div>
 
          <div class="input-field col s12 m6">
           <input id="Favourite_Music_Bands_Artists" name="Favourite_Music_Bands_Artists" type="text" class="validate">
-          <label for="Favourite_Music_Bands_Artists">Favourite_Music_Bands_Artists</label>
+          <label for="Favourite_Music_Bands_Artists">Favourite Music Bands Artists</label>
         </div>
 
         <div class="input-field col s12 m6">
           <input id="FavouriteBooks" name="FavouriteBooks" type="text" class="validate">
-          <label for="FavouriteBooks">FavouriteBooks</label>
+          <label for="FavouriteBooks">Favourite Books</label>
         </div>
 
          <div class="input-field col s12 m6">
           <input id="FavouriteWriters" name="FavouriteWriters" maxlength="10" type="text" class="validate">
-          <label for="FavouriteWriters">FavouriteWriters</label>
+          <label for="FavouriteWriters">Favourite Writers</label>
         </div>
 
         <div class="input-field col s12 m6">
           <input id="FavouriteMovies" name="FavouriteMovies" type="text" class="validate">
-          <label for="FavouriteMovies">FavouriteMovies</label>
+          <label for="FavouriteMovies">Favourite Movies</label>
         </div>
 
          <div class="input-field col s12 m6">
         <input id="FavouriteGames" name="FavouriteGames" type="text" class="validate">
-          <label for="FavouriteGames">FavouriteGames</label>
+          <label for="FavouriteGames">Favourite Games</label>
         </div>
 
           <div class="input-field col s12 m12">
         <input id="OtherInterests" name="OtherInterests" type="text" class="validate">
-          <label for="OtherInterests">OtherInterests</label>
+          <label for="OtherInterests">Other Interests</label>
         </div>
 
         <div class="col s12 input-field done-btn-cols">
