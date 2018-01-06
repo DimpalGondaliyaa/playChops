@@ -34,7 +34,6 @@ $(function(){
 	});
 
 
-
 	/*Smooth Scroillig*/
 
 var baseurl = $("#base_url").val();

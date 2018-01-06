@@ -119,21 +119,9 @@
 						<!-- // post area for post -->
 
 						<?php 
-							
-							//$q=("SELECT * FROM buddyposts WHERE postDate > DATE_SUB(NOW(), INTERVAL 10 MINUTE)");
-
-			/*	$email=$this->session->userdata('email');
-				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' and postDate > DATE_SUB(NOW(), INTERVAL 10 MINUTE) ORDER BY post_Id DESC");
-				$row=$this->db->query("SELECT sent_date FROM invitations WHERE email='$email' AND uid='$session_uid' AND `sent_date` < SUBDATE( CURRENT_DATE, INTERVAL 1 DAY)")
-				$row=$row->result_array();*/
-
+					
 							foreach ($postRow as $key => $postData) {
-						
-							
-
 						?>
-
-
 						<div class="postBox">
 							<div class="postProfile row">
 								<div class="col s4 m1">
@@ -178,11 +166,13 @@
 												<input type="hidden" name="likes" id="likes" value="<?php echo $postData['post_Id']; ?>">
 												<input type="hidden" name="status" id="status" value="1">
 											<div class="valign-wrapper">
+
 												 <a data-like-id="<?php echo $postData['post_Id'];?>" class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
 												 	<i class="material-icons">thumb_up</i>
 												 </a>&nbsp; 20
 											</div>
 											</form>	
+
 										</div>
 										  <!-- <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i>
 										  	<span class="likeValue">200</span>
@@ -196,8 +186,11 @@
 										 	
 										 	<div class="valign-wrapper">
 										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
-										 			<i class="material-icons">message</i>
-										 		</a>&nbsp; 20
+
+										 			<i class="material-icons">message</i>&nbsp;
+										 		</a>
+										 		 30
+
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
@@ -215,7 +208,7 @@
 									<form name="commentform" id="commentform_<?php echo $postData['post_Id']; ?>">
 										<div class="row">
 											
-									           <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
+									          
 									       
 									           <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>">
 											<div class="col s8 m9">									   
