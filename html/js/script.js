@@ -109,9 +109,9 @@ $('.btnLike').on('click',function(){
 
   var baseUrl=$('#baseurl').val();
 
-  var data:{
+ /* var data:{
     
-  }
+  }*/
 
 })
 

@@ -29,7 +29,7 @@
 		public function getComments($id){
 			$query = $this->db->query("Select * from commenttbl where post_id='$id' GROUP BY id DESC LIMIT 2");
 			$profileRow = $query->result_array();
-			var_dump($profileRow);
+		
 			return $profileRow;
 		}
 
