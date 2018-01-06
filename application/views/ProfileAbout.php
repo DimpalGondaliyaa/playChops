@@ -217,7 +217,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Hobbies:</div>
 								<div class="Hobbies-content">
@@ -226,7 +226,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Music Bands / Artists:</div>
 								<div class="Hobbies-content">
@@ -235,7 +235,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite TV Shows:</div>
 								<div class="Hobbies-content">
@@ -244,7 +244,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Books:</div>
 								<div class="Hobbies-content">
@@ -253,7 +253,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Movies:</div>
 								<div class="Hobbies-content">
@@ -262,7 +262,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Writers:</div>
 								<div class="Hobbies-content">
@@ -271,7 +271,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Favourite Games:</div>
 								<div class="Hobbies-content">
@@ -280,7 +280,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Other Interests:</div>
 								<div class="Hobbies-content">
@@ -307,7 +307,7 @@
 					</div>
 					<div class="row">
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title"><?php echo $pro_data['college']; ?></div>
 								<div class="education-date"><?php echo $pro_data['college_start_year']; ?> - <?php echo $pro_data['college_end_year']; ?></div>
@@ -317,7 +317,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title"><?php echo $pro_data['primaryschool']; ?></div>
 								<div class="education-date"><?php echo $pro_data['start_primary_year']; ?> - <?php echo $pro_data['end_primary_year']; ?></div>
@@ -327,7 +327,7 @@
 							</div>
 						</div>
 
-						<div class="col s12 m6">
+						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title"><?php echo $pro_data['highersecondary']; ?></div>
 								<div class="education-date"><?php echo $pro_data['start_higher_year']; ?> - <?php echo $pro_data['end_higher_year']; ?></div>
@@ -378,17 +378,51 @@
 							<div class="commentsBox">
 								<div class="row">
 									<div class="col s4 m4">
-										  <div class="like-cnt unchecked" id="like-cnt" data-likesid="<?php echo $postData['post_Id'];  ?>">
-										  <i class="like-btn material-icons">thumb_up</i>
+										  <div class="likBox">
+											<div class="valign-wrapper">
+												 <a class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
+												 	<i class="material-icons">thumb_up</i>&nbsp;
+												 </a> 20
+											</div>	
 										</div>
-										<i class="fa fa-heart red-text" aria-hidden="true"> 84</i>
+									
 									</div>
 									<div class="col s4 m4">
-										<i class="fa fa-comment blue-text" aria-hidden="true"> 284</i>
+										 <div   id="coomm-div"">
+										 	
+										 	<div class="valign-wrapper">
+										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
+										 			<i class="material-icons">message</i>&nbsp;
+										 		</a>
+										 		 30
+										 	</div>
+										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
+										 </div>
+										   <!-- <i class="fa fa-comment  comment-class" aria-hidden="true"> 284</i> -->
 									</div>
+
 									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
+										<div class="valign-wrapper">
+										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="share">
+										 			<i class="material-icons">forward</i>&nbsp; 20
+										 		</a>
+										 	</div>
+										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
 									</div>
+									<form name="commentform" id="commentform">
+										<div class="row">
+											
+									          
+									       
+									           <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>">
+											<div class="col s8 m9">									   
+									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
+									           <div class="col s4 m3 comm-col">	
+									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
+
+									
+									</div>
+									</form>
 								</div>
 							</div>
 						</div>

@@ -13,7 +13,6 @@ class ProfileDashboard extends CI_Controller {
 		$this->load->model('ProfileDashboard_model');
 		$postRow=$this->ProfileDashboard_model->getPostData();
 
-		/*$cmt=$this->ProfileDashboard_model->getComments();*/
 		
 	/*	$comments = $this->ProfileDashboard_model->gettwocomment($postid);*/
 
@@ -35,7 +34,7 @@ class ProfileDashboard extends CI_Controller {
 		$viewData = array(
 			"viewName" => "profileDashboard",
 
-            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,/*'comment'=>$cmt*/),
+            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,/*"comments"=>$comments*/),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
@@ -117,7 +116,7 @@ public function postMedia()
 	public function commentpost()
 	{
 		$this->load->model("ProfileDashboard_model");
-		$data  = array('email' => $_POST['email'] ,
+		$data  = array(
 		'comment'=>$_POST['comment'],
 		'post_id' =>$_POST['post_id'] );
 		$this->ProfileDashboard_model->addcommentpost($data);
