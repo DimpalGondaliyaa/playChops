@@ -106,3 +106,17 @@ nav .nav-wrapper{
 
 ::-moz-selection { background: transparent;}
 ::selection {background: transparent;}
+
+
+
+
+
+.likeValue{
+        position: absolute;
+    left: 45px;
+    float: left;
+    top: -5px;
+    color: #006dbb;
+    font-weight: 500;
+}
+}

@@ -100,5 +100,17 @@ $(".like-cnt").click(function(){
 })*/
 
 
+
+/*========= For Like ===========*/
+$('.btnLike').on('click',function(){
+
+  var baseUrl=$('#baseurl').val();
+
+  var data:{
+    
+  }
+
+})
+
 });
 

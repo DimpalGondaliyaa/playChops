@@ -170,21 +170,41 @@
 							
 							<div class="commentsBox">
 								<div class="row">
-									<div class="col s4 m4">
-										  <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i></div>
-										<i class="fa fa-heart red-text" aria-hidden="true"> <strong id='output' data-n="0">0<i></i></strong></i>
+									<div class="col s4 m4 row">
+										<div class="likBox">
+											<div class="valign-wrapper">
+												 <a class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
+												 	<i class="material-icons">thumb_up</i>&nbsp; 20
+												 </a>
+											</div>	
+										</div>
+										  <!-- <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i>
+										  	<span class="likeValue">200</span>
+										  </div> -->
+									
 									</div>
 
 									
 									<div class="col s4 m4">
 										 <div   id="coomm-div"">
-										   <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i>
+										 	
+										 	<div class="valign-wrapper">
+										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
+										 			<i class="material-icons">message</i>&nbsp; 20
+										 		</a>
+										 	</div>
+										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
-										   <i class="fa fa-comment  comment-class" aria-hidden="true"> 284</i>
+										   <!-- <i class="fa fa-comment  comment-class" aria-hidden="true"> 284</i> -->
 									</div>
 
 									<div class="col s4 m4">
-										<i class="fa fa-share" aria-hidden="true"> Share</i>
+										<div class="valign-wrapper">
+										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="share">
+										 			<i class="material-icons">forward</i>&nbsp; 20
+										 		</a>
+										 	</div>
+										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
 									</div>
 									<form name="commentform" id="commentform">
 										<div class="row">
