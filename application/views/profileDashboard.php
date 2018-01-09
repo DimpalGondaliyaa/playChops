@@ -159,16 +159,36 @@
 							<div class="commentsBox">
 								<div class="row">
 									<div class="col s4 m4 row">
-										<div class="likBox">
+
+
+
+										
+<form name="rating-form" id='rating-form'>
+	
+  <div class="rate">
+    <input type="radio" name="star5" id="star5" name="rate" value="5" style="display: none;" />
+    <label for="star5"  title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" style="display: none;"/>
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" style="display: none;" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" style="display: none;"/>
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" style="display: none;"/>
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+<a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" class="waves-effect waves-light btn rating">Rating</a>
+  </form>
+
+										<!-- <div class="likBox">
 											<div class="valign-wrapper">
 												 <a class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
 												 	<i class="material-icons">thumb_up</i>&nbsp;
 												 </a> 20
 											</div>	
-										</div>
-										  <!-- <div class="like-cnt unchecked" data-n="0" id="like-cnt circle" data-likesid="<?php echo $postData['post_Id'];  ?>"> <i class="like-btn material-icons">thumb_up</i>
-										  	<span class="likeValue">200</span>
-										  </div> -->
+										</div> -->
+										 
 									
 									</div>
 
@@ -200,23 +220,24 @@
 											
 									          
 									       
-									           <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>">
+									          <!--  <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>"> -->
 											<div class="col s8 m9">									   
 									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
-									           <div class="col s4 m3 comm-col">	
-									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
+									           <div class="col s4 m3 comm-col">
+									           
+									  <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-comid="<?php echo $postData['post_Id'];  ?>"  class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
 
 									
 									</div>
 									</form>
 									  <div>
-									  	<?php 
+									  	<!-- <?php 
 									  		foreach ($postData['coment'] as  $imagekey => $imageRow) {
 									  			?>
 									  			<?php echo $imageRow['comment']; ?>
 									  			<?php
 									  		}
-									  	?>
+									  	?> -->
 									  </div>
 								</div>
 							</div>

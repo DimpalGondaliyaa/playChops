@@ -20,18 +20,18 @@
 
 
 
-				foreach ($row as $key => $coments) {
+				/*foreach ($row as $key => $coments) {
 					$row[$key]["coment"] = $this->getComments($coments["post_Id"]);
-		 		}
+		 		}*/
 				return $row;
 		}
 
-		public function getComments($id){
+		/*public function getComments($id){
 			$query = $this->db->query("Select * from commenttbl where post_id='$id' GROUP BY id DESC LIMIT 2");
 			$profileRow = $query->result_array();
 		
 			return $profileRow;
-		}
+		}*/
 
 
 		public function addpostimg($data,$id)
@@ -42,7 +42,14 @@
 		}
 		public function addcommentpost($data)
 		{
-			$post=$this->db->insert('commenttbl',$data);
+			/*$post_id=$data['post_id'];
+			$comment = $data['comment'];*/
+			/*$this->db->where('post_id','2');*/
+			$this->db->insert("commenttbl",$data);
+		}
+		public function addratingpost($data)
+		{
+			$this->db->insert("userliks",$data);
 		}
 
 		

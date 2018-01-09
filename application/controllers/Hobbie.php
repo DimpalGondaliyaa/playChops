@@ -24,13 +24,7 @@ class Hobbie extends CI_Controller {
 	public function addHobbie()
 	{
 		$this->load->model("Hobbie_model");
-		$data =  array('Favourite_TV_Shows' => $_POST['Favourite_TV_Shows'] ,
-		'Favourite_Music_Bands_Artists' => $_POST['Favourite_Music_Bands_Artists'] ,
-		'FavouriteBooks' => $_POST['FavouriteBooks'] ,
-		'FavouriteWriters' => $_POST['FavouriteWriters'] ,
-		'FavouriteMovies' => $_POST['FavouriteMovies'] ,
-		'FavouriteGames' => $_POST['FavouriteGames'] ,
-		'OtherInterests' => $_POST['OtherInterests']  );
+		$data =  array('hobby' => implode(',', $_POST['hobby'])  );
 
 		$this->Hobbie_model->addhobbies($data);
 	}

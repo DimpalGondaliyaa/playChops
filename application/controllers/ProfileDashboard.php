@@ -103,6 +103,30 @@ public function postMedia()
 		$adduserimgg=array('post_attachment'=>$userImage);
 		$this->ProfileDashboard_model->addpostimg($adduserimgg,$postid);
 
+
+		$dir = "<?php echo base_url(); ?>html/images/post_images";   //your folder location
+
+			foreach (glob($dir."*.jpg") as $file) { 
+			    if (filectime($file) < time() - 5) { 
+			        unlink($file);
+			    }
+			}
+		/*$imagePattern = "/\.(jpg|jpeg|png|gif|bmp|tiff)$/";
+			$directory = ".";
+
+			if (($handle = opendir($directory)) != false) {
+			    while (($file = readdir($handle)) != false) {
+			        $filename = "html/images/post_images/$file";
+			        if (strtotime("-24 hours") <= filemtime($filename) && preg_match($imagePattern, $filename)) {
+			            unlink($filename);
+			        }
+			    }
+
+			    closedir($handle);
+			}
+*/
+
+
 		$config["upload_path"]='html/images/post_images';
 		$config["allowed_types"]='gif|png|jpg|jpeg';
 		$config["file_name"]=$postid."_postImage";
@@ -113,13 +137,22 @@ public function postMedia()
 		$this->load->library('upload',$config);
 		$this->upload->do_upload('post_attachment');
 	}
-	public function commentpost()
+	public function commentpost($id)
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'comment'=>$_POST['comment'],
-		'post_id' =>$_POST['post_id'] );
+		'post_id' =>$id);
 		$this->ProfileDashboard_model->addcommentpost($data);
+	}
+	public function ratingpost($id)
+	{
+		$this->load->model("ProfileDashboard_model");
+		$data  = array(
+		'rate'=>$_POST['rate'],
+		'post_id'=>$id,
+		 );
+		$this->ProfileDashboard_model->addratingpost($data);
 	}
 
 }

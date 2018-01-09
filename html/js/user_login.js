@@ -25,6 +25,7 @@ $(function(){
 				else
 				{
 					alert("Please Check your Login Details.");
+					window.location.reload();
 					console.log(data);
 				}
 			});

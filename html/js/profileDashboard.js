@@ -1,4 +1,50 @@
 $(function(){
+/*rating js*/
+
+$(".rating").on("click",function()
+{
+	  var reg_form = new FormData($("#rating-form")[0]);
+
+	var id = $(this).data("id");
+
+  $.ajax({
+
+    url : baseurl+"ProfileDashboard/ratingpost/"+id,
+    type :"POST",
+    data :reg_form, 
+    contentType:false,
+    processData:false,
+    success:function(res)
+    {
+     /* window.location.reload();*/
+    }
+  });
+});
+
+
+
+$( "#rate option:selected" ).text();
+/*-----comment js--------*/
+$(".post-btn").on("click",function(){
+
+  var reg_form = new FormData($("#commentform")[0]);
+  var id = $(this).data("comid");
+
+  $.ajax({
+
+    url : baseurl+"ProfileDashboard/commentpost/"+id,
+    type :"POST",
+    data :reg_form, 
+    contentType:false,
+    processData:false,
+    success:function(res)
+    {
+      /*window.location.reload();*/
+    }
+  });
+}); 
+
+
 
 $('#demo').on("click",function(){
 
@@ -6,22 +52,7 @@ $('#demo').on("click",function(){
 	$("#personal-model").modal("open");
 
 });
-$(".post-btn").on("click",function(){
 
-  var reg_form = new FormData($("#commentform")[0]);
-  $.ajax({
-
-    url : baseurl+"ProfileDashboard/commentpost",
-    type :"POST",
-    data :reg_form, 
-    contentType:false,
-    processData:false,
-    success:function(res)
-    {
-      window.location.reload();
-    }
-  });
-}); 
 
 	$(".like-cnt").click(function() {
   var n = Number($("strong").attr("data-n"))+1;
@@ -79,7 +110,7 @@ $(".post-btn").on("click",function(){
 					{
 						/*window.location.href = reload();*/
 						/*window.location.href=baseurl+"RegisterNext";*/
-						/*window.location.reload();*/
+						window.location.reload();
 					}
 				});
 		});
