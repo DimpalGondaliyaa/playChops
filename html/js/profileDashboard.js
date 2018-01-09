@@ -87,7 +87,7 @@ $(".post-btn").on("click",function(){
 					{
 						/*window.location.href = reload();*/
 						/*window.location.href=baseurl+"RegisterNext";*/
-						/*window.location.reload();*/
+						window.location.reload();
 					}
 				});
 		});

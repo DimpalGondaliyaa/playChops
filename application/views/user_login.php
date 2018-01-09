@@ -8,12 +8,11 @@
     <form class="col s12" name="user_login" id="user_login" method='post' enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s12">
-          <input id="email"  name="email" type="text" class="validate">
-          <label for="email">Email</label>
+          <input id="email"  name="email" type="text" class="validate" placeholder="User Email">
         </div>
         <div class="input-field col s12">
-          <input id="password" name="password" type="text" class="validate">
-          <label for="password">Password</label>
+          <input id="password" name="password" type="Password" class="validate" placeholder="Passwords">
+          
         </div>
         <div class="col s12 input-field col s12">
            <a class="waves-effect waves-light btn user_login">Login</a>

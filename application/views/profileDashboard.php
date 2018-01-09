@@ -187,9 +187,9 @@
 										 	<div class="valign-wrapper">
 										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
-										 			<i class="material-icons">message</i>&nbsp;
-										 		</a>
-										 		 30
+										 			<i class="material-icons">message</i>
+										 		</a> &nbsp; 30
+										 		 
 
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
