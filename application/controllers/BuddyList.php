@@ -9,9 +9,8 @@ class BuddyList extends CI_Controller {
 		if(!$this->session->userdata('email')){
 			header('Location:user_login');
 		}
-		
-		/*$this->load->model->
-		$this->getPostData();*/
+		$this->load->model("buddyListt");
+		$rowData = $this->buddyListt->fetchbuddylist();
 
 		$headerData = array(
 			"pageTitle" => "BuddyList",
@@ -22,7 +21,7 @@ class BuddyList extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "buddyList",
-            "viewData" => array(),
+            "viewData" => array("rowData"=>$rowData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

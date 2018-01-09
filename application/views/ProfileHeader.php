@@ -1,8 +1,8 @@
 
 <div class="row">
-	<div class="parallax-container">
+	<div class="parallax-container head-parall">
       <div class="parallax">
-      	<img src="<?php echo base_url(); ?>html/images/user_profile_cover/tiger.jpg">
+      	
       	<div class="profileDetails-area">
       		<div class="row">
       		<div class="profile_img col s12 m4">
