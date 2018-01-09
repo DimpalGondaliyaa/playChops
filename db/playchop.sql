@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2018 at 06:45 AM
+-- Generation Time: Jan 09, 2018 at 10:28 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -131,8 +131,7 @@ CREATE TABLE `userliks` (
 --
 
 INSERT INTO `userliks` (`id`, `post_id`, `email`, `rate`, `status`) VALUES
-(1, 5, '', '3', 1),
-(2, 6, '', '2', 0);
+(1, 6, '', '3', 0);
 
 -- --------------------------------------------------------
 
@@ -176,9 +175,9 @@ CREATE TABLE `user_ragister` (
 --
 
 INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `OtherInterests`, `profile_photo`) VALUES
-(1, 'riya', 'shah', 'riya123', 'riya', 9888888888, '24 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'movies,entertainment,reading', '', '1_userImage.jpg'),
-(3, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '3_userImage.'),
-(4, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '4_userImage.');
+(1, 'riya', 'shah', 'riya@123', 'riya', 9898989899, '21 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(2, 'maya', 'shah', 'maya@123', 'maya', 989898100, '1 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '2_postImage.png'),
+(3, 'anita', 'shah', 'anu@123', 'anu', 989898100, '1 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'travileng', '', '5_postImage.jpg');
 
 --
 -- Indexes for dumped tables
@@ -240,13 +239,13 @@ ALTER TABLE `personal_info`
 -- AUTO_INCREMENT for table `userliks`
 --
 ALTER TABLE `userliks`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

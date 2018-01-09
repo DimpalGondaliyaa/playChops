@@ -86,7 +86,7 @@
 							<div class="friendRow row">
 								<h5>Suggest Friends...</h5>
 							</div>
-							<div class="friendRow row">
+							<!-- <div class="friendRow row">
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 								</div>
@@ -204,7 +204,8 @@
 									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
 									<button class="btn flat-btn remove-btn ">Remove</button>
 								</div>
-							</div><div class="friendRow row">
+							</div> -->
+							<div class="friendRow row">
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 								</div>
@@ -213,10 +214,33 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col s12 m5">
+									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
+									<button class="btn flat-btn remove-btn ">Remove</button>
+								</div>
+							</div> 
+
+							<?php foreach ($rowData as $key => $roww) { ?>
+
+<?php 
+								foreach ($roww["subCategory"] as $key => $value) {
+							
+							 ?>
+							
+					
+							<div class="friendRow row">
+								<div class="col s4 m1">
+								<img src="<?php echo base_url() ?>html/images/profile_photo/<?php echo $value['profile_photo'] ?>" class="responsive-img">
+								</div>
+								<div class="col s8 m6">
+								<span><?php echo $value['fname']; ?></span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col s12 m5">
 									<button class="btn flat-btn add-btn ">Add Friend</button>&nbsp;
 									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>
 							</div>
+								<?php }	} ?>
 
 						</div>
 					</div>

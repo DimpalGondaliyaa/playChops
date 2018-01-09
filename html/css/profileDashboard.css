@@ -1,6 +1,13 @@
 
 
-
+/*---------------------profile header css-----------**/
+.head-parall
+{
+    position: relative;
+    overflow: hidden;
+  background: #ffffffad;
+    height: 450px;
+}
 
 /*css for rating*/
 
@@ -218,9 +225,15 @@ body{
 }
 img.responsive-img.profile_photo {
     display: block;
+    top: 22px;
     position: relative;
-    height: 200px;
-    object-fit: contain;
+    height: 218px;
+    width: 212px;
+    border-radius: 153px;
+    background: #fff;
+    width: -40px !important;
+    min-width: 0px;
+    /* object-fit: contain; */
 }
 .post_img img {
     height:  auto;
@@ -247,13 +260,13 @@ button#postPOSTButton:hover {
     background: #2898f4ad !important;
 }
 .profileDetails-area {
-    max-width: 1000px;
+          max-width: 1730px;
     margin: 0 auto;
-    background: #ffffffa9 !important;
+       background: #eeeeee !important;
     position: relative !important;
-    top: 23vh;
+    top: 60px;
     padding: 25px;
-	border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 .totalData ul li {
