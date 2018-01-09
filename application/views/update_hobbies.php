@@ -1,4 +1,4 @@
-<div class="col s4 m7">
+<!-- <div class="col s4 m7">
   <h5>Hobbies and Interests</h5>
 </div>
 						
@@ -75,4 +75,4 @@
 	   </div>
 	</div>
 </div>
-</div></form>
+</div></form> -->

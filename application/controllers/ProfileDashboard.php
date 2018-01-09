@@ -95,6 +95,30 @@ class ProfileDashboard extends CI_Controller {
 		$adduserimgg=array('post_attachment'=>$userImage);
 		$this->ProfileDashboard_model->addpostimg($adduserimgg,$postid);
 
+
+		$dir = "<?php echo base_url(); ?>html/images/post_images";   //your folder location
+
+			foreach (glob($dir."*.jpg") as $file) { 
+			    if (filectime($file) < time() - 5) { 
+			        unlink($file);
+			    }
+			}
+		/*$imagePattern = "/\.(jpg|jpeg|png|gif|bmp|tiff)$/";
+			$directory = ".";
+
+			if (($handle = opendir($directory)) != false) {
+			    while (($file = readdir($handle)) != false) {
+			        $filename = "html/images/post_images/$file";
+			        if (strtotime("-24 hours") <= filemtime($filename) && preg_match($imagePattern, $filename)) {
+			            unlink($filename);
+			        }
+			    }
+
+			    closedir($handle);
+			}
+*/
+
+
 		$config["upload_path"]='html/images/post_images';
 		$config["allowed_types"]='gif|png|jpg|jpeg';
 		$config["file_name"]=$postid."_postImage";
@@ -106,13 +130,23 @@ class ProfileDashboard extends CI_Controller {
 		$this->upload->do_upload('post_attachment');
 	}
 
-	public function commentpost()
+	public function commentpost($id)
+
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'comment'=>$_POST['comment'],
-		'post_id' =>$_POST['post_id'] );
+		'post_id' =>$id);
 		$this->ProfileDashboard_model->addcommentpost($data);
+	}
+	public function ratingpost($id)
+	{
+		$this->load->model("ProfileDashboard_model");
+		$data  = array(
+		'rate'=>$_POST['rate'],
+		'post_id'=>$id
+		 );
+		$this->ProfileDashboard_model->addratingpost($data);
 	}
 
 	/*public function postLike(){
@@ -127,6 +161,59 @@ class ProfileDashboard extends CI_Controller {
 		$this->postLike_model->postLikeData($data);*/
 		/*echo json_encode($likes);*/
 	/*}*/
+
+
+
+
+
+
+	/*============= Ratting system ===============*/
+
+	   // .. some User controller code up here
+    // Rate function on User Controller
+    public function rate()
+    {
+        // Turn of layout for Ajax request
+       
+        // Gather ajax post data
+        // Load model data
+        $this->load->model('Post');
+        $post_id = $this->Post->get_post_id($post_url);
+        // Call function to check if user is login
+        // return current login user id, null if not login yet
+        // You need to define this helper function your self
+        if (get_user_id()) {
+            // Call the Post Model is_rated method to check whether the current login user has submit a rate to related post
+            if (!$this->Post->is_rated(get_user_id(), $post_id))
+            {
+                $data = array("post_id" => $post_id,
+                    "user_id" => get_user_id(),
+                    "posts_rating_value" => $rate,
+                    "posts_rating_date" => date("Y-m-d H:i:s")
+                );
+                // Call Post model method to insert rating data
+                if ($this->Post->insert_rating($data, $post_id, $rate)) {
+                    echo json_encode(array("code" => "Success", "msg" => "Thank you, rate has been submitted"));
+                }
+                else {
+                    echo json_encode(array("code" => "Error", "msg" => "Sorry, something wrong. Please try again."));
+                }
+            }
+            // If post has been rated by the current login user
+            else {
+                echo json_encode(array("code" => "Error", "msg" => "You have already rated this post"));
+            }
+        }
+        // User is not login yet, ask them to login first
+        else {
+            echo json_encode(array("code" => "Error", "msg" => "Please login to submit this rate"));
+        }
+        // Do not proceed to view, just terminate to send Json response
+        exit;
+    }
+    // .. any other User controller code goes here
+
+
 
 }
 ?>

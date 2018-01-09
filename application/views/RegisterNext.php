@@ -1,10 +1,84 @@
-<div class="register-area">
+<div class="container-fullwidth">
+  <div class="row">
+    <div class="col s12 m4">
+       <div class="registerBox">
+           <div class="login-img">
+                <img src="<?php  echo base_url();?>html/images/login.png">
+          </div>
+            <div class="title">
+            <h5>sign up</h5>
+          </div>
+           <div class="login-panel">
+            <div class="login-card">
+             Enter your details to create your account:
+            </div>
+           </div>
+          
+           <div class="row">
+     <form class="col s12" name="nextform" id="nextform" method='post' enctype="multipart/form-data">
+      <div class="row">
+         <div class="input-field col s12 m12">
+          <input type="text"  class="datepicker" name='Birthday' id="Birthday">
+          <label for="Birthday">Birthday</label>
+        </div>
+        <div class="input-field col s12 m12">
+          <input id="Birthplace" name="Birthplace" type="text" class="validate">
+          <label for="Birthplace">Birthplace</label>
+        </div>
+
+         <div class="input-field col s12 m12">
+          <input id="Status" name="Status" type="text" class="validate">
+          <label for="Status">Marital Status</label>
+        </div>
+
+        <div class="input-field col s12 m12">
+          <input id="Lives_In" name="Lives_In" type="text" class="validate">
+          <label for="Lives_In">Lives In</label>
+        </div>
+
+         <div class="input-field col s12 m12">
+          <input id="country" name="country" maxlength="10" type="text" class="validate">
+          <label for="country">Country</label>
+        </div>
+
+        <div class="input-field col s12 m12">
+          <input id="state" name="state" type="text" class="validate">
+          <label for="state">State</label>
+        </div>
+
+        <div class="col s12 input-field done-btn-cols" style="text-align: center;">
+        <a class="waves-effect waves-light btn usernextdata hobb-btn">next</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+    </div>
+     <div class="col s12 m8">
+        <div class="parallax-container login-parallax">
+      <div class="parallax"><img src="<?php  echo base_url();?>html/images/bg4.jpg"></div>
+      <div class="right-side-title"> 
+          play <span class="chops">chops</span><br>
+          <span class="bold-text">make money doing fun stuff</span>
+      </div>
+    </div>
+        
+     </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="register-area">
 	<div class="main">
 		<div class="registerBox">
       <div class="title">
       <h5>Profile details</h5>
     </div>
-    <h5><!-- <?php echo $this->session->userdata('email'); ?> --></h5>
+   
 			 <div class="row">
     <form class="col s12" name="nextform" id="nextform" method='post' enctype="multipart/form-data">
       <div class="row">
@@ -94,3 +168,4 @@
 </div>
 </div>
 </div>
+ -->

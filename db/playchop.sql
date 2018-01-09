@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2018 at 09:53 AM
+-- Generation Time: Jan 09, 2018 at 06:45 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,8 +46,12 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, 'qqq', '02:08:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '1_postImage.jpg'),
-(2, '', '02:21:pm', 'January 6, 2018', 'abc@me.com', 'status', 1, '', '', '2_postImage.jpg');
+(1, '', '04:17:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '1_postImage.jpg'),
+(2, '', '04:17:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '2_postImage.jpg'),
+(3, '', '04:27:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '3_postImage.jpg'),
+(4, 'fgffg', '05:30:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', ''),
+(5, '', '06:41:pm', 'January 8, 2018', 'priya@123', 'status', 1, '', '', '5_postImage.jpg'),
+(6, '', '06:45:pm', 'January 8, 2018', 'riya123', 'status', 1, '', '', '6_postImage.jpg');
 
 -- --------------------------------------------------------
 
@@ -67,23 +71,23 @@ CREATE TABLE `commenttbl` (
 --
 
 INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
-(1, 1, 'abc@me.com', 'meeeeeee'),
-(2, 1, 'abc@me.com', 'meeeeeee'),
-(3, 1, 'abc@me.com', 'meeeeeee'),
-(4, 1, 'abc@me.com', 'meeeeeee'),
-(5, 1, 'abc@me.com', 'meeeeeee'),
-(6, 1, 'abc@me.com', 'meeeeeee'),
-(7, 1, 'abc@me.com', 'meeeeeee'),
-(8, 1, 'abc@me.com', 'meeeeeee'),
-(9, 1, 'abc@me.com', 'meeeeeee'),
-(10, 1, 'abc@me.com', 'meeeeeee'),
-(11, 1, 'abc@me.com', 'meeeeeee'),
-(12, 1, 'abc@me.com', 'meeeeeee'),
-(13, 1, 'abc@me.com', 'meeeeeee'),
-(14, 1, 'abc@me.com', 'qqqqqq'),
-(15, 1, 'abc@me.com', 'dddddd'),
-(16, 1, 'abc@me.com', 'rrrrrrr'),
-(17, 1, 'abc@me.com', 'fdfdfd');
+(1, 2, '', ''),
+(2, 1, '', ''),
+(3, 3, '', 'dfdfd'),
+(4, 2, '', ''),
+(5, 3, '', 'dfdfd'),
+(6, 2, '', 'dfdfd'),
+(7, 1, '', 'dfdfd'),
+(8, 3, '', ''),
+(9, 0, '', ''),
+(10, 0, '', ''),
+(11, 0, '', ''),
+(12, 0, '', ''),
+(13, 0, '', ''),
+(14, 0, '', ''),
+(15, 2, '', ''),
+(16, 0, '', ''),
+(17, 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -118,9 +122,17 @@ CREATE TABLE `userliks` (
   `id` int(5) NOT NULL,
   `post_id` int(5) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `likes` varchar(255) NOT NULL,
+  `rate` varchar(255) NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userliks`
+--
+
+INSERT INTO `userliks` (`id`, `post_id`, `email`, `rate`, `status`) VALUES
+(1, 5, '', '3', 1),
+(2, 6, '', '2', 0);
 
 -- --------------------------------------------------------
 
@@ -155,12 +167,6 @@ CREATE TABLE `user_ragister` (
   `start_higher_year` varchar(233) NOT NULL,
   `end_higher_year` varchar(233) NOT NULL,
   `hobby` varchar(233) NOT NULL,
-  `Favourite_TV_Shows` varchar(233) NOT NULL,
-  `Favourite_Music_Bands_Artists` varchar(233) NOT NULL,
-  `FavouriteBooks` varchar(233) NOT NULL,
-  `FavouriteWriters` varchar(233) NOT NULL,
-  `FavouriteMovies` varchar(233) NOT NULL,
-  `FavouriteGames` varchar(232) NOT NULL,
   `OtherInterests` varchar(233) NOT NULL,
   `profile_photo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -169,9 +175,10 @@ CREATE TABLE `user_ragister` (
 -- Dumping data for table `user_ragister`
 --
 
-INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `Favourite_TV_Shows`, `Favourite_Music_Bands_Artists`, `FavouriteBooks`, `FavouriteWriters`, `FavouriteMovies`, `FavouriteGames`, `OtherInterests`, `profile_photo`) VALUES
-(3, 'riya', 'shah', 'abc@me.com', '123', 0, '  Hi, I’m James, I’m 36 and I work as a Digital Designer for the “Daydreams” Agency in Pier resrdrererererterererer', '         abd', '         marrid', '  Hi, I’m James, I’m 36 and I work as a Digital sdsdsDesigner for the “Daydreams” Agency in Pier resrdrererererterererer', 'UI/UX Designer', ' April 31st, 2014', '', '         abd', 'ffdfd', 'fdfd', 'dfdfdfdwwwwwwwwww', 'fdfdfdfdfdf', 'dfdfdfdfd', 'fdfdf', 'dfdfddfdfdfd', 'dfdfdfdfdsdsd', 'fdfd', 'sadsd', 'fdfdfdfd', 'eerere', 'rtererer', 'dfdfdfrererer', 'rtrterererer', 'rtrtr', 'trtrererere', 'trtrdsdssd', 'trtrtr', '2_userImage.jpg'),
-(4, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '4_userImage.');
+INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `OtherInterests`, `profile_photo`) VALUES
+(1, 'riya', 'shah', 'riya123', 'riya', 9888888888, '24 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'movies,entertainment,reading', '', '1_userImage.jpg'),
+(3, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '3_userImage.'),
+(4, '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '4_userImage.');
 
 --
 -- Indexes for dumped tables
@@ -215,7 +222,7 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`
@@ -233,7 +240,7 @@ ALTER TABLE `personal_info`
 -- AUTO_INCREMENT for table `userliks`
 --
 ALTER TABLE `userliks`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user_ragister`

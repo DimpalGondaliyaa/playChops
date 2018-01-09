@@ -1,5 +1,8 @@
 $(function(){
 
+    $('select').material_select();
+  
+
 		var baseurl = $("#base_url").val();
 
 		$(".hobbiedata").on("click",function(){
