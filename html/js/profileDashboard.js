@@ -27,6 +27,7 @@ $( "#rate option:selected" ).text();
 /*-----comment js--------*/
 $(".post-btn").on("click",function(){
 
+
   var reg_form = new FormData($("#commentform")[0]);
   var id = $(this).data("comid");
 
@@ -45,7 +46,6 @@ $(".post-btn").on("click",function(){
 }); 
 
 
-
 $('#demo').on("click",function(){
 
 	$(".modal").modal();
@@ -62,6 +62,8 @@ $('#demo').on("click",function(){
 });
 	function a(a,b){b=Math.pow(10,b);var c=["k","m","b","t"];for(var i=b.length-1;i>=0;i--){var d=Math.pow(10,(i+1)*3);if(d<=a){a=Math.round(a*b/d)/b;if((a==1000)&&(i<c.length-1)){a=1;i++}a+=c[i];break}}return a}
 	/*parallax effect*/
+  
+
 
   $('#postStory').val('');
   $('#postStory').trigger('autoresize');

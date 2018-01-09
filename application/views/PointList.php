@@ -1,5 +1,192 @@
 <?php  $this->load->view("ProfileHeader"); ?>
 
+
+
+<div class="pointDashboard">
+   <div class="row"><h4 class="center" style="color: #FF9000;
+    text-shadow: 0px 2px 4px #000;">Top 10 Ranker</h4></div>
+   <div class="pointDashboardBox">
+      <div class="row">
+         <div class="col s12 m4">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 1</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m4">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 2</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m4">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 3</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m3">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 4</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m3">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 5</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m3">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 6</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col s12 m3">
+            <div class="profileBox hoverable">
+               <div class="profileView">
+                  <div class="profile_img"><img src="<?php echo base_url(); ?>/html/images/user_image/2_userImage.png"></div>
+                  <div class="detaileBox">
+                     <div class="name">
+                        Ravi Meswaniya
+                     </div>
+                     <div class="countBox">
+                        <div class="likes row">
+                           <div class="col s12 m4">
+                           <i class="material-icons">thumb_up</i> <span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">comment</i><span>&nbsp; 200</span></div>
+                           <div class="col s12 m4">
+                           <i class="material-icons">camera_alt</i><span>&nbsp; 200</span></div>
+                        </div>
+                        <div class="rank">
+                           <h5>Rank : 7</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
 <div class="container-fullwidth">
 	<div class="main">
 		<div class="row">
@@ -50,1045 +237,9 @@
 	    </div>
 
 <div class="row" style="background: #fff;">
-	<table 	class="fm-line"
-   data-fm-date-format="MMM/YYYY"
-   data-fm-disable-spillover=""
-   data-fm-end-pullout=""
-   data-fm-include-zero=""
-   data-fm-pullout-title=""
-   data-fm-rebase=""
-   data-fm-smooth-curve=""
-   data-fm-start-pullout=""
-   data-fm-value-prefix=""
-   data-fm-value-suffix="%"
-   data-fm-y-label="Long term bond interest rate">
-   <thead>
-      <tr>
-         <th>DATE</th>
-         <th>Germany</th>
-         <th>Greece</th>
-         <th>United Kingdom</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>JAN-20017</td>
-         <td>4.8</td>
-         <td>5.35</td>
-         <td>4.94</td>
-      </tr>
-      <tr>
-         <td>FEB-2001</td>
-         <td>4.78</td>
-         <td>5.35</td>
-         <td>4.95</td>
-      </tr>
-      <tr>
-         <td>MAR-2001</td>
-         <td>4.67</td>
-         <td>5.28</td>
-         <td>4.82</td>
-      </tr>
-      <tr>
-         <td>APR-2001</td>
-         <td>4.83</td>
-         <td>5.39</td>
-         <td>5.03</td>
-      </tr>
-      <tr>
-         <td>MAY-2001</td>
-         <td>5.05</td>
-         <td>5.54</td>
-         <td>5.21</td>
-      </tr>
-      <tr>
-         <td>JUN-2001</td>
-         <td>5</td>
-         <td>5.48</td>
-         <td>5.3</td>
-      </tr>
-      <tr>
-         <td>JUL-2001</td>
-         <td>5.02</td>
-         <td>5.51</td>
-         <td>5.3</td>
-      </tr>
-      <tr>
-         <td>AUG-2001</td>
-         <td>4.82</td>
-         <td>5.33</td>
-         <td>5.07</td>
-      </tr>
-      <tr>
-         <td>SEP-2001</td>
-         <td>4.81</td>
-         <td>5.31</td>
-         <td>5.02</td>
-      </tr>
-      <tr>
-         <td>OCT-2001</td>
-         <td>4.6</td>
-         <td>5.07</td>
-         <td>4.86</td>
-      </tr>
-      <tr>
-         <td>NOV-2001</td>
-         <td>4.45</td>
-         <td>4.9</td>
-         <td>4.67</td>
-      </tr>
-      <tr>
-         <td>DEC-2001</td>
-         <td>4.74</td>
-         <td>5.13</td>
-         <td>4.94</td>
-      </tr>
-      <tr>
-         <td>JAN-2002</td>
-         <td>4.86</td>
-         <td>5.24</td>
-         <td>5.02</td>
-      </tr>
-      <tr>
-         <td>FEB-2002</td>
-         <td>4.92</td>
-         <td>5.31</td>
-         <td>5.04</td>
-      </tr>
-      <tr>
-         <td>MAR-2002</td>
-         <td>5.16</td>
-         <td>5.5</td>
-         <td>5.34</td>
-      </tr>
-      <tr>
-         <td>APR-2002</td>
-         <td>5.15</td>
-         <td>5.51</td>
-         <td>5.33</td>
-      </tr>
-      <tr>
-         <td>MAY-2002</td>
-         <td>5.17</td>
-         <td>5.52</td>
-         <td>5.35</td>
-      </tr>
-      <tr>
-         <td>JUN-2002</td>
-         <td>5.02</td>
-         <td>5.37</td>
-         <td>5.19</td>
-      </tr>
-      <tr>
-         <td>JUL-2002</td>
-         <td>4.87</td>
-         <td>5.21</td>
-         <td>5.02</td>
-      </tr>
-      <tr>
-         <td>AUG-2002</td>
-         <td>4.59</td>
-         <td>4.95</td>
-         <td>4.67</td>
-      </tr>
-      <tr>
-         <td>SEP-2002</td>
-         <td>4.38</td>
-         <td>4.73</td>
-         <td>4.45</td>
-      </tr>
-      <tr>
-         <td>OCT-2002</td>
-         <td>4.46</td>
-         <td>4.79</td>
-         <td>4.53</td>
-      </tr>
-      <tr>
-         <td>NOV-2002</td>
-         <td>4.48</td>
-         <td>4.76</td>
-         <td>4.55</td>
-      </tr>
-      <tr>
-         <td>DEC-2002</td>
-         <td>4.33</td>
-         <td>4.58</td>
-         <td>4.49</td>
-      </tr>
-      <tr>
-         <td>JAN-2003</td>
-         <td>4.18</td>
-         <td>4.43</td>
-         <td>4.31</td>
-      </tr>
-      <tr>
-         <td>FEB-2003</td>
-         <td>3.95</td>
-         <td>4.24</td>
-         <td>4.29</td>
-      </tr>
-      <tr>
-         <td>MAR-2003</td>
-         <td>4</td>
-         <td>4.26</td>
-         <td>4.41</td>
-      </tr>
-      <tr>
-         <td>APR-2003</td>
-         <td>4.15</td>
-         <td>4.38</td>
-         <td>4.56</td>
-      </tr>
-      <tr>
-         <td>MAY-2003</td>
-         <td>3.82</td>
-         <td>4.02</td>
-         <td>4.31</td>
-      </tr>
-      <tr>
-         <td>JUN-2003</td>
-         <td>3.62</td>
-         <td>3.81</td>
-         <td>4.19</td>
-      </tr>
-      <tr>
-         <td>JUL-2003</td>
-         <td>3.97</td>
-         <td>4.12</td>
-         <td>4.47</td>
-      </tr>
-      <tr>
-         <td>AUG-2003</td>
-         <td>4.13</td>
-         <td>4.29</td>
-         <td>4.64</td>
-      </tr>
-      <tr>
-         <td>SEP-2003</td>
-         <td>4.17</td>
-         <td>4.32</td>
-         <td>4.76</td>
-      </tr>
-      <tr>
-         <td>OCT-2003</td>
-         <td>4.22</td>
-         <td>4.38</td>
-         <td>4.96</td>
-      </tr>
-      <tr>
-         <td>NOV-2003</td>
-         <td>4.35</td>
-         <td>4.51</td>
-         <td>5.1</td>
-      </tr>
-      <tr>
-         <td>DEC-2003</td>
-         <td>4.29</td>
-         <td>4.45</td>
-         <td>4.94</td>
-      </tr>
-      <tr>
-         <td>JAN-2004</td>
-         <td>4.17</td>
-         <td>4.37</td>
-         <td>4.84</td>
-      </tr>
-      <tr>
-         <td>FEB-2004</td>
-         <td>4.11</td>
-         <td>4.35</td>
-         <td>4.88</td>
-      </tr>
-      <tr>
-         <td>MAR-2004</td>
-         <td>3.91</td>
-         <td>4.17</td>
-         <td>4.76</td>
-      </tr>
-      <tr>
-         <td>APR-2004</td>
-         <td>4.1</td>
-         <td>4.35</td>
-         <td>4.99</td>
-      </tr>
-      <tr>
-         <td>MAY-2004</td>
-         <td>4.25</td>
-         <td>4.49</td>
-         <td>5.15</td>
-      </tr>
-      <tr>
-         <td>JUN-2004</td>
-         <td>4.31</td>
-         <td>4.55</td>
-         <td>5.24</td>
-      </tr>
-      <tr>
-         <td>JUL-2004</td>
-         <td>4.24</td>
-         <td>4.44</td>
-         <td>5.14</td>
-      </tr>
-      <tr>
-         <td>AUG-2004</td>
-         <td>4.08</td>
-         <td>4.28</td>
-         <td>5.03</td>
-      </tr>
-      <tr>
-         <td>SEP-2004</td>
-         <td>4.02</td>
-         <td>4.22</td>
-         <td>4.95</td>
-      </tr>
-      <tr>
-         <td>OCT-2004</td>
-         <td>3.89</td>
-         <td>4.11</td>
-         <td>4.81</td>
-      </tr>
-      <tr>
-         <td>NOV-2004</td>
-         <td>3.78</td>
-         <td>3.97</td>
-         <td>4.74</td>
-      </tr>
-      <tr>
-         <td>DEC-2004</td>
-         <td>3.58</td>
-         <td>3.77</td>
-         <td>4.58</td>
-      </tr>
-      <tr>
-         <td>JAN-2005</td>
-         <td>3.56</td>
-         <td>3.69</td>
-         <td>4.6</td>
-      </tr>
-      <tr>
-         <td>FEB-2005</td>
-         <td>3.54</td>
-         <td>3.69</td>
-         <td>4.66</td>
-      </tr>
-      <tr>
-         <td>MAR-2005</td>
-         <td>3.7</td>
-         <td>3.92</td>
-         <td>4.87</td>
-      </tr>
-      <tr>
-         <td>APR-2005</td>
-         <td>3.48</td>
-         <td>3.76</td>
-         <td>4.67</td>
-      </tr>
-      <tr>
-         <td>MAY-2005</td>
-         <td>3.3</td>
-         <td>3.6</td>
-         <td>4.45</td>
-      </tr>
-      <tr>
-         <td>JUN-2005</td>
-         <td>3.13</td>
-         <td>3.44</td>
-         <td>4.31</td>
-      </tr>
-      <tr>
-         <td>JUL-2005</td>
-         <td>3.2</td>
-         <td>3.46</td>
-         <td>4.31</td>
-      </tr>
-      <tr>
-         <td>AUG-2005</td>
-         <td>3.23</td>
-         <td>3.47</td>
-         <td>4.34</td>
-      </tr>
-      <tr>
-         <td>SEP-2005</td>
-         <td>3.07</td>
-         <td>3.3</td>
-         <td>4.25</td>
-      </tr>
-      <tr>
-         <td>OCT-2005</td>
-         <td>3.24</td>
-         <td>3.45</td>
-         <td>4.4</td>
-      </tr>
-      <tr>
-         <td>NOV-2005</td>
-         <td>3.45</td>
-         <td>3.67</td>
-         <td>4.37</td>
-      </tr>
-      <tr>
-         <td>DEC-2005</td>
-         <td>3.34</td>
-         <td>3.57</td>
-         <td>4.27</td>
-      </tr>
-      <tr>
-         <td>JAN-2006</td>
-         <td>3.32</td>
-         <td>3.6</td>
-         <td>3.97</td>
-      </tr>
-      <tr>
-         <td>FEB-2006</td>
-         <td>3.47</td>
-         <td>3.77</td>
-         <td>4.05</td>
-      </tr>
-      <tr>
-         <td>MAR-2006</td>
-         <td>3.64</td>
-         <td>3.95</td>
-         <td>4.19</td>
-      </tr>
-      <tr>
-         <td>APR-2006</td>
-         <td>3.89</td>
-         <td>4.23</td>
-         <td>4.37</td>
-      </tr>
-      <tr>
-         <td>MAY-2006</td>
-         <td>3.96</td>
-         <td>4.3</td>
-         <td>4.49</td>
-      </tr>
-      <tr>
-         <td>JUN-2006</td>
-         <td>3.96</td>
-         <td>4.31</td>
-         <td>4.5</td>
-      </tr>
-      <tr>
-         <td>JUL-2006</td>
-         <td>4.01</td>
-         <td>4.33</td>
-         <td>4.49</td>
-      </tr>
-      <tr>
-         <td>AUG-2006</td>
-         <td>3.88</td>
-         <td>4.19</td>
-         <td>4.49</td>
-      </tr>
-      <tr>
-         <td>SEP-2006</td>
-         <td>3.75</td>
-         <td>4.06</td>
-         <td>4.44</td>
-      </tr>
-      <tr>
-         <td>OCT-2006</td>
-         <td>3.79</td>
-         <td>4.08</td>
-         <td>4.51</td>
-      </tr>
-      <tr>
-         <td>NOV-2006</td>
-         <td>3.71</td>
-         <td>3.98</td>
-         <td>4.45</td>
-      </tr>
-      <tr>
-         <td>DEC-2006</td>
-         <td>3.77</td>
-         <td>4.04</td>
-         <td>4.54</td>
-      </tr>
-      <tr>
-         <td>JAN-2007</td>
-         <td>4.02</td>
-         <td>4.28</td>
-         <td>4.94</td>
-      </tr>
-      <tr>
-         <td>FEB-2007</td>
-         <td>4.05</td>
-         <td>4.3</td>
-         <td>4.97</td>
-      </tr>
-      <tr>
-         <td>MAR-2007</td>
-         <td>3.94</td>
-         <td>4.2</td>
-         <td>4.88</td>
-      </tr>
-      <tr>
-         <td>APR-2007</td>
-         <td>4.15</td>
-         <td>4.4</td>
-         <td>5.11</td>
-      </tr>
-      <tr>
-         <td>MAY-2007</td>
-         <td>4.28</td>
-         <td>4.51</td>
-         <td>5.2</td>
-      </tr>
-      <tr>
-         <td>JUN-2007</td>
-         <td>4.56</td>
-         <td>4.8</td>
-         <td>5.49</td>
-      </tr>
-      <tr>
-         <td>JUL-2007</td>
-         <td>4.5</td>
-         <td>4.79</td>
-         <td>5.46</td>
-      </tr>
-      <tr>
-         <td>AUG-2007</td>
-         <td>4.3</td>
-         <td>4.62</td>
-         <td>5.19</td>
-      </tr>
-      <tr>
-         <td>SEP-2007</td>
-         <td>4.22</td>
-         <td>4.56</td>
-         <td>5.05</td>
-      </tr>
-      <tr>
-         <td>OCT-2007</td>
-         <td>4.28</td>
-         <td>4.58</td>
-         <td>5</td>
-      </tr>
-      <tr>
-         <td>NOV-2007</td>
-         <td>4.09</td>
-         <td>4.43</td>
-         <td>4.74</td>
-      </tr>
-      <tr>
-         <td>DEC-2007</td>
-         <td>4.21</td>
-         <td>4.53</td>
-         <td>4.7</td>
-      </tr>
-      <tr>
-         <td>JAN-2008</td>
-         <td>4.03</td>
-         <td>4.4</td>
-         <td>4.26</td>
-      </tr>
-      <tr>
-         <td>FEB-2008</td>
-         <td>3.95</td>
-         <td>4.36</td>
-         <td>4.45</td>
-      </tr>
-      <tr>
-         <td>MAR-2008</td>
-         <td>3.8</td>
-         <td>4.42</td>
-         <td>4.42</td>
-      </tr>
-      <tr>
-         <td>APR-2008</td>
-         <td>4.04</td>
-         <td>4.54</td>
-         <td>4.62</td>
-      </tr>
-      <tr>
-         <td>MAY-2008</td>
-         <td>4.2</td>
-         <td>4.74</td>
-         <td>4.84</td>
-      </tr>
-      <tr>
-         <td>JUN-2008</td>
-         <td>4.52</td>
-         <td>5.17</td>
-         <td>5.16</td>
-      </tr>
-      <tr>
-         <td>JUL-2008</td>
-         <td>4.49</td>
-         <td>5.15</td>
-         <td>5</td>
-      </tr>
-      <tr>
-         <td>AUG-2008</td>
-         <td>4.2</td>
-         <td>4.87</td>
-         <td>4.68</td>
-      </tr>
-      <tr>
-         <td>SEP-2008</td>
-         <td>4.09</td>
-         <td>4.88</td>
-         <td>4.57</td>
-      </tr>
-      <tr>
-         <td>OCT-2008</td>
-         <td>3.88</td>
-         <td>4.93</td>
-         <td>4.52</td>
-      </tr>
-      <tr>
-         <td>NOV-2008</td>
-         <td>3.56</td>
-         <td>5.09</td>
-         <td>4.13</td>
-      </tr>
-      <tr>
-         <td>DEC-2008</td>
-         <td>3.05</td>
-         <td>5.08</td>
-         <td>3.36</td>
-      </tr>
-      <tr>
-         <td>JAN-2009</td>
-         <td>3.07</td>
-         <td>5.6</td>
-         <td>3.17</td>
-      </tr>
-      <tr>
-         <td>FEB-2009</td>
-         <td>3.13</td>
-         <td>5.7</td>
-         <td>3.23</td>
-      </tr>
-      <tr>
-         <td>MAR-2009</td>
-         <td>3.02</td>
-         <td>5.87</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>APR-2009</td>
-         <td>3.13</td>
-         <td>5.5</td>
-         <td>3.16</td>
-      </tr>
-      <tr>
-         <td>MAY-2009</td>
-         <td>3.37</td>
-         <td>5.22</td>
-         <td>3.41</td>
-      </tr>
-      <tr>
-         <td>JUN-2009</td>
-         <td>3.47</td>
-         <td>5.33</td>
-         <td>3.52</td>
-      </tr>
-      <tr>
-         <td>JUL-2009</td>
-         <td>3.34</td>
-         <td>4.89</td>
-         <td>3.55</td>
-      </tr>
-      <tr>
-         <td>AUG-2009</td>
-         <td>3.31</td>
-         <td>4.52</td>
-         <td>3.45</td>
-      </tr>
-      <tr>
-         <td>SEP-2009</td>
-         <td>3.26</td>
-         <td>4.56</td>
-         <td>3.42</td>
-      </tr>
-      <tr>
-         <td>OCT-2009</td>
-         <td>3.21</td>
-         <td>4.57</td>
-         <td>3.34</td>
-      </tr>
-      <tr>
-         <td>NOV-2009</td>
-         <td>3.22</td>
-         <td>4.84</td>
-         <td>3.46</td>
-      </tr>
-      <tr>
-         <td>DEC-2009</td>
-         <td>3.14</td>
-         <td>5.49</td>
-         <td>3.6</td>
-      </tr>
-      <tr>
-         <td>JAN-2010</td>
-         <td>3.26</td>
-         <td>6.02</td>
-         <td>4.01</td>
-      </tr>
-      <tr>
-         <td>FEB-2010</td>
-         <td>3.17</td>
-         <td>6.46</td>
-         <td>4.02</td>
-      </tr>
-      <tr>
-         <td>MAR-2010</td>
-         <td>3.1</td>
-         <td>6.24</td>
-         <td>3.98</td>
-      </tr>
-      <tr>
-         <td>APR-2010</td>
-         <td>3.06</td>
-         <td>7.83</td>
-         <td>3.96</td>
-      </tr>
-      <tr>
-         <td>MAY-2010</td>
-         <td>2.73</td>
-         <td>7.97</td>
-         <td>3.6</td>
-      </tr>
-      <tr>
-         <td>JUN-2010</td>
-         <td>2.54</td>
-         <td>9.1</td>
-         <td>3.14</td>
-      </tr>
-      <tr>
-         <td>JUL-2010</td>
-         <td>2.62</td>
-         <td>10.34</td>
-         <td>2.97</td>
-      </tr>
-      <tr>
-         <td>AUG-2010</td>
-         <td>2.35</td>
-         <td>10.7</td>
-         <td>2.68</td>
-      </tr>
-      <tr>
-         <td>SEP-2010</td>
-         <td>2.3</td>
-         <td>11.34</td>
-         <td>2.84</td>
-      </tr>
-      <tr>
-         <td>OCT-2010</td>
-         <td>2.35</td>
-         <td>9.57</td>
-         <td>2.8</td>
-      </tr>
-      <tr>
-         <td>NOV-2010</td>
-         <td>2.53</td>
-         <td>11.52</td>
-         <td>3.03</td>
-      </tr>
-      <tr>
-         <td>DEC-2010</td>
-         <td>2.91</td>
-         <td>12.01</td>
-         <td>3.34</td>
-      </tr>
-      <tr>
-         <td>JAN-2011</td>
-         <td>3.02</td>
-         <td>11.73</td>
-         <td>3.61</td>
-      </tr>
-      <tr>
-         <td>FEB-2011</td>
-         <td>3.2</td>
-         <td>11.4</td>
-         <td>3.77</td>
-      </tr>
-      <tr>
-         <td>MAR-2011</td>
-         <td>3.21</td>
-         <td>12.44</td>
-         <td>3.54</td>
-      </tr>
-      <tr>
-         <td>APR-2011</td>
-         <td>3.34</td>
-         <td>13.86</td>
-         <td>3.56</td>
-      </tr>
-      <tr>
-         <td>MAY-2011</td>
-         <td>3.06</td>
-         <td>15.94</td>
-         <td>3.26</td>
-      </tr>
-      <tr>
-         <td>JUN-2011</td>
-         <td>2.89</td>
-         <td>16.69</td>
-         <td>3.12</td>
-      </tr>
-      <tr>
-         <td>JUL-2011</td>
-         <td>2.74</td>
-         <td>16.15</td>
-         <td>2.98</td>
-      </tr>
-      <tr>
-         <td>AUG-2011</td>
-         <td>2.21</td>
-         <td>15.9</td>
-         <td>2.4</td>
-      </tr>
-      <tr>
-         <td>SEP-2011</td>
-         <td>1.83</td>
-         <td>17.78</td>
-         <td>2.18</td>
-      </tr>
-      <tr>
-         <td>OCT-2011</td>
-         <td>2</td>
-         <td>18.04</td>
-         <td>2.24</td>
-      </tr>
-      <tr>
-         <td>NOV-2011</td>
-         <td>1.87</td>
-         <td>17.92</td>
-         <td>1.96</td>
-      </tr>
-      <tr>
-         <td>DEC-2011</td>
-         <td>1.93</td>
-         <td>21.14</td>
-         <td>1.81</td>
-      </tr>
-      <tr>
-         <td>JAN-2012</td>
-         <td>1.82</td>
-         <td>25.91</td>
-         <td>2.04</td>
-      </tr>
-      <tr>
-         <td>FEB-2012</td>
-         <td>1.85</td>
-         <td>29.24</td>
-         <td>2.13</td>
-      </tr>
-      <tr>
-         <td>MAR-2012</td>
-         <td>1.83</td>
-         <td>19.07</td>
-         <td>2.17</td>
-      </tr>
-      <tr>
-         <td>APR-2012</td>
-         <td>1.62</td>
-         <td>21.48</td>
-         <td>2.03</td>
-      </tr>
-      <tr>
-         <td>MAY-2012</td>
-         <td>1.34</td>
-         <td>26.9</td>
-         <td>1.78</td>
-      </tr>
-      <tr>
-         <td>JUN-2012</td>
-         <td>1.3</td>
-         <td>27.82</td>
-         <td>1.6</td>
-      </tr>
-      <tr>
-         <td>JUL-2012</td>
-         <td>1.24</td>
-         <td>25.82</td>
-         <td>1.47</td>
-      </tr>
-      <tr>
-         <td>AUG-2012</td>
-         <td>1.34</td>
-         <td>24.34</td>
-         <td>1.49</td>
-      </tr>
-      <tr>
-         <td>SEP-2012</td>
-         <td>1.49</td>
-         <td>20.91</td>
-         <td>1.53</td>
-      </tr>
-      <tr>
-         <td>OCT-2012</td>
-         <td>1.47</td>
-         <td>17.96</td>
-         <td>1.54</td>
-      </tr>
-      <tr>
-         <td>NOV-2012</td>
-         <td>1.34</td>
-         <td>17.2</td>
-         <td>1.55</td>
-      </tr>
-      <tr>
-         <td>DEC-2012</td>
-         <td>1.3</td>
-         <td>13.33</td>
-         <td>1.6</td>
-      </tr>
-      <tr>
-         <td>JAN-2013</td>
-         <td>1.51</td>
-         <td>11.1</td>
-         <td>1.82</td>
-      </tr>
-      <tr>
-         <td>FEB-2013</td>
-         <td>1.54</td>
-         <td>10.95</td>
-         <td>1.92</td>
-      </tr>
-      <tr>
-         <td>MAR-2013</td>
-         <td>1.35</td>
-         <td>11.38</td>
-         <td>1.65</td>
-      </tr>
-      <tr>
-         <td>APR-2013</td>
-         <td>1.2</td>
-         <td>11.58</td>
-         <td>1.46</td>
-      </tr>
-      <tr>
-         <td>MAY-2013</td>
-         <td>1.29</td>
-         <td>9.07</td>
-         <td>1.62</td>
-      </tr>
-      <tr>
-         <td>JUN-2013</td>
-         <td>1.53</td>
-         <td>10.07</td>
-         <td>1.96</td>
-      </tr>
-      <tr>
-         <td>JUL-2013</td>
-         <td>1.56</td>
-         <td>10.53</td>
-         <td>2.09</td>
-      </tr>
-      <tr>
-         <td>AUG-2013</td>
-         <td>1.73</td>
-         <td>10.01</td>
-         <td>2.29</td>
-      </tr>
-      <tr>
-         <td>SEP-2013</td>
-         <td>1.89</td>
-         <td>10.15</td>
-         <td>2.44</td>
-      </tr>
-      <tr>
-         <td>OCT-2013</td>
-         <td>1.76</td>
-         <td>8.74</td>
-         <td>2.26</td>
-      </tr>
-      <tr>
-         <td>NOV-2013</td>
-         <td>1.68</td>
-         <td>8.41</td>
-         <td>2.31</td>
-      </tr>
-      <tr>
-         <td>DEC-2013</td>
-         <td>1.8</td>
-         <td>8.66</td>
-         <td>2.5</td>
-      </tr>
-      <tr>
-         <td>JAN-2014</td>
-         <td>1.76</td>
-         <td>8.18</td>
-         <td>2.48</td>
-      </tr>
-      <tr>
-         <td>FEB-2014</td>
-         <td>1.56</td>
-         <td>7.7</td>
-         <td>2.37</td>
-      </tr>
-      <tr>
-         <td>MAR-2014</td>
-         <td>1.51</td>
-         <td>6.9</td>
-         <td>2.34</td>
-      </tr>
-      <tr>
-         <td>APR-2014</td>
-         <td>1.46</td>
-         <td>6.2</td>
-         <td>2.3</td>
-      </tr>
-      <tr>
-         <td>MAY-2014</td>
-         <td>1.33</td>
-         <td>6.38</td>
-         <td>2.27</td>
-      </tr>
-      <tr>
-         <td>JUN-2014</td>
-         <td>1.26</td>
-         <td>5.93</td>
-         <td>2.35</td>
-      </tr>
-      <tr>
-         <td>JUL-2014</td>
-         <td>1.11</td>
-         <td>6.1</td>
-         <td>2.31</td>
-      </tr>
-      <tr>
-         <td>AUG-2014</td>
-         <td>0.95</td>
-         <td>6.09</td>
-         <td>2.12</td>
-      </tr>
-      <tr>
-         <td>SEP-2014</td>
-         <td>0.92</td>
-         <td>5.89</td>
-         <td>2.08</td>
-      </tr>
-      <tr>
-         <td>OCT-2014</td>
-         <td>0.79</td>
-         <td>7.26</td>
-         <td>1.82</td>
-      </tr>
-      <tr>
-         <td>NOV-2014</td>
-         <td>0.72</td>
-         <td>8.1</td>
-         <td>1.72</td>
-      </tr>
-      <tr>
-         <td>DEC-2014</td>
-         <td>0.59</td>
-         <td>8.42</td>
-         <td>1.52</td>
-      </tr>
-      <tr>
-         <td>JAN-2015</td>
-         <td>0.39</td>
-         <td>9.48</td>
-         <td>1.21</td>
-      </tr>
-   </tbody>
-</table>
-<link class="table-renderer" href="https://factmint.io/line.css" rel="stylesheet">
-<script async="" class="table-renderer" src="https://factmint.io/line.js"></script>
+	
+<!-- <link class="table-renderer" href="https://factmint.io/line.css" rel="stylesheet"> -->
+<!-- <script async="" class="table-renderer" src="https://factmint.io/line.js"></script> -->
 
 <div class="row">
  <div class="col s12 m3">

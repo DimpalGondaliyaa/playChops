@@ -160,8 +160,6 @@
 								<div class="row">
 									<div class="col s4 m4 row">
 
-
-
 										
 <form name="rating-form" id='rating-form'>
 	
@@ -188,8 +186,7 @@
 												 </a> 20
 											</div>	
 										</div> -->
-										 
-									
+
 									</div>
 
 									
@@ -198,9 +195,11 @@
 										 	
 										 	<div class="valign-wrapper">
 										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
+
 										 			<i class="material-icons">message</i>&nbsp;
 										 		</a>
 										 		 30
+
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
@@ -215,7 +214,7 @@
 										 	</div>
 										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
 									</div>
-									<form name="commentform" id="commentform">
+									<form name="commentform" id="commentform_<?php echo $postData['post_Id']; ?>">
 										<div class="row">
 											
 									          
@@ -223,13 +222,16 @@
 									          <!--  <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>"> -->
 											<div class="col s8 m9">									   
 									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
+
 									           <div class="col s4 m3 comm-col">
 									           
 									  <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-comid="<?php echo $postData['post_Id'];  ?>"  class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
 
 									
+
 									</div>
 									</form>
+									  
 									  <div>
 									  	<!-- <?php 
 									  		foreach ($postData['coment'] as  $imagekey => $imageRow) {
