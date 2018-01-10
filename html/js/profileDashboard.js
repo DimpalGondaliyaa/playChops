@@ -4,10 +4,10 @@ $(function(){
 $(".rating").on("click",function()
 {
 	var reg_form = new FormData($("#rating-form")[0]);
- 	var id = $(this).data("id");
+	$.ajax({
 
-  	$.ajax({
-	url : baseurl+"ProfileDashboard/ratingpost/"+id,
+    url : baseurl+"ProfileDashboard/ratingpost/",
+
     type :"POST",
     data :reg_form, 
     contentType:false,
@@ -29,7 +29,7 @@ $(".post-btn").on("click",function(){
 
   $.ajax({
 
-    url : baseurl+"ProfileDashboard/commentpost/"+id,
+    url : baseurl+"ProfileDashboard/commentpost/",
     type :"POST",
     data :reg_form, 
     contentType:false,

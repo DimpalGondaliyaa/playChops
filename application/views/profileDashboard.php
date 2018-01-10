@@ -4,21 +4,57 @@
 		<div class="col s12 m3">
 			<div class="recentPostBox sticky">
 				<div class="title">
-					<h5>Recent Post</h5>
+					<h5>Suggest Friends...</h5>
 				</div>
 				<div class="recentPostData row">
-					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
+						<div class="main">
+			<div class="profile-area">
+				<div class="max-width">
+					<div class="post-area">
+
+							<?php foreach ($rowData as $key => $roww) { ?>
+
+                                     <?php 
+								foreach ($roww["subCategory"] as $key => $value) {
+							
+							 ?>
+							
+					
+							<div class="friendRow row">
+								<div class="col s4 m2">
+								<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
+								</div>
+								<div class="col s8 m5">
+								<span class="friend-name">
+									<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col m2 s3">
+									<button class="btn flat-btn add-btn">follow</button>
+								
+								</div>
+								
+							</div>
+								<?php }	} ?>
+
+							<div class="friendRow row">
+								<div class="col s4 m2">
+								<img class="friend-img" src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
+								</div>
+								<div class="col s8 m5">
+								<span class="friend-name">Ravi Meswaniya</span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col m2 s3">
+									<button class="btn flat-btn add-btn">follow</button>
+								
+								</div>
+								
+							</div> 
 					</div>
-					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
-					</div>
-					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
-					</div>
-					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
-					</div>
+				</div>
+			</div>
+		</div>
 				</div>
 			</div>
 		</div>
@@ -56,7 +92,10 @@
 							        	</ul>
 							        </div>
 							        <div class="col s12 m4">
-							        	<button id="postPOSTButton" type="button" class="btn btn-flat blue white-text">Post</button>
+							        	<button id="postPOSTButton" type="button" class="btn btn-flat blue white-text"
+
+							        	<?php if($userData['post_status']==0){?> disabled <?php } ?>
+							        	>Post</button>
 							        </div>
 							    	</div>
 								</form>
@@ -162,21 +201,21 @@
 
 										
 <form name="rating-form" id='rating-form'>
-	
+		<input type="hidden" name="star_post_id" value="<?php echo $postData['post_Id'];  ?>" id="star_post_id">
   <div class="rate">
-    <input type="radio" name="star5" id="star5" name="rate" value="5" style="display: none;" />
-    <label for="star5"  title="text" class="rating">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" style="display: none;"/>
-    <label for="star4" title="text" class="rating">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" style="display: none;" />
-    <label for="star3" title="text" class="rating">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" style="display: none;"/>
-    <label for="star2" title="text" class="rating">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" style="display: none;"/>
-    <label for="star1" title="text" class="rating">1 star</label>
+    <input type="radio" onclick="$('#starbtn').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
+    <label for="star5"  title="text">5 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star4" name="rate" value="4" style="display: none;"/>
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();"  class="rating" id="star3" name="rate" value="3" style="display: none;" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star2" name="rate" value="2" style="display: none;"/>
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star1" name="rate" value="1" style="display: none;"/>
+    <label for="star1" title="text">1 star</label>
   </div>
 
-<a value='<?php echo $postData['post_Id'];  ?>' id="rateBt" name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" class="waves-effect waves-light btn rating">Rating</a>
+<!-- <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" id="starbtn" class="waves-effect waves-light btn ">Rating</a> -->
   </form>
 
 										<!-- <div class="likBox">
@@ -261,16 +300,28 @@
 				</div>
 				<div class="recentPostData row">
 					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img1.jpg" class="responsive-img">
 					</div>
 					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img5.jpg" class="responsive-img">
 					</div>
 					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img2.jpg" class="responsive-img">
 					</div>
 					<div class="col s6 m4 recentBox">
-					<img src="<?php echo base_url() ?>html/images/recentPost/placeholder-logo.png" class="responsive-img">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img3.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img6.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img7.jpg" class="responsive-img">
 					</div>
 				</div>
 			</div>

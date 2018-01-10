@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2018 at 10:28 AM
+-- Generation Time: Jan 10, 2018 at 12:36 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,12 +46,8 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, '', '04:17:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '1_postImage.jpg'),
-(2, '', '04:17:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '2_postImage.jpg'),
-(3, '', '04:27:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', '3_postImage.jpg'),
-(4, 'fgffg', '05:30:pm', 'January 8, 2018', 'riya', 'status', 1, '', '', ''),
-(5, '', '06:41:pm', 'January 8, 2018', 'priya@123', 'status', 1, '', '', '5_postImage.jpg'),
-(6, '', '06:45:pm', 'January 8, 2018', 'riya123', 'status', 1, '', '', '6_postImage.jpg');
+(1, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '1_postImage.jpg'),
+(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg');
 
 -- --------------------------------------------------------
 
@@ -71,23 +67,10 @@ CREATE TABLE `commenttbl` (
 --
 
 INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
-(1, 2, '', ''),
-(2, 1, '', ''),
-(3, 3, '', 'dfdfd'),
-(4, 2, '', ''),
-(5, 3, '', 'dfdfd'),
-(6, 2, '', 'dfdfd'),
-(7, 1, '', 'dfdfd'),
-(8, 3, '', ''),
-(9, 0, '', ''),
-(10, 0, '', ''),
-(11, 0, '', ''),
-(12, 0, '', ''),
-(13, 0, '', ''),
-(14, 0, '', ''),
-(15, 2, '', ''),
-(16, 0, '', ''),
-(17, 0, '', '');
+(1, 1, '', ''),
+(2, 2, '', ''),
+(3, 2, '', 'cxcx'),
+(4, 2, '', '');
 
 -- --------------------------------------------------------
 
@@ -131,7 +114,7 @@ CREATE TABLE `userliks` (
 --
 
 INSERT INTO `userliks` (`id`, `post_id`, `email`, `rate`, `status`) VALUES
-(1, 6, '', '3', 0);
+(1, 2, '', '4', 0);
 
 -- --------------------------------------------------------
 
@@ -149,6 +132,7 @@ CREATE TABLE `user_ragister` (
   `Birthday` varchar(233) NOT NULL,
   `Birthplace` varchar(233) NOT NULL,
   `Status` varchar(233) NOT NULL,
+  `post_status` int(11) NOT NULL,
   `about_me` varchar(244) NOT NULL,
   `Occupation` varchar(222) NOT NULL,
   `Joined` varchar(222) NOT NULL,
@@ -174,10 +158,11 @@ CREATE TABLE `user_ragister` (
 -- Dumping data for table `user_ragister`
 --
 
-INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `OtherInterests`, `profile_photo`) VALUES
-(1, 'riya', 'shah', 'riya@123', 'riya', 9898989899, '21 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
-(2, 'maya', 'shah', 'maya@123', 'maya', 989898100, '1 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '2_postImage.png'),
-(3, 'anita', 'shah', 'anu@123', 'anu', 989898100, '1 January, 2018', 'abd', 'marrid', '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'travileng', '', '5_postImage.jpg');
+INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `post_status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `OtherInterests`, `profile_photo`) VALUES
+(1, 'riya', 'shah', 'riya@123', 'riya', 9898989899, '', ' abd', ' marrid', 1, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', ' abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(3, 'anita', 'shah', 'anu@123', 'anu', 989898100, '1 January, 2018', 'abd', 'marrid', 0, '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'travileng', '', '5_postImage.jpg'),
+(4, 'priya', 'shah', 'priya@123', 'priya', 6565656565, '23 January, 2018', 'fdfdfd', 'fdfdd', 0, '', '', '', '', 'dd', 'fdfd', 'fdfdf', '', '', '', '', '', '', '', '', '', 'READING', '', '4_userImage.jpg'),
+(5, 'mayur', 'riy', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png');
 
 --
 -- Indexes for dumped tables
@@ -221,13 +206,13 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`
 --
 ALTER TABLE `commenttbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
@@ -245,7 +230,7 @@ ALTER TABLE `userliks`
 -- AUTO_INCREMENT for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
