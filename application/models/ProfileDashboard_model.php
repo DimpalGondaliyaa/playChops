@@ -15,7 +15,14 @@
 		/*get Post Data*/
 		public function getPostData(){
 			$email=$this->session->userdata('email');
-				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' ORDER BY post_Id DESC");
+			$date=gmdate("F j, Y");
+			$time= date("h:i:a");
+				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' AND postDate ='".$date."' 
+					 ORDER BY post_Id DESC");
+
+
+
+
 				$row=$row->result_array();
 
 

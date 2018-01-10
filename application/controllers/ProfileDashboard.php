@@ -96,13 +96,6 @@ class ProfileDashboard extends CI_Controller {
 		$this->ProfileDashboard_model->addpostimg($adduserimgg,$postid);
 
 
-		$dir = "<?php echo base_url(); ?>html/images/post_images";   //your folder location
-
-			foreach (glob($dir."*.jpg") as $file) { 
-			    if (filectime($file) < time() - 5) { 
-			        unlink($file);
-			    }
-			}
 		/*$imagePattern = "/\.(jpg|jpeg|png|gif|bmp|tiff)$/";
 			$directory = ".";
 

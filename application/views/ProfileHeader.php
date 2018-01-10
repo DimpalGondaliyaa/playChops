@@ -1,9 +1,6 @@
 
 <div class="row">
-	<div class="parallax-container head-parall">
-      <div class="parallax">
-      	
-      	<div class="profileDetails-area">
+		<div class="profileDetails-area">
       		<div class="row">
       		<div class="profile_img col s12 m4">
       			<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $pro_data['profile_photo'];?>" class="responsive-img profile_photo">
@@ -49,5 +46,3 @@
       		</div>
       	</div>
       </div>
-    </div>
-</div>
