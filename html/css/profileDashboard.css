@@ -1,17 +1,26 @@
 /*---------------------------left side friend list------------*/
 .add-btn {
-    color: grey;
+    color: #394b65b5;
     border-radius: 20px;
-    background: transparent;
-    border: 1px solid darkgray;
+    background: linear-gradient(3deg, #cecdcd,#dfdfdf82);
+    border: 1px solid #c5c5c5;
     position: relative;
-    top: 10px;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     box-shadow: none;
 }
 .add-btn:hover {
+    color: #eeeeee;
+    border-radius: 20px;
+    background: #677487;
+    border: 1px solid #696969;
+}
+/*.add-btn:hover {
     color: #fff;
     background: #2196f3;
-}
+}*/
 .post-area {
     background: #fff;
 }
@@ -249,17 +258,20 @@ body{
     height: 400px;
     position: relative;
 }
-img.responsive-img.profile_photo {
+img.responsive-img.profile_photo {    
     display: block;
-    top: 22px;
-    position: relative;
-    height: 218px;
-    width: 212px;
+    bottom: 50px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
     border-radius: 153px;
-      background: #ab9d9d47;
-    width: -40px !important;
-    min-width: 0px;
-    /* object-fit: contain; */
+    left: 50px;
+    top: 50px;
+    right: 50px;
+    object-fit: cover;
+    border: 2px solid #002a43;
+    padding: 5px;
+    box-shadow: 0px 2px 5px #0000006b;
 }
 .post_img img {
     height:  auto;
@@ -286,11 +298,11 @@ button#postPOSTButton:hover {
     background: #2898f4ad !important;
 }
 .profileDetails-area {
-          max-width: 1730px;
+    max-width: 1280px;
     margin: 0 auto;
-       background: #eeeeee !important;
+    background: #ffffff !important;
     position: relative !important;
-    top: 60px;
+    margin-top: 25px;
     padding: 25px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -365,14 +377,20 @@ div#coomm-div {
 }
 .recentPostBox {
     background: #fff;
-    padding: 25px;
+    padding: 15px;
     box-shadow: 0px 1px 3px #0000004f;
     position: relative;
 }
 .col.s6.m4.recentBox img {
     border: 1px solid #ddd;
     margin-bottom: 15px;
-    min-height: 100px;
+    min-height: 75px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #00000052;
+    box-shadow: 2px 3px 3px #00000059;
 }
 .title h5{
 	border-bottom: 1px solid #ddd;

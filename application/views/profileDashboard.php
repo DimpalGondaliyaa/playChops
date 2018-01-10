@@ -6,11 +6,11 @@
 				<div class="title">
 					<h5>Suggest Friends...</h5>
 				</div>
-				<div class="recentPostData row">
+				<div class="recentPostData">
 						<div class="main">
 			<div class="profile-area">
 				<div class="max-width">
-					<div class="post-area">
+					<div class="post-area row">
 
 							<?php foreach ($rowData as $key => $roww) { ?>
 
@@ -20,20 +20,18 @@
 							 ?>
 							
 					
-							<div class="friendRow row">
-								<div class="col s4 m2">
+							<div class="friendRow col s12 m12">
+								<div class="col s2 m3">
 								<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
 								</div>
-								<div class="col s8 m5">
+								<div class="col s8 m6">
 								<span class="friend-name">
 									<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
-								<div class="col m2 s3">
-									<button class="btn flat-btn add-btn">follow</button>
-								
+								<div class="col m2 s3 m3">
+									<button class="btn btn-add-person flat-btn add-btn"><i class="large material-icons">person_add</i></button>
 								</div>
-								
 							</div>
 								<?php }	} ?>
 
@@ -46,7 +44,7 @@
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
 								<div class="col m2 s3">
-									<button class="btn flat-btn add-btn">follow</button>
+									<button class="btn flat-btn add-btn"><i class="large material-icons">person_add</i></button>
 								
 								</div>
 								

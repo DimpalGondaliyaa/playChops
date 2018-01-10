@@ -10,6 +10,7 @@
     <link href="<?php echo base_url(); ?>html/css/style.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Quicksand|Raleway" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     
     <!-- font Link -->
