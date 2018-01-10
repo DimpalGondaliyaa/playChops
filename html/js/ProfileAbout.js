@@ -1,12 +1,29 @@
 $(function(){
 
-
+	var baseurl = $("#base_url").val();
 
 	/*parallax effect*/
     $('.parallax').parallax();
 
 
+$(".updatepost").on("click",function(){
 
+      var modeldata = new FormData($('#updatepost')[0]);
+      $.ajax({
+        url : baseurl+"ProfileAbout/updateimages",
+        type : 'POST',
+        data : modeldata,
+        processData :false,
+        contentType : false,
+        success : function(res)
+        {
+          /*alert("Update Successfully ");
+          window.location.reload();*/
+        }
+
+      });
+
+    });  
 /*Position Fixed On Scroll top */
 
 	var stickySidebar = $('.sticky');

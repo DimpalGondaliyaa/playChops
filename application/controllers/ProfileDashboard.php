@@ -13,7 +13,8 @@ class ProfileDashboard extends CI_Controller {
 		$this->load->model('ProfileDashboard_model');
 		$postRow=$this->ProfileDashboard_model->getPostData();
 
-		
+		$this->load->model("buddyListt");
+		$rowData = $this->buddyListt->fetchbuddylist();
 	/*	$comments = $this->ProfileDashboard_model->gettwocomment($postid);*/
 
 
@@ -34,7 +35,7 @@ class ProfileDashboard extends CI_Controller {
 		$viewData = array(
 			"viewName" => "profileDashboard",
 
-            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,/*"comments"=>$comments*/),
+            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,'rowData'=>$rowData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
@@ -130,21 +131,21 @@ class ProfileDashboard extends CI_Controller {
 		$this->upload->do_upload('post_attachment');
 	}
 
-	public function commentpost($id)
+	public function commentpost()
 
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'comment'=>$_POST['comment'],
-		'post_id' =>$id);
+		'post_id' =>$_POST['post_id']);
 		$this->ProfileDashboard_model->addcommentpost($data);
 	}
-	public function ratingpost($id)
+	public function ratingpost()
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'rate'=>$_POST['rate'],
-		'post_id'=>$id,
+		'post_id'=>$_POST['star_post_id']
 		 );
 		$this->ProfileDashboard_model->addratingpost($data);
 	}
