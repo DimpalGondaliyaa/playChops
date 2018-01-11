@@ -37,8 +37,8 @@
       				<li><a href="<?php echo base_url(); ?>ProfileAbout">About</a></li>
       				<li><a href='<?php echo base_url(); ?>FriendsList'>Friends List</a></li>
                               <li><a href='<?php echo base_url(); ?>buddyList'>Friends Request</a></li>
-      				<li><a href="#!">Posts</a></li>
-      				<li><a href="<?php echo base_url(); ?>ProfilePhoto">Photo</a></li>
+      				<!-- <li><a href="#!">Posts</a></li> -->
+      				<!-- <li><a href="<?php echo base_url(); ?>ProfilePhoto">Photo</a></li> -->
                               <li><a href="<?php echo base_url(); ?>PointList">Chops</a></li>
       			</ul>
       			</div>

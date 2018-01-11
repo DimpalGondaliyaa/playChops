@@ -57,7 +57,7 @@
 							<div class="postBtns">
 								
 								<ul>
-									<li><button type="button" class="btn btn-flat blue-text statusPostBtn">Status</button></li>
+									<li><button type="button" class="btn btn-flat blue-text statusPostBtn active">Status</button></li>
 									<li><button type="button" class="btn btn-flat blue-text  mediaPostBtn">Media</button></li>
 									<li><button type="button" class="btn btn-flat blue-text  locationPostBtn">Location</button></li>
 								</ul>
@@ -178,6 +178,12 @@
 									<img src="<?php echo base_url(); ?>html/images/post_images/<?php echo $postData['post_attachment']; ?>" >
 									<?php } else { ?> <?php } ?>
 								    </div>
+								    <div class="row">
+								<p>This is First Commet.</p>
+							</div>
+							<div class="row">
+								<p>This is First Commet.</p>
+							</div>
 								</div>
 							</div>
 							
@@ -218,7 +224,7 @@
 										 <div   id="coomm-div"">
 										 	
 										 	<div class="valign-wrapper">
-							 		<a class="" data-position="bottom" data-delay="50" data-tooltip="Comment">
+							 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
 										 			<i class="material-icons">message</i>
 										 		</a> &nbsp; 30
@@ -239,6 +245,7 @@
 									</div>
 								</div>
 							</div>
+
 								
 						</div>
 

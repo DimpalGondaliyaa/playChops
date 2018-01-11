@@ -1,4 +1,5 @@
 
+<?php  $this->load->view("ProfileHeader"); ?>
 <div class="PostContainer">
 	<div class="row">
 		<div class="col s12 m3">
@@ -38,11 +39,11 @@
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
 								</div>
-								<div class="col s8 m6">
+								<div class="col s8 m5">
 								<span>Ravi Meswaniya</span>
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
-								<div class="col s12 m5">
+								<div class="col s12 m6">
 									<button class="btn flat-btn add-btn">Add Friend</button>&nbsp;
 									<button class="btn flat-btn remove-btn ">Remove</button>
 								</div>
@@ -60,11 +61,11 @@
 								<div class="col s4 m1">
 								<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
 								</div>
-								<div class="col s8 m6">
+								<div class="col s8 m5">
 								<span class="friendname"><?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
-								<div class="col s12 m5">
+								<div class="col s12 m6">
 									<button class="btn flat-btn add-btn ">Add Friend</button>&nbsp;
 									<button class="btn flat-btn remove-btn">Remove</button>
 								</div>

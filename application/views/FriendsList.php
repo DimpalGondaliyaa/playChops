@@ -3,7 +3,7 @@
 <div class="container-fullwidth">
 	<div class="row">
 		<div class="main">
-			<div class="col s12 m3">
+			<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img1.jpg">
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 
-						<div class="col s12 m3">
+						<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img1.jpg">
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 
-						<div class="col s12 m3">
+						<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img1.jpg">
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 
-						<div class="col s12 m3">
+						<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img2.jpg">
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 
-						<div class="col s12 m3">
+						<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img3.jpg">
@@ -158,7 +158,7 @@
 				</div>
 			</div>
 
-						<div class="col s12 m3">
+						<div class="col s12 m2">
 				<div class="friend-box">
 					<div class="friend-img">
 						<img class="friend-pic" src="<?php echo base_url(); ?>html/images/friend/img1.jpg">

@@ -9,19 +9,22 @@ class BuddyList extends CI_Controller {
 		if(!$this->session->userdata('email')){
 			header('Location:user_login');
 		}
+			$this->load->model("profile_about_model");
+		$pro_data = $this->profile_about_model->fetch_pro_data();
+
 		$this->load->model("buddyListt");
 		$rowData = $this->buddyListt->fetchbuddylist();
 
 		$headerData = array(
 			"pageTitle" => "BuddyList",
-			"stylesheet" => array("buddyList.css")
+			"stylesheet" => array("buddyList.css",'profileAbout.css')
 		);
 		$footerData = array(
 			"jsFiles" => array("buddyList.js")
 		);
 		$viewData = array(
 			"viewName" => "buddyList",
-            "viewData" => array("rowData"=>$rowData),
+            "viewData" => array("rowData"=>$rowData,'pro_data'=>$pro_data),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

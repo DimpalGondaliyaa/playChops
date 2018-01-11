@@ -81,12 +81,12 @@ position: relative;
 }
 .btn-upload {
     background: #fb9108d1;
-    color: #000;
+    color: #fff;
     border: 2px solid #cacaca54;
 }
 .btn-upload:hover {
     background: #fb9017;
-    color: #000;
+    color: #fff;
     border: 2px solid #cacaca54;
 }
 
