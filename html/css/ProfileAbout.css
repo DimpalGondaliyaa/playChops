@@ -1,3 +1,43 @@
+.head-parall
+{
+    position: relative;
+    overflow: hidden;
+  background: #ffffffad;
+    height: 450px;
+}
+
+
+/**-----------post edit delete css--------*/
+.fixed-action-btn {
+     position: relative; 
+    right: 0px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+.btn-floating.btn-large {
+    float: right;
+    width: 56px;
+    height: 56px;
+    position: relative;
+    top: 16px;
+}
+.update-btn {
+    width: 13%;
+    margin:  0 auto;
+    position:  relative;
+    top: 36px;
+}
+/*#persona
+{
+    z-index: 1005;
+    display: block;
+    opacity: 1;
+    transform: scaleX(1);
+    top: 73%;
+}*/
+
 /*ProfileDashboard Global Css*/
 body{
 	background: #eee;
@@ -13,6 +53,12 @@ body{
 }
 
 /*Profile backgrounf images*/
+
+.up-title
+{
+    text-transform: capitalize;
+    text-align: center;
+}
 .parallax-container{
 	z-index: 0;
 }
@@ -25,18 +71,16 @@ body{
     position: relative;
 }
 img.responsive-img.profile_photo {
-  /*     display: block;
+ display: block;
+    top: 22px;
     position: relative;
-    height: 282px;
-    padding: 42px 50px;
-    border-radius: 170px;
-    width: 69px !important;*/
+    height: 218px;
+    width: 212px;
+    border-radius: 153px;
+    background: #fff;
+    width: -40px !important;
+    min-width: 0px;
     /* object-fit: contain; */
-    /* object-fit: contain; */
-    /*display: block;
-    position: relative;
-    height: 200px;
-    object-fit: contain;*/
 }
 .edit-pro-btn {
     float: right;
@@ -72,13 +116,13 @@ img.responsive-img.profile_photo {
     /* border: 2px solid #635959; */
 }
 .profileDetails-area {
-    max-width: 1000px;
+   max-width: 1730px;
     margin: 0 auto;
-    background: #ffffffa9 !important;
+    background: #eeeeee !important;
     position: relative !important;
-    top: 23vh;
+    top: 60px;
     padding: 25px;
-	border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 .totalData ul li {
@@ -116,13 +160,14 @@ img.responsive-img.profile_photo {
 .postProfile {
     position: relative;
     top: 0;
-    height: 60px;
+       height: 85px;
     border-bottom: 1px solid #ddd;
     width: 100%;
 }
 .postProfile img{
     position: relative;
     top: 0;
+    
     height: auto;
     width: auto;
 }

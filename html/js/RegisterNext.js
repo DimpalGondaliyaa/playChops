@@ -108,6 +108,7 @@ $('.edit-pro-btn').on("click",function(){
 	$("#personal-model").modal("open");
 });
 
+
 /*------------------OPEN HOBBIE MODEL------------------*/
 
 $('.edit-hobbie-btn').on("click",function(){
@@ -119,6 +120,12 @@ $('.edit-education-btn').on("click",function(){
 		$(".modal").modal();
 		$("#education-model").modal("open");
 });
+
+$('.updateData').on("click",function(){
+		$(".modal").modal();
+		$("#updateprofile").modal("open");
+});
+
    
 
 

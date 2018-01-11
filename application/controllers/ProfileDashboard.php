@@ -10,14 +10,13 @@ class ProfileDashboard extends CI_Controller {
 			header('Location:user_login');
 		}
 
+        
 		$this->load->model('ProfileDashboard_model');
 		$postRow=$this->ProfileDashboard_model->getPostData();
 
-		
-	/*	$comments = $this->ProfileDashboard_model->gettwocomment($postid);*/
+		$this->load->model("buddyListt");
+		$rowData = $this->buddyListt->fetchbuddylist();
 
-
-		/*get User Deatails by Email*/
 		$this->load->model('getUserDetais_model');
 		$userData=$this->getUserDetais_model->getUserDetails();
 
@@ -34,7 +33,7 @@ class ProfileDashboard extends CI_Controller {
 		$viewData = array(
 			"viewName" => "profileDashboard",
 
-            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,/*"comments"=>$comments*/),
+            "viewData" => array('postRow'=>$postRow,'userData'=>$userData,'pro_data'=>$pro_data,'rowData'=>$rowData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
@@ -95,30 +94,6 @@ class ProfileDashboard extends CI_Controller {
 		$adduserimgg=array('post_attachment'=>$userImage);
 		$this->ProfileDashboard_model->addpostimg($adduserimgg,$postid);
 
-
-		$dir = "<?php echo base_url(); ?>html/images/post_images";   //your folder location
-
-			foreach (glob($dir."*.jpg") as $file) { 
-			    if (filectime($file) < time() - 5) { 
-			        unlink($file);
-			    }
-			}
-		/*$imagePattern = "/\.(jpg|jpeg|png|gif|bmp|tiff)$/";
-			$directory = ".";
-
-			if (($handle = opendir($directory)) != false) {
-			    while (($file = readdir($handle)) != false) {
-			        $filename = "html/images/post_images/$file";
-			        if (strtotime("-24 hours") <= filemtime($filename) && preg_match($imagePattern, $filename)) {
-			            unlink($filename);
-			        }
-			    }
-
-			    closedir($handle);
-			}
-*/
-
-
 		$config["upload_path"]='html/images/post_images';
 		$config["allowed_types"]='gif|png|jpg|jpeg';
 		$config["file_name"]=$postid."_postImage";
@@ -130,37 +105,38 @@ class ProfileDashboard extends CI_Controller {
 		$this->upload->do_upload('post_attachment');
 	}
 
-	public function commentpost($id)
+	public function commentpost()
 
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'comment'=>$_POST['comment'],
-		'post_id' =>$id);
+		'post_id' =>$_POST['post_id']);
 		$this->ProfileDashboard_model->addcommentpost($data);
 	}
-	public function ratingpost($id)
+	public function ratingpost()
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
 		'rate'=>$_POST['rate'],
-		'post_id'=>$id,
+	
+
 		 );
 		$this->ProfileDashboard_model->addratingpost($data);
 	}
-
-	/*public function postLike(){
-		$this->load->model('postLike_model');*/
-		/*$data=$_POST['data'];*/
-		/*$data=array(
-			'post_id'=>$_POST['id'],
-			'email'=>$_POST['email'],
-			'likes'=>$_POST['likes'],
-			'status'=>$_POST['status']
-		);
-		$this->postLike_model->postLikeData($data);*/
-		/*echo json_encode($likes);*/
-	/*}*/
+	public function adddashcomment()
+	{
+		$this->load->model("ProfileDashboard_model");
+		$id = $_POST['post_Id'];
+		$data = array('comment' => $_POST['comment'] ,'post_Id'=> $_POST['post_Id'] );
+		$this->ProfileDashboard_model->adddascomm($data);
+	}
+	public function getcomm($id)
+	{
+		$this->load->model("ProfileDashboard_model");
+		$data =$this->ProfileDashboard_model->getcomm($id);
+		$this->load->view("add_comment",$data);
+	}
 
 }
 ?>

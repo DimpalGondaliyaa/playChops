@@ -35,6 +35,8 @@
               <div class="col s12 input-field col s12">
                 <div class="login-btn">
                  <a class="waves-effect waves-light btn user_login">Login</a>
+                 <a href="https://en-gb.facebook.com/login/" target="_blank" class="waves-effect waves-light btn facebook-btn">login with facebook</a>
+                  <a href="https://twitter.com/login" target="_blank" class="waves-effect waves-light btn twitter-btn">login with twitter</a>
                </div>
               </div>
 

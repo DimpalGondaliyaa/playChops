@@ -25,6 +25,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
           
     <script src="<?php echo base_url(); ?>html/js/script.js"></script>
+    <script type="text/javascript" src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
     <?php foreach($stylesheet as $fileName){ ?>
     <link href="<?php echo base_url(); ?>html/css/<?php echo $fileName; ?>" rel="stylesheet">
     <?php } ?>
@@ -33,11 +34,11 @@
 <?php if($this->session->userdata('email')){  ?>
  <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+    <!--  <a href="#" class="brand-logo">Logo</a> -->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
+        <!-- <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li> -->
         <li><a href="<?php echo base_url(); ?>User_login/logout"><i class="fa fa-power-off" aria-hidden="true"></i></a> </li>
       </ul>
     </div>
