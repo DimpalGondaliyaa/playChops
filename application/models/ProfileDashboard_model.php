@@ -15,21 +15,22 @@
 		/*get Post Data*/
 		public function getPostData(){
 			$email=$this->session->userdata('email');
-			$date=gmdate("F j, Y");
-			$time= date("h:i:a");
-				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' AND postDate ='".$date."' 
-					 ORDER BY post_Id DESC");
-
-
-
-
+				$row=$this->db->query("SELECT * FROM buddyposts WHERE email='".$email."' ORDER BY post_Id DESC");
 				$row=$row->result_array();
+
+				foreach ($row as $key => $coments) {
+					$row[$key]["coment"] = $this->getComments($coments["post_Id"]);
+		 		}
 				return $row;
+		}
+		public function getComments($id){
+			$query = $this->db->query("Select * from commenttbl where post_id='$id' GROUP BY id DESC LIMIT 2");
+			$profileRow = $query->result_array();
+		
+			return $profileRow;
 		}
         public function adddascomm($data)
         {
-
-
         	$this->db->insert("commenttbl",$data);
         }
         public function getcomm($id)

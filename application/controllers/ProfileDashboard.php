@@ -10,6 +10,7 @@ class ProfileDashboard extends CI_Controller {
 			header('Location:user_login');
 		}
 
+        
 		$this->load->model('ProfileDashboard_model');
 		$postRow=$this->ProfileDashboard_model->getPostData();
 
@@ -22,6 +23,7 @@ class ProfileDashboard extends CI_Controller {
 	/*	$id = $this->ProfileDashboard_model->getid();*/
 
 		/*get User Deatails by Email*/
+
 		$this->load->model('getUserDetais_model');
 		$userData=$this->getUserDetais_model->getUserDetails();
 
@@ -125,7 +127,9 @@ class ProfileDashboard extends CI_Controller {
 		$data  = array(
 
 		'rate'=>$_POST['rate'],
+
 		'post_id'=>$_POST['star_post_id']
+
 
 		 );
 		$this->ProfileDashboard_model->addratingpost($data);
@@ -156,6 +160,7 @@ class ProfileDashboard extends CI_Controller {
 		$this->postLike_model->postLikeData($data);*/
 		/*echo json_encode($likes);*/
 	/*}*/
+
 
 
 
