@@ -99,6 +99,9 @@ $('#demo').on("click",function(){
 	/*Post View/media/status/blog*/	
 
 	$('.statusPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.mediaPostBtn').removeClass('active');
+		$('.mediaPostBtn').removeClass('active');
 		$('#postStatus').show();
 		$('#postMedia').hide();
 		$('#postLocation').hide();
@@ -106,6 +109,9 @@ $('#demo').on("click",function(){
 
 
 	$('.mediaPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.locationPostBtn').removeClass('active');
+		$('.statusPostBtn').removeClass('active');
 		$('#postMedia').show();
 		$('#postStatus').hide();
 		$('#postLocation').hide();
@@ -113,6 +119,9 @@ $('#demo').on("click",function(){
 
 
 	$('.locationPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.statusPostBtn').removeClass('active');
+		$('.mediaPostBtn').removeClass('active');
 		$('#postLocation').show();
 		$('#postMedia').hide();
 		$('#postStatus').hide();

@@ -44,7 +44,7 @@ span.friend-name {
     background: transparent;
     border: 1px solid darkgray;
     position: relative;
-    top: 10px;
+/*    top: 10px;*/
     box-shadow: none;
 }
 .add-btn:hover {
@@ -52,7 +52,7 @@ span.friend-name {
     background: #2196f3;
 }
 .post-area {
-    background: #fff;
+/*    background: #fff;*/
 }
 img.friend-img {
        width: 47px;
@@ -353,9 +353,12 @@ button#postPOSTButton:hover {
 .profile_quickLinks ul li a {
     display: inline-block;
     margin-right: 10px;
-    color: #000;
+    color: #ffffff70;
 }
 
+.profile_quickLinks ul li a:hover,.profile_quickLinks ul li a:focus,.profile_quickLinks ul li a.active {
+    color: #ffffffbf;
+}
 
 
 /*RecentPost area*/

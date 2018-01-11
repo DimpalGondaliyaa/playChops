@@ -24,34 +24,20 @@
 							
 					
 							<div class="friendRow col s12 m12">
-								<div class="col s2 m3">
+								<div class="col s2 m2">
 								<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
 								</div>
-								<div class="col s8 m6">
+								<div class="col s8 m7">
 								<span class="friend-name">
 									<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
 								<label><h6>4 Mutual Friends.</h6></label>
 								</div>
-								<div class="col m2 s3 m3">
+								<div class="col m2 s3 m2">
 									<button class="btn btn-add-person flat-btn add-btn"><i class="large material-icons">person_add</i></button>
 								</div>
 							</div>
 								<?php }	} ?>
 
-							<div class="friendRow row">
-								<div class="col s4 m2">
-								<img class="friend-img" src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
-								</div>
-								<div class="col s8 m5">
-								<span class="friend-name">Ravi Meswaniya</span>
-								<label><h6>4 Mutual Friends.</h6></label>
-								</div>
-								<div class="col m2 s3">
-									<button class="btn flat-btn add-btn"><i class="large material-icons">person_add</i></button>
-								
-								</div>
-								
-							</div> 
 					</div>
 				</div>
 			</div>

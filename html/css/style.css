@@ -64,7 +64,7 @@ img.responsive-img.profile_photo {
     top: 50px;
     right: 50px;
     object-fit: cover;
-    border: 2px solid #002a43;
+    border: 2px solid #ffffff1a;
     padding: 5px;
     box-shadow: 0px 2px 5px #0000006b;
 }
@@ -93,13 +93,20 @@ img.responsive-img.profile_photo {
 .profile_followig p{
     color: #949494;      
 }
-
-
-
-
 .post_img img {
     width: 100%;
 }
+
+.profile_quickLinks ul li a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffffff70;
+}
+
+.profile_quickLinks ul li a:hover,.profile_quickLinks ul li a:focus,.profile_quickLinks ul li a.active {
+    color: #ffffffbf;
+}
+
 
 
 /*end header area*/
@@ -107,6 +114,12 @@ img.responsive-img.profile_photo {
 .PostContainer {
     max-width: 1600px;
     margin: 0 auto;
+}
+.commentsBox {
+    padding-top: 15px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*.total_post h5 {
@@ -119,6 +132,33 @@ img.responsive-img.profile_photo {
     background: linear-gradient(3deg,#104261,#00446d9e);
     color:  #fff;
 }*/
+
+
+button.btn.btn-flat.blue-text.statusPostBtn {
+    border: 1px solid;
+}
+button.btn.btn-flat.blue-text.statusPostBtn:hover,button.btn.btn-flat.blue-text.statusPostBtn.active {
+    border: 1px solid #2196f3;
+    background: #2196f3 !important;
+    color: #fff !important;
+}
+
+button.btn.btn-flat.blue-text.mediaPostBtn{
+    border: 1px solid #2196f3;
+}
+button.btn.btn-flat.blue-text.mediaPostBtn:hover,button.btn.btn-flat.blue-text.mediaPostBtn.active{
+    border: 1px solid #2196f3;
+    background: #2196f3 !important;
+    color: #fff !important;   
+}
+button.btn.btn-flat.blue-text.locationPostBtn{
+    border: 1px solid #2196f3;
+}
+button.btn.btn-flat.blue-text.locationPostBtn:hover,button.btn.btn-flat.blue-text.locationPostBtn.active{
+    border: 1px solid #2196f3;
+    background: #2196f3 !important;
+    color: #fff !important;   
+}
 
 
 /*RecentPost area*/
