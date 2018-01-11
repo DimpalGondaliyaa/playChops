@@ -226,60 +226,6 @@
 							</div>
 						</div>
 
-						<!-- <div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite Music Bands / Artists:</div>
-								<div class="Hobbies-content">
-								<?php echo $pro_data['Favourite_Music_Bands_Artists']; ?>
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite TV Shows:</div>
-								<div class="Hobbies-content">
-								<?php echo $pro_data['Favourite_TV_Shows']; ?>
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite Books:</div>
-								<div class="Hobbies-content">
-								<?php echo $pro_data['FavouriteBooks']; ?>
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite Movies:</div>
-								<div class="Hobbies-content">
-								<?php echo $pro_data['FavouriteMovies']; ?>
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite Writers:</div>
-								<div class="Hobbies-content">
-							<?php echo $pro_data['FavouriteWriters']; ?>
-							   </div>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="postContent">
-								<div class="Hobbies-title">Favourite Games:</div>
-								<div class="Hobbies-content">
-								<?php echo $pro_data['FavouriteGames']; ?>
-							   </div>
-							</div>
-						</div>
- -->
 						<div class="col s12 m4">
 							<div class="postContent">
 								<div class="Hobbies-title">Other Interests:</div>
@@ -321,9 +267,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title"><?php echo $pro_data['primaryschool']; ?></div>
 								<div class="education-date"><?php echo $pro_data['start_primary_year']; ?> - <?php echo $pro_data['end_primary_year']; ?></div>
-								<!-- <div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div> -->
+								
 							</div>
 						</div>
 
@@ -331,9 +275,7 @@
 							<div class="postContent">
 								<div class="Hobbies-title"><?php echo $pro_data['highersecondary']; ?></div>
 								<div class="education-date"><?php echo $pro_data['start_higher_year']; ?> - <?php echo $pro_data['end_higher_year']; ?></div>
-								<!-- <div class="Hobbies-content">
-								Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
-							   </div> -->
+								
 							</div>
 						</div>
 
@@ -360,21 +302,20 @@
 								</span>
 								<label><h6><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
 
-								<div class="fixed-action-btn horizontal click-to-toggle">
-    <a class="btn-floating btn-large red">
-      <i class="material-icons">menu</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
 
 								</div>
 								<div class="col s4 m4">
-									
+									<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red deletebtn" data-delid="<?php echo $postData['post_Id']; ?>"><i class="material-icons">close</i></a></li>
+      <li>	<a class="btn-floating red postimage" data-postid="<?php echo $postData['post_Id'];  ?>"><i class="material-icons">create</i></a></li>
+    
+     
+    </ul>
+  </div>
 								</div>
 							</div>
 							<div class="postContent">
@@ -432,6 +373,8 @@
 											<div class="col s8 m9">									   
 									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
 									           <div class="col s4 m3 comm-col">	
+									           <!-- 	<a class="waves-effect waves-light btn postimage" data-postid="<?php echo $postData['post_Id'];  ?>">edit post</a> -->
+									           	<!-- <a class="btn-floating red deletebtn" data-delid="<?php echo $postData['post_Id']; ?>">delete</a> -->
 									  <a class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
 
 									
@@ -472,3 +415,14 @@
 	</div>
 </div>
 </div>
+
+
+ <!-- Modal Structure -->
+  <div id="imagemodel" class="modal">
+    <div class="modal-content">
+     
+    </div>
+    <div class="modal-footer">
+      <a  class="modal-action modal-close waves-effect waves-green btn-flat imageupdate" >Agree</a>
+    </div>
+  </div>

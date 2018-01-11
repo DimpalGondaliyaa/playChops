@@ -1,15 +1,47 @@
 $(function(){
+
+$(".mybtn").on("click",function(){
+ $(".modal").modal();
+    $("#q .modal-content").html("");
+	$("#q").modal("open");
+	var dataid = $(this).data("messid");
+	$.post(baseurl+"ProfileDashboard/getcomm/"+dataid,function(dataid){
+		$("#q .modal-content").html(dataid);
+	});
+});
+
+$(".adddeshcomment").on("click",function(){
+
+	var dasform = new FormData($("#dasform")[0]);
+	$.ajax({
+
+		url : "ProfileDashboard/adddashcomment",
+		data : dasform,
+		type:"POST",
+		contentType:false,
+		processData:false,
+		success:function(res)
+		{
+			
+		}
+	});
+});
+
+
+
 /*rating js*/
 
 $(".rating").on("click",function()
 {
+
 	  var reg_form = new FormData($("#rating-form")[0]);
 
 	var id = $(this).data("id");
+	alert(id);
 
   $.ajax({
 
-    url : baseurl+"ProfileDashboard/ratingpost/"+id,
+    url : baseurl+"ProfileDashboard/ratingpost/",
     type :"POST",
     data :reg_form, 
     contentType:false,
@@ -33,7 +65,7 @@ $(".post-btn").on("click",function(){
 
   $.ajax({
 
-    url : baseurl+"ProfileDashboard/commentpost/"+id,
+    url : baseurl+"ProfileDashboard/commentpost/",
     type :"POST",
     data :reg_form, 
     contentType:false,

@@ -1,5 +1,33 @@
 
 
+/*---------------------------left side friend list------------*/
+.add-btn {
+    color: grey;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid darkgray;
+    position: relative;
+    top: 10px;
+    box-shadow: none;
+}
+.add-btn:hover {
+    color: #fff;
+    background: #2196f3;
+}
+.post-area {
+    background: #fff;
+}
+img.friend-img {
+       width: 47px;
+    border-radius: 67px;
+    background: #a9a9a9ba;
+    height: 48px;
+}
+span.friend-name {
+    font-size: 18px;
+    text-transform:  capitalize;
+}
+
 /*---------------------profile header css-----------**/
 .head-parall
 {
@@ -98,17 +126,17 @@ textarea.materialize-textarea {
 .comment-btn a {
     background: #0089ec;
 }
-body
+/*body
 
 {
          background: #ededed;
   
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;      
-        /*prevents flickering*/
+       
 }
 
-
+*/
 
 #circle
 {
@@ -227,7 +255,7 @@ img.responsive-img.profile_photo {
     height: 218px;
     width: 212px;
     border-radius: 153px;
-    background: #fff;
+      background: #ab9d9d47;
     width: -40px !important;
     min-width: 0px;
     /* object-fit: contain; */
@@ -343,6 +371,7 @@ div#coomm-div {
 .col.s6.m4.recentBox img {
     border: 1px solid #ddd;
     margin-bottom: 15px;
+    min-height: 100px;
 }
 .title h5{
 	border-bottom: 1px solid #ddd;
@@ -370,13 +399,28 @@ div#coomm-div {
     color: #0070ff;
 }
 
-
+#postStory
+{
+    background: #fff;
+}
 
 
 /*========== Post story ============*/
-
+.comm-title {
+    font-size: 18px;
+    text-transform:  capitalize;
+    color: #ffffff;
+}
 .postStoryBox {
     background: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+    position: relative;
+}
+.serveybox{
+        background: #2196f36e;
+    margin-top: 20px;
+    
     margin-bottom: 25px;
     padding: 25px;
     position: relative;
