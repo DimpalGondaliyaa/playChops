@@ -15,8 +15,11 @@ class ProfileDashboard extends CI_Controller {
 
 		$this->load->model("buddyListt");
 		$rowData = $this->buddyListt->fetchbuddylist();
-	/*	$comments = $this->ProfileDashboard_model->gettwocomment($postid);*/
 
+
+
+			/*GET PROFILE ID*/
+	/*	$id = $this->ProfileDashboard_model->getid();*/
 
 		/*get User Deatails by Email*/
 		$this->load->model('getUserDetais_model');
@@ -96,23 +99,6 @@ class ProfileDashboard extends CI_Controller {
 		$adduserimgg=array('post_attachment'=>$userImage);
 		$this->ProfileDashboard_model->addpostimg($adduserimgg,$postid);
 
-
-		/*$imagePattern = "/\.(jpg|jpeg|png|gif|bmp|tiff)$/";
-			$directory = ".";
-
-			if (($handle = opendir($directory)) != false) {
-			    while (($file = readdir($handle)) != false) {
-			        $filename = "html/images/post_images/$file";
-			        if (strtotime("-24 hours") <= filemtime($filename) && preg_match($imagePattern, $filename)) {
-			            unlink($filename);
-			        }
-			    }
-
-			    closedir($handle);
-			}
-*/
-
-
 		$config["upload_path"]='html/images/post_images';
 		$config["allowed_types"]='gif|png|jpg|jpeg';
 		$config["file_name"]=$postid."_postImage";
@@ -137,10 +123,25 @@ class ProfileDashboard extends CI_Controller {
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
+
 		'rate'=>$_POST['rate'],
 		'post_id'=>$_POST['star_post_id']
+
 		 );
 		$this->ProfileDashboard_model->addratingpost($data);
+	}
+	public function adddashcomment()
+	{
+		$this->load->model("ProfileDashboard_model");
+		$id = $_POST['post_Id'];
+		$data = array('comment' => $_POST['comment'] ,'post_Id'=> $_POST['post_Id'] );
+		$this->ProfileDashboard_model->adddascomm($data);
+	}
+	public function getcomm($id)
+	{
+		$this->load->model("ProfileDashboard_model");
+		$data =$this->ProfileDashboard_model->getcomm($id);
+		$this->load->view("add_comment",$data);
 	}
 
 	/*public function postLike(){

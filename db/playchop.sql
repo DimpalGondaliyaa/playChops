@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2018 at 12:36 PM
+-- Generation Time: Jan 11, 2018 at 10:34 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -47,7 +47,8 @@ CREATE TABLE `buddyposts` (
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
 (1, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '1_postImage.jpg'),
-(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg');
+(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg'),
+(3, 'dfgsfg', '03:03:pm', 'January 11, 2018', 'riya@123', 'status', 1, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -59,18 +60,21 @@ CREATE TABLE `commenttbl` (
   `id` int(11) NOT NULL,
   `post_id` int(12) NOT NULL,
   `email` varchar(222) NOT NULL,
-  `comment` text NOT NULL
+  `comment` text NOT NULL,
+  `emojis` varchar(233) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `commenttbl`
 --
 
-INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
-(1, 1, '', ''),
-(2, 2, '', ''),
-(3, 2, '', 'cxcx'),
-(4, 2, '', '');
+INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`, `emojis`) VALUES
+(1, 2, '', 'ererere', ''),
+(2, 1, '', 'weewewe', ''),
+(3, 1, '', 'sasas', ''),
+(4, 1, '', 'sddsds', ''),
+(5, 2, '', 'fdfddf', ''),
+(6, 2, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -98,6 +102,21 @@ CREATE TABLE `personal_info` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `servey`
+--
+
+CREATE TABLE `servey` (
+  `id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `email` varchar(233) NOT NULL,
+  `servey_msg` text NOT NULL,
+  `date` varchar(233) NOT NULL,
+  `time` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `userliks`
 --
 
@@ -108,13 +127,6 @@ CREATE TABLE `userliks` (
   `rate` varchar(255) NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `userliks`
---
-
-INSERT INTO `userliks` (`id`, `post_id`, `email`, `rate`, `status`) VALUES
-(1, 2, '', '4', 0);
 
 -- --------------------------------------------------------
 
@@ -187,6 +199,12 @@ ALTER TABLE `personal_info`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `servey`
+--
+ALTER TABLE `servey`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `userliks`
 --
 ALTER TABLE `userliks`
@@ -206,13 +224,13 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`
 --
 ALTER TABLE `commenttbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
@@ -221,10 +239,16 @@ ALTER TABLE `personal_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `servey`
+--
+ALTER TABLE `servey`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `userliks`
 --
 ALTER TABLE `userliks`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_ragister`

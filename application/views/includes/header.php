@@ -26,6 +26,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
           
     <script src="<?php echo base_url(); ?>html/js/script.js"></script>
+    <script type="text/javascript" src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
     <?php foreach($stylesheet as $fileName){ ?>
     <link href="<?php echo base_url(); ?>html/css/<?php echo $fileName; ?>" rel="stylesheet">
     <?php } ?>

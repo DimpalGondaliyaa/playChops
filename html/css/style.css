@@ -70,7 +70,7 @@ img.responsive-img.profile_photo {
 }
 .about-name-title
 {
-    background: -webkit-linear-gradient(top,#e19d56,#002a43);
+    background: -webkit-linear-gradient(top,#ffffffab,#cacaca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;

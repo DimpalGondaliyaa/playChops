@@ -1,11 +1,14 @@
 <?php  $this->load->view("ProfileHeader"); ?>
 <div class="PostContainer">
 	<div class="row">
+
 		<div class="col s12 m3">
 			<div class="recentPostBox sticky">
+
 				<div class="title">
 					<h5>Suggest Friends...</h5>
 				</div>
+
 				<div class="recentPostData">
 						<div class="main">
 			<div class="profile-area">
@@ -56,12 +59,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s12 m6">
-		<div class="main">
-			<div class="profile-area">
-				<div class="max-width">
-					<div class="post-area">
 
+
+		<div class="col s12 m6">
+		   <div class="main">
+			  <div class="profile-area">
+				  <div class="max-width">
+					  <div class="post-area">
 						<!-- post area for post -->
 						<div class="postStoryBox">
 							<div class="postBtns">
@@ -109,15 +113,13 @@
 							          <input type="hidden" name="postStatus" id="postStatus" value="1">
 							        </div>
 							        <input id="post_attachment" name="post_attachment" type="file" class="validate" style="display: none;"> 
-									<!-- <div class="input-field col s12">
-							          <textarea id="postStory" class="materialize-textarea" placeholder="Post Media File..."></textarea>
-							        </div> -->
+									
 							        <div class="col s12 m12">
 							        <div class="attachmentBox col s12 m8">
 							        	<ul class="addAttachment">
 							        		<li class="fa fa-map-marker" aria-hidden="true"></li>
 							        		  <li  aria-hidden="true" class="fa fa-camera btn-upload" onclick="$('input#post_attachment').click();"></li>
-							        		<!-- <li class="fa fa-camera" aria-hidden="true"></li> -->
+							        		
 							        		<li class="fa fa-tags" aria-hidden="true"></li>
 							        	</ul>
 							        </div>
@@ -127,7 +129,7 @@
 							    	</div>
 								</form>
 							</div>
-							<!-- // post Meda -->
+						
 
 							<!-- post Loaction  -->
 							<div class="postLocation" style="display: none;" id="postLocation">
@@ -172,7 +174,8 @@
 										echo $userData['lname'];
 									?>
 								</span>
-								<label><h6><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
+								
+								<label><h6><!-- <?php echo $postData['post_Id']; ?> --><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
 								</div>
 								<div class="col s4 m4">
 									
@@ -201,6 +204,7 @@
 <form name="rating-form" id='rating-form'>
 		<input type="hidden" name="star_post_id" value="<?php echo $postData['post_Id'];  ?>" id="star_post_id">
   <div class="rate">
+
     <input type="radio" onclick="$('#starbtn').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
     <label for="star5"  title="text">5 stars</label>
     <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star4" name="rate" value="4" style="display: none;"/>
@@ -213,16 +217,13 @@
     <label for="star1" title="text">1 star</label>
   </div>
 
+	<a name="star_post_id" data-id="<?php echo $postData['post_Id']; ?>" value="<?php echo $postData['post_Id']; ?>" id="star_post_id"></a>
+
+
 <!-- <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" id="starbtn" class="waves-effect waves-light btn ">Rating</a> -->
+
   </form>
 
-										<!-- <div class="likBox">
-											<div class="valign-wrapper">
-												 <a class="btn-floating btn-large waves-effect waves-light blue tooltipped btnLike" data-position="bottom" data-delay="50" data-tooltip="Like">
-												 	<i class="material-icons">thumb_up</i>&nbsp;
-												 </a> 20
-											</div>	
-										</div> -->
 
 									</div>
 
@@ -231,12 +232,11 @@
 										 <div   id="coomm-div"">
 										 	
 										 	<div class="valign-wrapper">
-										 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
+							 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
 										 			<i class="material-icons">message</i>
 										 		</a> &nbsp; 30
 										 		 
-
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
@@ -251,37 +251,11 @@
 										 	</div>
 										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
 									</div>
-									<form name="commentform" id="commentform_<?php echo $postData['post_Id']; ?>">
-										<div class="row">
-											
-									          
-									       
-									          <!--  <input type="hidden" name="post_id" id="post_id" data-postid="<?php echo $postData['post_Id'];  ?>" value="<?php echo $postData['post_Id'];  ?>"> -->
-											<div class="col s8 m9">									   
-									           <textarea id="comment" name="comment" placeholder="Post Your Comments" class="materialize-textarea"></textarea></div>
-
-									           <div class="col s4 m3 comm-col">
-									           
-									  <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-comid="<?php echo $postData['post_Id'];  ?>"  class="waves-effect waves-light btn postcomm-btn post-btn">post</a></div>
-
-									
-
-									</div>
-									</form>
-									  
-									  <div>
-									  	<!-- <?php 
-									  		foreach ($postData['coment'] as  $imagekey => $imageRow) {
-									  			?>
-									  			<?php echo $imageRow['comment']; ?>
-									  			<?php
-									  		}
-									  	?> -->
-									  </div>
 								</div>
 							</div>
 								
 						</div>
+
 						
 						<?php } ?>
 
@@ -305,6 +279,7 @@
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img2.jpg" class="responsive-img">
+
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img3.jpg" class="responsive-img">
@@ -319,14 +294,71 @@
 					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
 					</div>
 					<div class="col s6 m4 recentBox">
+
 					<img src="<?php echo base_url() ?>html/images/recentPost/img7.jpg" class="responsive-img">
 					</div>
 				</div>
 			</div>
+		
+			<div class="serveybox sticky">
+			<div class="postBtns">
+				<div class="comm-title">
+					 <i class="material-icons">add</i>comments
+				</div>
+			</div>
+			<div class="postStory" id="postStatus">
+				<form name="postPOST" id="postPOST">
+					<div class="input-field col s12">
+					  <input type="hidden" name="email" id="email" value="<?php echo $this->session->userdata('email'); ?>">
+			          <textarea id="postStory" name="postStory" class="materialize-textarea" placeholder="Post Something..."></textarea>
+			          <input type="hidden" name="postType" id="postType" value="status">
+			          <input type="hidden" name="postStatus" id="postStatus" value="1">
+			        </div>
+			    <!--     <input id="post_attachment" name="post_attachment" type="file" class="validate" style="display: none;"> -->
+			         <div class="col s12 m12">
+			       
+			        <div class="col s12 m4">
+			        	<button id="postPOSTButton" type="button" class="btn btn-flat blue white-text"
+
+			        	<?php if($userData['post_status']==0){?> disabled <?php } ?>
+			        	>Post</button>
+			        </div>
+			    	</div>
+				</form>
+			</div>
+	
+						</div>
+		
 		</div>
+
+
+
+
+
+
 	</div>
 </div>
 
+        
+
+<!-- Modal Structure -->
+ 
+
+<div id="q" class="modal">
+    <div class="modal-content">
+    
+    </div>
+    <div class="modal-footer">
+    	
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat adddeshcomment">Agree</a>
+     
+    </div> 
+  </div>
+
+
+  <div class="row">
+
+  </div>
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
