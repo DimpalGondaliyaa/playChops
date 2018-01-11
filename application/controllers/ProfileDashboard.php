@@ -16,6 +16,8 @@ class ProfileDashboard extends CI_Controller {
 		$this->load->model("buddyListt");
 		$rowData = $this->buddyListt->fetchbuddylist();
 
+
+
 			/*GET PROFILE ID*/
 	/*	$id = $this->ProfileDashboard_model->getid();*/
 
@@ -121,7 +123,9 @@ class ProfileDashboard extends CI_Controller {
 	{
 		$this->load->model("ProfileDashboard_model");
 		$data  = array(
-		'rate'=>$_POST['rate']
+
+		'rate'=>$_POST['rate'],
+		'post_id'=>$_POST['star_post_id']
 
 		 );
 		$this->ProfileDashboard_model->addratingpost($data);
@@ -152,6 +156,59 @@ class ProfileDashboard extends CI_Controller {
 		$this->postLike_model->postLikeData($data);*/
 		/*echo json_encode($likes);*/
 	/*}*/
+
+
+
+
+
+
+	/*============= Ratting system ===============*/
+
+	   // .. some User controller code up here
+    // Rate function on User Controller
+    public function rate()
+    {
+        // Turn of layout for Ajax request
+       
+        // Gather ajax post data
+        // Load model data
+        $this->load->model('Post');
+        $post_id = $this->Post->get_post_id($post_url);
+        // Call function to check if user is login
+        // return current login user id, null if not login yet
+        // You need to define this helper function your self
+        if (get_user_id()) {
+            // Call the Post Model is_rated method to check whether the current login user has submit a rate to related post
+            if (!$this->Post->is_rated(get_user_id(), $post_id))
+            {
+                $data = array("post_id" => $post_id,
+                    "user_id" => get_user_id(),
+                    "posts_rating_value" => $rate,
+                    "posts_rating_date" => date("Y-m-d H:i:s")
+                );
+                // Call Post model method to insert rating data
+                if ($this->Post->insert_rating($data, $post_id, $rate)) {
+                    echo json_encode(array("code" => "Success", "msg" => "Thank you, rate has been submitted"));
+                }
+                else {
+                    echo json_encode(array("code" => "Error", "msg" => "Sorry, something wrong. Please try again."));
+                }
+            }
+            // If post has been rated by the current login user
+            else {
+                echo json_encode(array("code" => "Error", "msg" => "You have already rated this post"));
+            }
+        }
+        // User is not login yet, ask them to login first
+        else {
+            echo json_encode(array("code" => "Error", "msg" => "Please login to submit this rate"));
+        }
+        // Do not proceed to view, just terminate to send Json response
+        exit;
+    }
+    // .. any other User controller code goes here
+
+
 
 }
 ?>

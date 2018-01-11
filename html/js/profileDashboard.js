@@ -34,14 +34,12 @@ $(".adddeshcomment").on("click",function(){
 $(".rating").on("click",function()
 {
 
-	  var reg_form = new FormData($("#rating-form")[0]);
-
-	var id = $(this).data("id");
-	alert(id);
-
-  $.ajax({
+	var reg_form = new FormData($("#rating-form")[0]);
+	$.ajax({
 
     url : baseurl+"ProfileDashboard/ratingpost/",
+
+
     type :"POST",
     data :reg_form, 
     contentType:false,
@@ -54,8 +52,6 @@ $(".rating").on("click",function()
 });
 
 
-
-$( "#rate option:selected" ).text();
 /*-----comment js--------*/
 $(".post-btn").on("click",function(){
 

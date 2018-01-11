@@ -8,41 +8,58 @@
 				<div class="title">
 					<h5>Suggest Friends...</h5>
 				</div>
-				<div class="recentPostData row">
-				    <div class="main">
-			            <div class="profile-area">
-				           <div class="max-width">
-					           <div class="post-area">
 
-								<?php foreach ($rowData as $key => $roww) { ?>
-	                            <?php 
-									foreach ($roww["subCategory"] as $key => $value) {
-								 ?>
-								
-								<div class="friendRow row">
-									<div class="col s4 m2">
-									<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
-									</div>
-									<div class="col s8 m5">
-									<span class="friend-name">
-										<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
-									<label><h6>4 Mutual Friends.</h6></label>
-									</div>
-									<div class="col m2 s3">
-										<button class="btn flat-btn add-btn">follow</button>
-									
-									</div>
-									
+				<div class="recentPostData">
+						<div class="main">
+			<div class="profile-area">
+				<div class="max-width">
+					<div class="post-area row">
+
+							<?php foreach ($rowData as $key => $roww) { ?>
+
+                                     <?php 
+								foreach ($roww["subCategory"] as $key => $value) {
+							
+							 ?>
+							
+					
+							<div class="friendRow col s12 m12">
+								<div class="col s2 m3">
+								<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
 								</div>
-									<?php }	} ?>
-					            </div>
-				            </div>
-			            </div>
-		            </div>
+								<div class="col s8 m6">
+								<span class="friend-name">
+									<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col m2 s3 m3">
+									<button class="btn btn-add-person flat-btn add-btn"><i class="large material-icons">person_add</i></button>
+								</div>
+							</div>
+								<?php }	} ?>
+
+							<div class="friendRow row">
+								<div class="col s4 m2">
+								<img class="friend-img" src="<?php echo base_url() ?>html/images/profile_photo/profile_Placeholder.png" class="responsive-img">
+								</div>
+								<div class="col s8 m5">
+								<span class="friend-name">Ravi Meswaniya</span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col m2 s3">
+									<button class="btn flat-btn add-btn"><i class="large material-icons">person_add</i></button>
+								
+								</div>
+								
+							</div> 
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--end col-->
+				</div>
+			</div>
+		</div>
+
 
 		<div class="col s12 m6">
 		   <div class="main">
@@ -185,9 +202,9 @@
 
 										
 <form name="rating-form" id='rating-form'>
-	
+		<input type="hidden" name="star_post_id" value="<?php echo $postData['post_Id'];  ?>" id="star_post_id">
   <div class="rate">
-  
+
     <input type="radio" onclick="$('#starbtn').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
     <label for="star5"  title="text">5 stars</label>
     <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star4" name="rate" value="4" style="display: none;"/>
@@ -199,7 +216,12 @@
     <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star1" name="rate" value="1" style="display: none;"/>
     <label for="star1" title="text">1 star</label>
   </div>
+
 	<a name="star_post_id" data-id="<?php echo $postData['post_Id']; ?>" value="<?php echo $postData['post_Id']; ?>" id="star_post_id"></a>
+
+
+<!-- <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" id="starbtn" class="waves-effect waves-light btn ">Rating</a> -->
+
   </form>
 
 
@@ -210,10 +232,11 @@
 										 <div   id="coomm-div"">
 										 	
 										 	<div class="valign-wrapper">
-										 		<a data-messid="<?php echo $postData['post_Id']; ?>" class="btn-floating btn-large waves-effect waves-light blue tooltipped  mybtn" data-position="bottom" data-delay="50" data-tooltip="Comment"><i class="material-icons">message</i>&nbsp;</a>
-										 		
-										 		 30
+							 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
+										 			<i class="material-icons">message</i>
+										 		</a> &nbsp; 30
+										 		 
 										 	</div>
 										   <!-- <i class="fa fa-comment comm-btn blue-text " aria-hidden="true"></i> -->
 										 </div>
@@ -256,6 +279,7 @@
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img2.jpg" class="responsive-img">
+
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img3.jpg" class="responsive-img">
@@ -270,6 +294,7 @@
 					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
 					</div>
 					<div class="col s6 m4 recentBox">
+
 					<img src="<?php echo base_url() ?>html/images/recentPost/img7.jpg" class="responsive-img">
 					</div>
 				</div>

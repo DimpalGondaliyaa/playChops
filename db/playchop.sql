@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2018 at 10:21 AM
+-- Generation Time: Jan 11, 2018 at 10:34 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -47,7 +47,8 @@ CREATE TABLE `buddyposts` (
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
 (1, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '1_postImage.jpg'),
-(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg');
+(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg'),
+(3, 'dfgsfg', '03:03:pm', 'January 11, 2018', 'riya@123', 'status', 1, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -223,7 +224,7 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`

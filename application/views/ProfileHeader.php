@@ -1,14 +1,11 @@
 
 <div class="row">
-	<div class="parallax-container head-parall">
-      <div class="parallax">
-      	
-      	<div class="profileDetails-area">
+		<div class="profileDetails-area">
       		<div class="row">
-      		<div class="profile_img col s12 m4">
+      		<div class="profile_img col s12 m3">
       			<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $pro_data['profile_photo'];?>" class="responsive-img profile_photo">
       		</div>
-      		<div class="profileData col s12 m8">
+      		<div class="profileData col s12 m9">
       			<div class="user_name">
       				<h4 class="about-name-title"><?php echo $pro_data['fname']; ?> &nbsp;<?php echo $pro_data['lname']; ?></h4>
       			</div>
@@ -49,5 +46,3 @@
       		</div>
       	</div>
       </div>
-    </div>
-</div>
