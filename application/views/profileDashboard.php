@@ -218,7 +218,7 @@
 										 <div   id="coomm-div"">
 										 	
 										 	<div class="valign-wrapper">
-							 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
+							 		<a class="" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
 										 			<i class="material-icons">message</i>
 										 		</a> &nbsp; 30
@@ -288,8 +288,115 @@
 		
 			<div class="serveybox sticky">
 			<div class="postBtns">
-				<div class="comm-title">
-					 <i class="material-icons">add</i>comments
+				<div class="row">
+					<h5 class="black-text">Survey By Interest.</h5>
+				</div>
+			</div>
+			<div class="survey-list-box">
+				<div class="servey-user">
+					<div class="row">
+					<div class="col s4 m2">
+					<img src="<?php echo base_url(); ?>html/images/user_image/2_userImage.png" class="responsive-img">
+					</div>
+					<div class="survey-coment col s6 m8">
+						<p>Lorem ipsum is latin, slightly jumbled, the remnants ...  </p>
+					</div>
+					<div class="col s2 m2 btnMore">
+						 <li><a class="btn-floating blue darken-1"><i class="material-icons">message</i></a></li>
+						<!--  <div class="fixed-action-btn">
+						    <a class="btn-floating btn-large red">
+						      <i class="large material-icons">mode_edit</i>
+						    </a>
+						    <ul>
+						      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+						      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+						      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+						      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+						    </ul>
+						  </div> -->
+					</div>
+					</div>
+
+					<div class="row">
+					<div class="col s4 m2">
+					<img src="<?php echo base_url(); ?>html/images/user_image/2_userImage.png" class="responsive-img">
+					</div>
+					<div class="survey-coment col s6 m8">
+						<p>Lorem ipsum is latin, slightly jumbled, the remnants ...  </p>
+					</div>
+					<div class="col s2 m2 btnMore">
+						 <li><a class="btn-floating blue darken-1"><i class="material-icons">message</i></a></li>
+						<!--  <div class="fixed-action-btn">
+						    <a class="btn-floating btn-large red">
+						      <i class="large material-icons">mode_edit</i>
+						    </a>
+						    <ul>
+						      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+						      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+						      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+						      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+						    </ul>
+						  </div> -->
+					</div>
+					</div>
+
+<div class="row">
+					<div class="col s4 m2">
+					<img src="<?php echo base_url(); ?>html/images/user_image/2_userImage.png" class="responsive-img">
+					</div>
+					<div class="survey-coment col s6 m8">
+						<p>Lorem ipsum is latin, slightly jumbled, the remnants ...  </p>
+					</div>
+					<div class="col s2 m2 btnMore">
+						 <li><a class="btn-floating blue darken-1"><i class="material-icons">message</i></a></li>
+						<!--  <div class="fixed-action-btn">
+						    <a class="btn-floating btn-large red">
+						      <i class="large material-icons">mode_edit</i>
+						    </a>
+						    <ul>
+						      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+						      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+						      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+						      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+						    </ul>
+						  </div> -->
+					</div>
+					</div>
+
+<div class="row">
+					<div class="col s4 m2">
+					<img src="<?php echo base_url(); ?>html/images/user_image/2_userImage.png" class="responsive-img">
+					</div>
+					<div class="survey-coment col s6 m8">
+						<p>Lorem ipsum is latin, slightly jumbled, the remnants ...  </p>
+					</div>
+					<div class="col s2 m2 btnMore">
+						 <li><a class="btn-floating blue darken-1"><i class="material-icons">message</i></a></li>
+						<!--  <div class="fixed-action-btn">
+						    <a class="btn-floating btn-large red">
+						      <i class="large material-icons">mode_edit</i>
+						    </a>
+						    <ul>
+						      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+						      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+						      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+						      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+						    </ul>
+						  </div> -->
+					</div>
+					</div>
+
+					
+
+					<div class="row">
+					<div class="col s4 m2">
+					<img src="<?php echo base_url(); ?>html/images/user_image/2_userImage.png" class="responsive-img">
+					</div>
+					<div class="survey-coment col s6 m8">
+						<p>This is First Comment...</p>
+					</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="postStory" id="postStatus">
@@ -312,16 +419,8 @@
 			    	</div>
 				</form>
 			</div>
-	
-						</div>
-		
+			</div>
 		</div>
-
-
-
-
-
-
 	</div>
 </div>
 

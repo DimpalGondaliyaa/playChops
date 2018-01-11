@@ -42,7 +42,7 @@
         </div>
         
         <div class="col s12 input-field done-btn-cols" style="text-align: center;">
-           <a class="waves-effect waves-light btn hobbiedata hobb-btn">Done</a>
+           <a class="waves-effect waves-light btn hobbiedata hobb-btn purple">Done</a>
         
         </div>
       </div>

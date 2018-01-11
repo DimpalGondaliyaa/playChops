@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2018 at 10:34 AM
+-- Generation Time: Jan 11, 2018 at 12:29 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -46,9 +46,8 @@ CREATE TABLE `buddyposts` (
 --
 
 INSERT INTO `buddyposts` (`post_Id`, `postData`, `postTime`, `postDate`, `email`, `postType`, `post_status`, `post_location`, `postTag`, `post_attachment`) VALUES
-(1, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '1_postImage.jpg'),
-(2, '', '04:48:pm', 'January 10, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg'),
-(3, 'dfgsfg', '03:03:pm', 'January 11, 2018', 'riya@123', 'status', 1, '', '', '');
+(1, 'sdfdfsdf', '04:48:pm', 'January 11, 2018', 'riya@123', 'status', 1, '', '', '1_postImage.jpg'),
+(2, '', '04:48:pm', 'January 11, 2018', 'riya@123', 'status', 1, '', '', '2_postImage.jpg');
 
 -- --------------------------------------------------------
 
@@ -60,21 +59,18 @@ CREATE TABLE `commenttbl` (
   `id` int(11) NOT NULL,
   `post_id` int(12) NOT NULL,
   `email` varchar(222) NOT NULL,
-  `comment` text NOT NULL,
-  `emojis` varchar(233) NOT NULL
+  `comment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `commenttbl`
 --
 
-INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`, `emojis`) VALUES
-(1, 2, '', 'ererere', ''),
-(2, 1, '', 'weewewe', ''),
-(3, 1, '', 'sasas', ''),
-(4, 1, '', 'sddsds', ''),
-(5, 2, '', 'fdfddf', ''),
-(6, 2, '', '', '');
+INSERT INTO `commenttbl` (`id`, `post_id`, `email`, `comment`) VALUES
+(1, 1, '', ''),
+(2, 2, '', ''),
+(3, 2, '', 'cxcx'),
+(4, 2, '', '');
 
 -- --------------------------------------------------------
 
@@ -102,21 +98,6 @@ CREATE TABLE `personal_info` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `servey`
---
-
-CREATE TABLE `servey` (
-  `id` int(11) NOT NULL,
-  `post_id` int(11) NOT NULL,
-  `email` varchar(233) NOT NULL,
-  `servey_msg` text NOT NULL,
-  `date` varchar(233) NOT NULL,
-  `time` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `userliks`
 --
 
@@ -127,6 +108,19 @@ CREATE TABLE `userliks` (
   `rate` varchar(255) NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userliks`
+--
+
+INSERT INTO `userliks` (`id`, `post_id`, `email`, `rate`, `status`) VALUES
+(1, 2, '', '4', 0),
+(2, 2, '', '4', 0),
+(3, 2, '', '3', 0),
+(4, 2, '', '3', 0),
+(5, 2, '', '4', 0),
+(6, 2, '', '3', 0),
+(7, 2, '', '4', 0);
 
 -- --------------------------------------------------------
 
@@ -171,10 +165,15 @@ CREATE TABLE `user_ragister` (
 --
 
 INSERT INTO `user_ragister` (`id`, `fname`, `lname`, `email`, `password`, `mobile`, `Birthday`, `Birthplace`, `Status`, `post_status`, `about_me`, `Occupation`, `Joined`, `Website`, `Lives_In`, `country`, `state`, `college`, `college_start_year`, `college_end_year`, `primaryschool`, `start_primary_year`, `end_primary_year`, `highersecondary`, `start_higher_year`, `end_higher_year`, `hobby`, `OtherInterests`, `profile_photo`) VALUES
-(1, 'riya', 'shah', 'riya@123', 'riya', 9898989899, '', ' abd', ' marrid', 1, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', ' abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(1, 'Riya', 'Meswaniya', 'riya@123', '123', 9898989899, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', ' abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
 (3, 'anita', 'shah', 'anu@123', 'anu', 989898100, '1 January, 2018', 'abd', 'marrid', 0, '', '', '', '', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'travileng', '', '5_postImage.jpg'),
 (4, 'priya', 'shah', 'priya@123', 'priya', 6565656565, '23 January, 2018', 'fdfdfd', 'fdfdd', 0, '', '', '', '', 'dd', 'fdfd', 'fdfdf', '', '', '', '', '', '', '', '', '', 'READING', '', '4_userImage.jpg'),
-(5, 'mayur', 'riy', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png');
+(5, 'mayur', 'Patel', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(6, 'Raj', 'Ahir', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(7, 'Rahul', 'Raghuvanshi', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(8, 'Kriya', 'Dhodakiya', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(9, 'John', 'Doe', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png'),
+(10, 'Viha', 'Upadhyay', 'mayur@123', 'mayur', 9865676656, '', ' abd', ' marrid', 0, 'EEEEEE', 'UI/UX Designer', ' April 31st, 2014', 'daydreamsagency.com', 'abd', 'india', 'gujrat', '', '', '', '', '', '', '', '', '', 'event,movies,', '', '1_userImage.png');
 
 --
 -- Indexes for dumped tables
@@ -199,12 +198,6 @@ ALTER TABLE `personal_info`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `servey`
---
-ALTER TABLE `servey`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `userliks`
 --
 ALTER TABLE `userliks`
@@ -224,13 +217,13 @@ ALTER TABLE `user_ragister`
 -- AUTO_INCREMENT for table `buddyposts`
 --
 ALTER TABLE `buddyposts`
-  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `post_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `commenttbl`
 --
 ALTER TABLE `commenttbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `personal_info`
@@ -239,22 +232,16 @@ ALTER TABLE `personal_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `servey`
---
-ALTER TABLE `servey`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `userliks`
 --
 ALTER TABLE `userliks`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user_ragister`
 --
 ALTER TABLE `user_ragister`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

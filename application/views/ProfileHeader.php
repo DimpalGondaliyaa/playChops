@@ -5,7 +5,7 @@
       		<div class="profile_img col s12 m2">
       			<img src="<?php echo base_url() ?>html/images/user_image/<?php echo $pro_data['profile_photo'];?>" class="responsive-img profile_photo">
       		</div>
-      		<div class="profileData col s12 m10">
+      		<div class="profileData col s12 m9">
       			<div class="user_name">
       				<h4 class="about-name-title"><?php echo $pro_data['fname']; ?> &nbsp;<?php echo $pro_data['lname']; ?></h4>
       			</div>

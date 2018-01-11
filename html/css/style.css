@@ -222,6 +222,23 @@ button.btn.btn-flat.blue-text.locationPostBtn:hover,button.btn.btn-flat.blue-tex
 }
 
 
+
+/*========== Surevery Box ===============*/
+.serveybox{
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.serveybox li{
+    display: inline;
+}
+.survey-coment.col.s6.m8 {
+    border: 1px solid #ddd;
+}
+.btnMore .fixed-action-btn{
+    position: relative;
+}
+
 /*======================= PostBox Area Disign =============================*/
 /*like Button*/
 

@@ -49,11 +49,11 @@
             <input type="checkbox" id="test5" />
             <label for="test5">I Agree the<span class="teearm"> <a href="">terms and conditions</a>   </span></label>
           </div>
-        <div class="col s12 m6 input-field regin">
-         <a class="waves-effect waves-light reg-btn btn user_Register">Next</a>
-        </div>
-          <div class="col s12 m6 input-field regin">
-         <a href="<?php echo base_url(); ?>user_login" class="waves-effect waves-light btn reg-btn ">cancel</a>
+          <!-- <div class="col s12 m6 input-field regin">
+         <a href="<?php echo base_url(); ?>user_login" class="waves-effect waves-light btn reg-btn white purple-text ">cancel</a>
+        </div -->
+        <div class="col s12 m12 input-field regin center">
+         <a class="waves-effect waves-light reg-btn btn user_Register purple">Next</a>
         </div>
       </div>
     </form>

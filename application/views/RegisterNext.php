@@ -47,7 +47,7 @@
         </div>
 
         <div class="col s12 input-field done-btn-cols" style="text-align: center;">
-        <a class="waves-effect waves-light btn usernextdata hobb-btn">next</a>
+        <a class="waves-effect waves-light btn usernextdata hobb-btn purple">next</a>
         </div>
       </div>
     </form>

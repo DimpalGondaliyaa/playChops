@@ -5,13 +5,13 @@
            <div class="login-img">
                 <img src="<?php  echo base_url();?>html/images/login.png">
           </div>
-           <div class="card-panel login-panel">
+           <!-- <div class="card-panel login-panel">
             <div class="login-card">
               Use username demo@demo.com and password demo to continue or singup.
             </div>
-           </div>
+           </div> -->
             <div class="title">
-            <h5> Sign In To Admin</h5>
+            <h5> Sign In To PlayChop</h5>
           </div>
            <div class="row">
     <form class="col s12" name="user_login" id="user_login" method='post' enctype="multipart/form-data">
@@ -35,8 +35,8 @@
               <div class="col s12 input-field col s12">
                 <div class="login-btn">
                  <a class="waves-effect waves-light btn user_login">Login</a>
-                 <a href="https://en-gb.facebook.com/login/" target="_blank" class="waves-effect waves-light btn facebook-btn">login with facebook</a>
-                  <a href="https://twitter.com/login" target="_blank" class="waves-effect waves-light btn twitter-btn">login with twitter</a>
+                 <a href="https://en-gb.facebook.com/login/" target="_blank" class="waves-effect waves-light btn facebook-btn">login with <i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
+                  <a href="https://twitter.com/login" target="_blank" class="waves-effect waves-light btn twitter-btn">login with <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                </div>
               </div>
 
