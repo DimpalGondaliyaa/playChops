@@ -43,13 +43,11 @@ body{
 	background: #eee;
 	height: 100vh;
 }
-.main{
-	background: #eee;
-}
+
 .max-width {
     max-width: 1280px;
     margin: 0 auto;
-    background: #eee;
+   
 }
 
 /*Profile backgrounf images*/
@@ -70,7 +68,10 @@ body{
     height: 400px;
     position: relative;
 }
+
 img.responsive-img.profile_photo {
+
+/*img.responsive-img.profile_photo {
  display: block;
     top: 22px;
     position: relative;
@@ -82,16 +83,21 @@ img.responsive-img.profile_photo {
     min-width: 0px;
     /* object-fit: contain; */
 }
+
 .edit-pro-btn {
     float: right;
     height: 35px;
     border-radius: 13px;
-    background: #ada9a9;
+    background: #eee;
     /* border: 2px solid #635959; */
+    box-shadow: none;
+    border: 1px solid #0000001f;
+    color: #0000007d;
 }
 .edit-pro-btn:hover
 {
-    background: #4c4949;
+    background: #ddd;
+    box-shadow: 1px 2px 3px #00000035;
 }
 .edit-education-btn:hover
 {
@@ -106,16 +112,21 @@ img.responsive-img.profile_photo {
 }
 .edit-hobbie-btn:hover
 {
-    background: #4c4949;
+    background: #ddd;
+    box-shadow: 1px 2px 3px #00000035;
 }
 .edit-hobbie-btn {
-    float: right;
+      float: right;
     height: 35px;
     border-radius: 13px;
-    background: #ada9a9;
+    background: #eee;
     /* border: 2px solid #635959; */
+    box-shadow: none;
+    border: 1px solid #0000001f;
+    color: #0000007d;
 }
-.profileDetails-area {
+
+/*.profileDetails-area {
    max-width: 1730px;
     margin: 0 auto;
     background: #eeeeee !important;
@@ -124,7 +135,7 @@ img.responsive-img.profile_photo {
     padding: 25px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-}
+}*/
 .totalData ul li {
     display: inline-block;
     padding: 10px;
@@ -141,11 +152,6 @@ img.responsive-img.profile_photo {
 .profile_quickLinks ul li {
     display: inline-block;
     margin-left: 10px;
-}
-.profile_quickLinks ul li a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #000;
 }
 
 

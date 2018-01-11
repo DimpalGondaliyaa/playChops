@@ -34,12 +34,14 @@ $(".adddeshcomment").on("click",function(){
 $(".rating").on("click",function()
 {
 
+
 	  var reg_form = new FormData($("#rating-form")[0]);
   var de = $(this).data("idd");
   alert(de);
   $.ajax({
 
     url : baseurl+"ProfileDashboard/ratingpost/",
+
     type :"POST",
     data :reg_form, 
     contentType:false,
@@ -52,8 +54,6 @@ $(".rating").on("click",function()
 });
 
 
-
-$( "#rate option:selected" ).text();
 /*-----comment js--------*/
 $(".post-btn").on("click",function(){
 
@@ -101,6 +101,9 @@ $('#demo').on("click",function(){
 	/*Post View/media/status/blog*/	
 
 	$('.statusPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.mediaPostBtn').removeClass('active');
+		$('.mediaPostBtn').removeClass('active');
 		$('#postStatus').show();
 		$('#postMedia').hide();
 		$('#postLocation').hide();
@@ -108,6 +111,9 @@ $('#demo').on("click",function(){
 
 
 	$('.mediaPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.locationPostBtn').removeClass('active');
+		$('.statusPostBtn').removeClass('active');
 		$('#postMedia').show();
 		$('#postStatus').hide();
 		$('#postLocation').hide();
@@ -115,6 +121,9 @@ $('#demo').on("click",function(){
 
 
 	$('.locationPostBtn').on('click',function(){
+		$(this).addClass('active');
+		$('.statusPostBtn').removeClass('active');
+		$('.mediaPostBtn').removeClass('active');
 		$('#postLocation').show();
 		$('#postMedia').hide();
 		$('#postStatus').hide();

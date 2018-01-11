@@ -11,10 +11,6 @@ $(function(){
     });
 });
 
-
-
-
-
 	$(".imageupdate").on("click",function(){
 
 				var reg_form = new FormData($("#image")[0]);

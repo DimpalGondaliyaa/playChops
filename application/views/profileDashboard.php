@@ -8,6 +8,7 @@
 				<div class="title">
 					<h5>Suggest Friends...</h5>
 				</div>
+
 				<div class="recentPostData row">
 				    <div class="main">
 			            <div class="profile-area">
@@ -43,6 +44,43 @@
 			</div>
 		</div>
 		<!--end col-->
+
+				<div class="recentPostData">
+						<div class="main">
+			<div class="profile-area">
+				<div class="max-width">
+					<div class="post-area row">
+
+							<?php foreach ($rowData as $key => $roww) { ?>
+
+                                     <?php 
+								foreach ($roww["subCategory"] as $key => $value) {
+							
+							 ?>
+							
+					
+							<div class="friendRow col s12 m12">
+								<div class="col s2 m2">
+								<img class="friend-img"  src="<?php echo base_url() ?>html/images/user_image/<?php echo $value['profile_photo'] ?>" class="responsive-img">
+								</div>
+								<div class="col s8 m7">
+								<span class="friend-name">
+									<?php echo $value['fname']; ?> &nbsp;<?php echo $value['lname']; ?></span>
+								<label><h6>4 Mutual Friends.</h6></label>
+								</div>
+								<div class="col m2 s3 m2">
+									<button class="btn btn-add-person flat-btn add-btn"><i class="large material-icons">person_add</i></button>
+								</div>
+							</div>
+								<?php }	} ?>
+
+					</div>
+				</div>
+			</div>
+		</div>
+				</div>
+		
+
 
 		<div class="col s12 m6">
 		   <div class="main">
@@ -157,7 +195,9 @@
 									?>
 								</span>
 								
+
 								<label><h6><?php echo $postData['postDate']; echo ' | '; echo $postData['postTime']; ?></h6></label>
+
 								</div>
 								<div class="col s4 m4">
 									
@@ -184,10 +224,11 @@
 
 										
 <form name="rating-form" id='rating-form'>
-	
+		<input type="hidden" name="star_post_id" value="<?php echo $postData['post_Id'];  ?>" id="star_post_id">
   <div class="rate">
+
   
-    <input type="radio" onclick="$('#po').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
+  <!--   <input type="radio" onclick="$('#po').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
     <label for="star5"  title="text">5 stars</label>
     <input type="radio"  onclick="$('#po').click();" class="rating" id="star4" name="rate" value="4" style="display: none;"/>
     <label for="star4" title="text">4 stars</label>
@@ -198,7 +239,27 @@
     <input type="radio"  onclick="$('#po').click();" class="rating" id="star1" name="rate" value="1" style="display: none;"/>
     <label for="star1" title="text">1 star</label>
   </div>
-	<a name="post_id"  data-idd="<?php echo $postData['post_Id']; ?>" id="po"></a>
+	<a name="post_id"  data-idd="<?php echo $postData['post_Id']; ?>" id="po"></a> -->
+
+
+    <input type="radio" onclick="$('#starbtn').click();" class="rating" name="star5" id="star5" name="rate" value="5" style="display: none;" />
+    <label for="star5"  title="text">5 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star4" name="rate" value="4" style="display: none;"/>
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();"  class="rating" id="star3" name="rate" value="3" style="display: none;" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star2" name="rate" value="2" style="display: none;"/>
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio"  onclick="$('#starbtn').click();" class="rating" id="star1" name="rate" value="1" style="display: none;"/>
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+	<a name="star_post_id" data-id="<?php echo $postData['post_Id']; ?>" value="<?php echo $postData['post_Id']; ?>" id="star_post_id"></a>
+
+
+<!-- <a value='<?php echo $postData['post_Id'];  ?>' name='post_id' data-id="<?php echo $postData['post_Id'];  ?>" id="starbtn" class="waves-effect waves-light btn ">Rating</a> -->
+
+
   </form>
 
 
@@ -209,10 +270,15 @@
 										 <div   id="coomm-div"">
 										 	
 										 	<div class="valign-wrapper">
+
 										 		<a data-messid="<?php echo $postData['post_Id']; ?>" class="btn-floating btn-large waves-effect waves-light blue tooltipped  mybtn" data-position="bottom" data-delay="50" data-tooltip="Comment"><i class="material-icons">message</i>&nbsp;</a>
 										 		
 										 		 30
+							 		<a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Comment">
 
+										 			<i class="material-icons">message</i>
+										 		</a> &nbsp; 30
+										 		 
 										 	</div>
 										 
 										 </div>
@@ -225,6 +291,7 @@
 										 			<i class="material-icons">forward</i>&nbsp; 20
 										 		</a>
 										 	</div>
+
 										
 									</div>
 								</div>
@@ -238,6 +305,16 @@
 									  	?> 
 									  </div>
 						</div>
+
+										<!-- <i class="fa fa-share" aria-hidden="true"> Share</i> -->
+									</div>
+								</div>
+							</div>
+								
+						</div>
+
+						
+
 						<?php } ?>
 
 				
@@ -260,10 +337,21 @@
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img2.jpg" class="responsive-img">
+
 					</div>
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img3.jpg" class="responsive-img">
 					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img6.jpg" class="responsive-img">
+					</div>
+					<div class="col s6 m4 recentBox">
+					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
+					</div>
+		
 					<div class="col s6 m4 recentBox">
 					<img src="<?php echo base_url() ?>html/images/recentPost/img4.jpg" class="responsive-img">
 					</div>
@@ -285,6 +373,14 @@
 					 <i class="material-icons">add</i>comments
 				</div>
 			</div>
+
+			<div class="serveybox sticky">
+			<div class="postBtns">
+				<div class="comm-title">
+					 <i class="material-icons">add</i>comments
+				</div>
+			</div>
+
 			<div class="postStory" id="postStatus">
 				<form name="postPOST" id="postPOST">
 					<div class="input-field col s12">
