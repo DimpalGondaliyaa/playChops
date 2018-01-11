@@ -34,13 +34,11 @@ $(".adddeshcomment").on("click",function(){
 $(".rating").on("click",function()
 {
 
-
-	  var reg_form = new FormData($("#rating-form")[0]);
-  var de = $(this).data("idd");
-  alert(de);
-  $.ajax({
+	var reg_form = new FormData($("#rating-form")[0]);
+	$.ajax({
 
     url : baseurl+"ProfileDashboard/ratingpost/",
+
 
     type :"POST",
     data :reg_form, 
