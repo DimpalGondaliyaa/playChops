@@ -10,6 +10,8 @@
     height: 35px;
     line-height: 35px;
     box-shadow: none;
+    padding-right: 35px;
+
 }
 .add-btn:hover {
     color: #eeeeee;
@@ -22,7 +24,7 @@
     background: #2196f3;
 }*/
 .post-area {
-    background: #fff;
+    background: transparent;
 }
 img.friend-img {
        width: 47px;
@@ -237,13 +239,10 @@ body{
 	background: #eee;
 	height: 100vh;
 }
-.main{
-	background: #eee;
-}
+
 .max-width {
     max-width: 1280px;
     margin: 0 auto;
-    background: #eee;
 }
 
 /*Profile backgrounf images*/
@@ -258,7 +257,7 @@ body{
     height: 400px;
     position: relative;
 }
-img.responsive-img.profile_photo {    
+/*img.responsive-img.profile_photo {    
     display: block;
     bottom: 50px;
     position: absolute;
@@ -272,7 +271,7 @@ img.responsive-img.profile_photo {
     border: 2px solid #002a43;
     padding: 5px;
     box-shadow: 0px 2px 5px #0000006b;
-}
+}*/
 .post_img img {
     height:  auto;
     width: 100%;
@@ -297,7 +296,7 @@ h4.about-name-title {
 button#postPOSTButton:hover {
     background: #2898f4ad !important;
 }
-.profileDetails-area {
+/*.profileDetails-area {
     max-width: 1280px;
     margin: 0 auto;
     background: #ffffff !important;
@@ -306,7 +305,7 @@ button#postPOSTButton:hover {
     padding: 25px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-}
+}*/
 .totalData ul li {
     display: inline-block;
     padding: 10px;
@@ -381,23 +380,36 @@ div#coomm-div {
     box-shadow: 0px 1px 3px #0000004f;
     position: relative;
 }
+/*.recentPostBox {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 1px 3px #0000004f;
+    position: relative;
+}*/
 .col.s6.m4.recentBox img {
     border: 1px solid #ddd;
     margin-bottom: 15px;
     min-height: 75px;
     width: 100%;
     object-fit: cover;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border: 1px solid #00000052;
     box-shadow: 2px 3px 3px #00000059;
 }
-.title h5{
+.title h5 {
+    border-bottom: 1px solid #1a405666;
+    padding-bottom: 15px;
+    color: #f49839;
+    margin-bottom: 15px;
+    text-shadow: 0px 1px 1px #00000080;
+}
+/*.title h5{
 	border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     color: #002a43;
     margin-bottom: 15px;
-}
+}*/
 .commentsBox {
   	padding-top: 15px;
 }
@@ -422,13 +434,21 @@ div#coomm-div {
 
 
 /*========== Post story ============*/
-
+.postStoryBox {
+    /*background: linear-gradient(130deg,#dfdfdf66,#2a4d61);*/
+    background: #fff;
+    box-shadow: 0px 1px 3px #0000004f;
+    margin-bottom: 25px;
+    padding: 25px;
+    position: relative;
+}
+/*
 .postStoryBox {
     background: #fff;
     margin-bottom: 25px;
     padding: 25px;
     position: relative;
-}
+}*/
 .postStory {
     position: relative;
     overflow: hidden;

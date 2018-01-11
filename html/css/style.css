@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif;
 }*/
 body{
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(180deg, #0e053194,rgb(0, 42, 67)) !important;
+   /* background: linear-gradient(180deg, #0e053194,rgb(0, 42, 67)) !important;*/
     height: 100vh;
     
 }
@@ -21,8 +21,91 @@ nav .nav-wrapper{
 	margin: 0 auto;
 }
 
+
+/*top Header area*/
+
+.profileDetails-area {
+    max-width: 1600px;
+    margin: 0 auto;
+    /*background: linear-gradient(50deg, #f3f3f3,#d3d7d9 50%, #f3f3f3 100%);*/
+    background: linear-gradient(50deg, #002a43,#002a43d9 50%,#002a43 100%);
+    position: relative !important;
+    margin-top: 25px;
+    padding: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 1px 3px #0000004d;
+}
+.friendRow.col.s12.m12 {
+    background: linear-gradient(60deg,#dfdfdf66,#cdd5da,#f1f1f1);
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px #00000080;
+}
+/*.profileDetails-area{
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #ffffff !important;
+    position: relative !important;
+    margin-top: 25px;
+    padding: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}*/
+img.responsive-img.profile_photo {
+    display: block;
+    bottom: 50px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 153px;
+    left: 50px;
+    top: 50px;
+    right: 50px;
+    object-fit: cover;
+    border: 2px solid #002a43;
+    padding: 5px;
+    box-shadow: 0px 2px 5px #0000006b;
+}
+.about-name-title
+{
+    background: -webkit-linear-gradient(top,#e19d56,#002a43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.total_post h5 {
+    color: #949494;
+}
+.total_post p {
+    color: #949494;
+}
+.profile_followers h5{
+    color: #949494;   
+}
+.profile_followers p{
+    color: #949494;   
+}
+.profile_followig h5{
+    color: #949494;      
+}
+.profile_followig p{
+    color: #949494;      
+}
+
+
+
+
+.post_img img {
+    width: 100%;
+}
+
+
+/*end header area*/
+
 .PostContainer {
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
